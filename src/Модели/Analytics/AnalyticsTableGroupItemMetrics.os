@@ -1,132 +1,60 @@
+#Использовать jason
+
 // AnalyticsTableGroupItemMetrics
 //
 // Метрики товара в таблице
 //
 // Класс сформирован автоматически (onescript) из спецификации OpenAPI.
 // Правки будут потеряны при следующей генерации.
+//
+// Форма свойства описана аннотациями: jason берёт из `&Сериализуемое` имя поля
+// в JSON, а из `&Тип` и `&ДляКаждого` — класс, в который разбирать значение,
+// поэтому вложенные модели и массивы моделей восстанавливаются сами собой.
 
-// avgPosition - TableGroupItem_metrics_avgPosition
+// avgPosition - AnalyticsTableGroupItemMetricsAvgPosition
+&Сериализуемое("avgPosition")
+&Тип("AnalyticsTableGroupItemMetricsAvgPosition")
 Перем avgPosition Экспорт;
 
-// openCard - VisibilityInfo_openCard
+// openCard - AnalyticsVisibilityInfoOpenCard
+&Сериализуемое("openCard")
+&Тип("AnalyticsVisibilityInfoOpenCard")
 Перем openCard Экспорт;
 
-// addToCart - TableGroupItem_metrics_addToCart
+// addToCart - AnalyticsTableGroupItemMetricsAddToCart
+&Сериализуемое("addToCart")
+&Тип("AnalyticsTableGroupItemMetricsAddToCart")
 Перем addToCart Экспорт;
 
-// openToCart - TableGroupItem_metrics_openToCart
+// openToCart - AnalyticsTableGroupItemMetricsOpenToCart
+&Сериализуемое("openToCart")
+&Тип("AnalyticsTableGroupItemMetricsOpenToCart")
 Перем openToCart Экспорт;
 
-// orders - TableGroupItem_metrics_orders
+// orders - AnalyticsTableGroupItemMetricsOrders
+&Сериализуемое("orders")
+&Тип("AnalyticsTableGroupItemMetricsOrders")
 Перем orders Экспорт;
 
-// cartToOrder - TableGroupItem_metrics_cartToOrder
+// cartToOrder - AnalyticsTableGroupItemMetricsCartToOrder
+&Сериализуемое("cartToOrder")
+&Тип("AnalyticsTableGroupItemMetricsCartToOrder")
 Перем cartToOrder Экспорт;
 
-// visibility - TableGroupItem_metrics_visibility
+// visibility - AnalyticsTableGroupItemMetricsVisibility
+&Сериализуемое("visibility")
+&Тип("AnalyticsTableGroupItemMetricsVisibility")
 Перем visibility Экспорт;
 
-// Параметры:
-//   Данные - Соответствие, Структура - исходные значения, разобранные из JSON.
-//
-Процедура ПриСозданииОбъекта(Знач Данные = Неопределено)
-
-	Если Данные <> Неопределено Тогда
-		Заполнить(Данные);
-	КонецЕсли;
-
-КонецПроцедуры
-
-// Заполняет свойства из коллекции, полученной из JSON.
-//
-// Параметры:
-//   Данные - Соответствие, Структура - исходные значения.
-//
-Процедура Заполнить(Знач Данные) Экспорт
-
-	Если Данные = Неопределено Тогда
-		Возврат;
-	КонецЕсли;
-
-	Значения = Новый Соответствие;
-	Для Каждого ЭлементДанных Из Данные Цикл
-		Значения.Вставить(Строка(ЭлементДанных.Ключ), ЭлементДанных.Значение);
-	КонецЦикла;
-	Если Значения.Получить("avgPosition") <> Неопределено Тогда
-		avgPosition = Значения.Получить("avgPosition");
-	КонецЕсли;
-	Если Значения.Получить("openCard") <> Неопределено Тогда
-		openCard = Значения.Получить("openCard");
-	КонецЕсли;
-	Если Значения.Получить("addToCart") <> Неопределено Тогда
-		addToCart = Значения.Получить("addToCart");
-	КонецЕсли;
-	Если Значения.Получить("openToCart") <> Неопределено Тогда
-		openToCart = Значения.Получить("openToCart");
-	КонецЕсли;
-	Если Значения.Получить("orders") <> Неопределено Тогда
-		orders = Значения.Получить("orders");
-	КонецЕсли;
-	Если Значения.Получить("cartToOrder") <> Неопределено Тогда
-		cartToOrder = Значения.Получить("cartToOrder");
-	КонецЕсли;
-	Если Значения.Получить("visibility") <> Неопределено Тогда
-		visibility = Значения.Получить("visibility");
-	КонецЕсли;
-КонецПроцедуры
-
-// Возвращает значения свойств под именами из спецификации.
+// Возвращает JSON-представление модели.
 //
 // Незаполненные свойства пропускаются, поэтому в теле запроса не появится
 // null там, где сервис ожидает отсутствие поля.
 //
 // Возвращаемое значение:
-//   Соответствие
+//   Строка
 //
-Функция Данные() Экспорт
-
-	Результат = Новый Соответствие;
-	Если avgPosition <> Неопределено Тогда
-		Результат.Вставить("avgPosition", ЗначениеДляJSON(avgPosition));
-	КонецЕсли;
-	Если openCard <> Неопределено Тогда
-		Результат.Вставить("openCard", ЗначениеДляJSON(openCard));
-	КонецЕсли;
-	Если addToCart <> Неопределено Тогда
-		Результат.Вставить("addToCart", ЗначениеДляJSON(addToCart));
-	КонецЕсли;
-	Если openToCart <> Неопределено Тогда
-		Результат.Вставить("openToCart", ЗначениеДляJSON(openToCart));
-	КонецЕсли;
-	Если orders <> Неопределено Тогда
-		Результат.Вставить("orders", ЗначениеДляJSON(orders));
-	КонецЕсли;
-	Если cartToOrder <> Неопределено Тогда
-		Результат.Вставить("cartToOrder", ЗначениеДляJSON(cartToOrder));
-	КонецЕсли;
-	Если visibility <> Неопределено Тогда
-		Результат.Вставить("visibility", ЗначениеДляJSON(visibility));
-	КонецЕсли;
-	Возврат Результат;
-
-КонецФункции
-
-Функция ЗначениеДляJSON(Знач Значение)
-
-	Если ТипЗнч(Значение) = Тип("Массив") Тогда
-		Результат = Новый Массив;
-		Для Каждого ЭлементМассива Из Значение Цикл
-			Результат.Добавить(ЗначениеДляJSON(ЭлементМассива));
-		КонецЦикла;
-		Возврат Результат;
-	КонецЕсли;
-
-	// Вложенные модели раскладываются тем же способом.
-	Попытка
-		Возврат Значение.Данные();
-	Исключение
-		Возврат Значение;
-	КонецПопытки;
-
+Функция ВJson() Экспорт
+	Возврат Новый СериализаторJson().Сериализовать(ЭтотОбъект);
 КонецФункции
 

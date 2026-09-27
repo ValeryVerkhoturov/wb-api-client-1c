@@ -1,238 +1,118 @@
+#Использовать jason
+
 // AnalyticsTableItemItem
 //
 // Класс сформирован автоматически (onescript) из спецификации OpenAPI.
 // Правки будут потеряны при следующей генерации.
+//
+// Форма свойства описана аннотациями: jason берёт из `&Сериализуемое` имя поля
+// в JSON, а из `&Тип` и `&ДляКаждого` — класс, в который разбирать значение,
+// поэтому вложенные модели и массивы моделей восстанавливаются сами собой.
 
 // nmId - Число - Артикул WB
+&Сериализуемое("nmId")
+&Тип("Число")
 Перем nmId Экспорт;
 
 // name - Строка - Название товара
+&Сериализуемое("name")
+&Тип("Строка")
 Перем name Экспорт;
 
 // vendorCode - Строка - Артикул продавца
+&Сериализуемое("vendorCode")
+&Тип("Строка")
 Перем vendorCode Экспорт;
 
 // subjectName - Строка - Название предмета
+&Сериализуемое("subjectName")
+&Тип("Строка")
 Перем subjectName Экспорт;
 
 // brandName - Строка - Бренд
+&Сериализуемое("brandName")
+&Тип("Строка")
 Перем brandName Экспорт;
 
 // mainPhoto - Строка - URL главного фото карточки товара
+&Сериализуемое("mainPhoto")
+&Тип("Строка")
 Перем mainPhoto Экспорт;
 
 // isAdvertised - Булево - Находится ли товар в продвижении в Поисковой выдаче
+&Сериализуемое("isAdvertised")
+&Тип("Булево")
 Перем isAdvertised Экспорт;
 
 // isSubstitutedSKU - Булево - Искали ли товар по подменному артикулу. Поле будет в ответе при наличии в запросе `includeSubstitutedSKUs` и/или `includeSearchTexts`
+&Сериализуемое("isSubstitutedSKU")
+&Тип("Булево")
 Перем isSubstitutedSKU Экспорт;
 
 // isCardRated - Булево - Есть ли рейтинг у карточки товара
+&Сериализуемое("isCardRated")
+&Тип("Булево")
 Перем isCardRated Экспорт;
 
 // rating - Число - Рейтинг карточки товара
+&Сериализуемое("rating")
+&Тип("Число")
 Перем rating Экспорт;
 
 // feedbackRating - Число - Рейтинг по отзывам
+&Сериализуемое("feedbackRating")
+&Тип("Число")
 Перем feedbackRating Экспорт;
 
-// price - TableItemItem_allOf_price
+// price - AnalyticsTableItemItemAllOfPrice
+&Сериализуемое("price")
+&Тип("AnalyticsTableItemItemAllOfPrice")
 Перем price Экспорт;
 
-// avgPosition - TableGroupItem_metrics_avgPosition
+// avgPosition - AnalyticsTableGroupItemMetricsAvgPosition
+&Сериализуемое("avgPosition")
+&Тип("AnalyticsTableGroupItemMetricsAvgPosition")
 Перем avgPosition Экспорт;
 
-// openCard - VisibilityInfo_openCard
+// openCard - AnalyticsVisibilityInfoOpenCard
+&Сериализуемое("openCard")
+&Тип("AnalyticsVisibilityInfoOpenCard")
 Перем openCard Экспорт;
 
-// addToCart - TableGroupItem_metrics_addToCart
+// addToCart - AnalyticsTableGroupItemMetricsAddToCart
+&Сериализуемое("addToCart")
+&Тип("AnalyticsTableGroupItemMetricsAddToCart")
 Перем addToCart Экспорт;
 
-// openToCart - TableGroupItem_metrics_openToCart
+// openToCart - AnalyticsTableGroupItemMetricsOpenToCart
+&Сериализуемое("openToCart")
+&Тип("AnalyticsTableGroupItemMetricsOpenToCart")
 Перем openToCart Экспорт;
 
-// orders - TableGroupItem_metrics_orders
+// orders - AnalyticsTableGroupItemMetricsOrders
+&Сериализуемое("orders")
+&Тип("AnalyticsTableGroupItemMetricsOrders")
 Перем orders Экспорт;
 
-// cartToOrder - TableGroupItem_metrics_cartToOrder
+// cartToOrder - AnalyticsTableGroupItemMetricsCartToOrder
+&Сериализуемое("cartToOrder")
+&Тип("AnalyticsTableGroupItemMetricsCartToOrder")
 Перем cartToOrder Экспорт;
 
-// visibility - TableGroupItem_metrics_visibility
+// visibility - AnalyticsTableGroupItemMetricsVisibility
+&Сериализуемое("visibility")
+&Тип("AnalyticsTableGroupItemMetricsVisibility")
 Перем visibility Экспорт;
 
-// Параметры:
-//   Данные - Соответствие, Структура - исходные значения, разобранные из JSON.
-//
-Процедура ПриСозданииОбъекта(Знач Данные = Неопределено)
-
-	Если Данные <> Неопределено Тогда
-		Заполнить(Данные);
-	КонецЕсли;
-
-КонецПроцедуры
-
-// Заполняет свойства из коллекции, полученной из JSON.
-//
-// Параметры:
-//   Данные - Соответствие, Структура - исходные значения.
-//
-Процедура Заполнить(Знач Данные) Экспорт
-
-	Если Данные = Неопределено Тогда
-		Возврат;
-	КонецЕсли;
-
-	Значения = Новый Соответствие;
-	Для Каждого ЭлементДанных Из Данные Цикл
-		Значения.Вставить(Строка(ЭлементДанных.Ключ), ЭлементДанных.Значение);
-	КонецЦикла;
-	Если Значения.Получить("nmId") <> Неопределено Тогда
-		nmId = Значения.Получить("nmId");
-	КонецЕсли;
-	Если Значения.Получить("name") <> Неопределено Тогда
-		name = Значения.Получить("name");
-	КонецЕсли;
-	Если Значения.Получить("vendorCode") <> Неопределено Тогда
-		vendorCode = Значения.Получить("vendorCode");
-	КонецЕсли;
-	Если Значения.Получить("subjectName") <> Неопределено Тогда
-		subjectName = Значения.Получить("subjectName");
-	КонецЕсли;
-	Если Значения.Получить("brandName") <> Неопределено Тогда
-		brandName = Значения.Получить("brandName");
-	КонецЕсли;
-	Если Значения.Получить("mainPhoto") <> Неопределено Тогда
-		mainPhoto = Значения.Получить("mainPhoto");
-	КонецЕсли;
-	Если Значения.Получить("isAdvertised") <> Неопределено Тогда
-		isAdvertised = Значения.Получить("isAdvertised");
-	КонецЕсли;
-	Если Значения.Получить("isSubstitutedSKU") <> Неопределено Тогда
-		isSubstitutedSKU = Значения.Получить("isSubstitutedSKU");
-	КонецЕсли;
-	Если Значения.Получить("isCardRated") <> Неопределено Тогда
-		isCardRated = Значения.Получить("isCardRated");
-	КонецЕсли;
-	Если Значения.Получить("rating") <> Неопределено Тогда
-		rating = Значения.Получить("rating");
-	КонецЕсли;
-	Если Значения.Получить("feedbackRating") <> Неопределено Тогда
-		feedbackRating = Значения.Получить("feedbackRating");
-	КонецЕсли;
-	Если Значения.Получить("price") <> Неопределено Тогда
-		price = Значения.Получить("price");
-	КонецЕсли;
-	Если Значения.Получить("avgPosition") <> Неопределено Тогда
-		avgPosition = Значения.Получить("avgPosition");
-	КонецЕсли;
-	Если Значения.Получить("openCard") <> Неопределено Тогда
-		openCard = Значения.Получить("openCard");
-	КонецЕсли;
-	Если Значения.Получить("addToCart") <> Неопределено Тогда
-		addToCart = Значения.Получить("addToCart");
-	КонецЕсли;
-	Если Значения.Получить("openToCart") <> Неопределено Тогда
-		openToCart = Значения.Получить("openToCart");
-	КонецЕсли;
-	Если Значения.Получить("orders") <> Неопределено Тогда
-		orders = Значения.Получить("orders");
-	КонецЕсли;
-	Если Значения.Получить("cartToOrder") <> Неопределено Тогда
-		cartToOrder = Значения.Получить("cartToOrder");
-	КонецЕсли;
-	Если Значения.Получить("visibility") <> Неопределено Тогда
-		visibility = Значения.Получить("visibility");
-	КонецЕсли;
-КонецПроцедуры
-
-// Возвращает значения свойств под именами из спецификации.
+// Возвращает JSON-представление модели.
 //
 // Незаполненные свойства пропускаются, поэтому в теле запроса не появится
 // null там, где сервис ожидает отсутствие поля.
 //
 // Возвращаемое значение:
-//   Соответствие
+//   Строка
 //
-Функция Данные() Экспорт
-
-	Результат = Новый Соответствие;
-	Если nmId <> Неопределено Тогда
-		Результат.Вставить("nmId", ЗначениеДляJSON(nmId));
-	КонецЕсли;
-	Если name <> Неопределено Тогда
-		Результат.Вставить("name", ЗначениеДляJSON(name));
-	КонецЕсли;
-	Если vendorCode <> Неопределено Тогда
-		Результат.Вставить("vendorCode", ЗначениеДляJSON(vendorCode));
-	КонецЕсли;
-	Если subjectName <> Неопределено Тогда
-		Результат.Вставить("subjectName", ЗначениеДляJSON(subjectName));
-	КонецЕсли;
-	Если brandName <> Неопределено Тогда
-		Результат.Вставить("brandName", ЗначениеДляJSON(brandName));
-	КонецЕсли;
-	Если mainPhoto <> Неопределено Тогда
-		Результат.Вставить("mainPhoto", ЗначениеДляJSON(mainPhoto));
-	КонецЕсли;
-	Если isAdvertised <> Неопределено Тогда
-		Результат.Вставить("isAdvertised", ЗначениеДляJSON(isAdvertised));
-	КонецЕсли;
-	Если isSubstitutedSKU <> Неопределено Тогда
-		Результат.Вставить("isSubstitutedSKU", ЗначениеДляJSON(isSubstitutedSKU));
-	КонецЕсли;
-	Если isCardRated <> Неопределено Тогда
-		Результат.Вставить("isCardRated", ЗначениеДляJSON(isCardRated));
-	КонецЕсли;
-	Если rating <> Неопределено Тогда
-		Результат.Вставить("rating", ЗначениеДляJSON(rating));
-	КонецЕсли;
-	Если feedbackRating <> Неопределено Тогда
-		Результат.Вставить("feedbackRating", ЗначениеДляJSON(feedbackRating));
-	КонецЕсли;
-	Если price <> Неопределено Тогда
-		Результат.Вставить("price", ЗначениеДляJSON(price));
-	КонецЕсли;
-	Если avgPosition <> Неопределено Тогда
-		Результат.Вставить("avgPosition", ЗначениеДляJSON(avgPosition));
-	КонецЕсли;
-	Если openCard <> Неопределено Тогда
-		Результат.Вставить("openCard", ЗначениеДляJSON(openCard));
-	КонецЕсли;
-	Если addToCart <> Неопределено Тогда
-		Результат.Вставить("addToCart", ЗначениеДляJSON(addToCart));
-	КонецЕсли;
-	Если openToCart <> Неопределено Тогда
-		Результат.Вставить("openToCart", ЗначениеДляJSON(openToCart));
-	КонецЕсли;
-	Если orders <> Неопределено Тогда
-		Результат.Вставить("orders", ЗначениеДляJSON(orders));
-	КонецЕсли;
-	Если cartToOrder <> Неопределено Тогда
-		Результат.Вставить("cartToOrder", ЗначениеДляJSON(cartToOrder));
-	КонецЕсли;
-	Если visibility <> Неопределено Тогда
-		Результат.Вставить("visibility", ЗначениеДляJSON(visibility));
-	КонецЕсли;
-	Возврат Результат;
-
-КонецФункции
-
-Функция ЗначениеДляJSON(Знач Значение)
-
-	Если ТипЗнч(Значение) = Тип("Массив") Тогда
-		Результат = Новый Массив;
-		Для Каждого ЭлементМассива Из Значение Цикл
-			Результат.Добавить(ЗначениеДляJSON(ЭлементМассива));
-		КонецЦикла;
-		Возврат Результат;
-	КонецЕсли;
-
-	// Вложенные модели раскладываются тем же способом.
-	Попытка
-		Возврат Значение.Данные();
-	Исключение
-		Возврат Значение;
-	КонецПопытки;
-
+Функция ВJson() Экспорт
+	Возврат Новый СериализаторJson().Сериализовать(ЭтотОбъект);
 КонецФункции
 

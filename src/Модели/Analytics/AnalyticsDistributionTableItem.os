@@ -1,238 +1,118 @@
+#Использовать jason
+
 // AnalyticsDistributionTableItem
 //
 // Класс сформирован автоматически (onescript) из спецификации OpenAPI.
 // Правки будут потеряны при следующей генерации.
+//
+// Форма свойства описана аннотациями: jason берёт из `&Сериализуемое` имя поля
+// в JSON, а из `&Тип` и `&ДляКаждого` — класс, в который разбирать значение,
+// поэтому вложенные модели и массивы моделей восстанавливаются сами собой.
 
 // nmId - Число - Артикул WB
+&Сериализуемое("nmId")
+&Тип("Число")
 Перем nmId Экспорт;
 
 // title - Строка - Название товара
+&Сериализуемое("title")
+&Тип("Строка")
 Перем title Экспорт;
 
 // vendorCode - Строка - Артикул продавца
+&Сериализуемое("vendorCode")
+&Тип("Строка")
 Перем vendorCode Экспорт;
 
 // subjectId - Число - ID предмета
+&Сериализуемое("subjectId")
+&Тип("Число")
 Перем subjectId Экспорт;
 
 // subjectName - Строка - Название предмета
+&Сериализуемое("subjectName")
+&Тип("Строка")
 Перем subjectName Экспорт;
 
 // brandName - Строка - Бренд
+&Сериализуемое("brandName")
+&Тип("Строка")
 Перем brandName Экспорт;
 
 // tagName - Строка - Название ярлыка
+&Сериализуемое("tagName")
+&Тип("Строка")
 Перем tagName Экспорт;
 
 // tagId - Число - ID ярлыка
+&Сериализуемое("tagId")
+&Тип("Число")
 Перем tagId Экспорт;
 
 // pinnedFeedback - Булево - Отзыв закреплён
+&Сериализуемое("pinnedFeedback")
+&Тип("Булево")
 Перем pinnedFeedback Экспорт;
 
 // rating - Число - Рейтинг карточки товара
+&Сериализуемое("rating")
+&Тип("Число")
 Перем rating Экспорт;
 
-// feedbackRating - DistributionTableItem_feedbackRating
+// feedbackRating - AnalyticsDistributionTableItemFeedbackRating
+&Сериализуемое("feedbackRating")
+&Тип("AnalyticsDistributionTableItemFeedbackRating")
 Перем feedbackRating Экспорт;
 
-// feedbackCount - DistributionTableItem_feedbackCount
+// feedbackCount - AnalyticsDistributionTableItemFeedbackCount
+&Сериализуемое("feedbackCount")
+&Тип("AnalyticsDistributionTableItemFeedbackCount")
 Перем feedbackCount Экспорт;
 
-// fiveStar - DistributionTableItem_fiveStar
+// fiveStar - AnalyticsDistributionTableItemFiveStar
+&Сериализуемое("fiveStar")
+&Тип("AnalyticsDistributionTableItemFiveStar")
 Перем fiveStar Экспорт;
 
-// fourStar - DistributionTableItem_fourStar
+// fourStar - AnalyticsDistributionTableItemFourStar
+&Сериализуемое("fourStar")
+&Тип("AnalyticsDistributionTableItemFourStar")
 Перем fourStar Экспорт;
 
-// threeStar - DistributionTableItem_threeStar
+// threeStar - AnalyticsDistributionTableItemThreeStar
+&Сериализуемое("threeStar")
+&Тип("AnalyticsDistributionTableItemThreeStar")
 Перем threeStar Экспорт;
 
-// twoStar - DistributionTableItem_twoStar
+// twoStar - AnalyticsDistributionTableItemTwoStar
+&Сериализуемое("twoStar")
+&Тип("AnalyticsDistributionTableItemTwoStar")
 Перем twoStar Экспорт;
 
-// oneStar - DistributionTableItem_oneStar
+// oneStar - AnalyticsDistributionTableItemOneStar
+&Сериализуемое("oneStar")
+&Тип("AnalyticsDistributionTableItemOneStar")
 Перем oneStar Экспорт;
 
 // disqualified - Число - Отзывы, исключённые из рейтинга
+&Сериализуемое("disqualified")
+&Тип("Число")
 Перем disqualified Экспорт;
 
 // isShadowed - Булево - Является ли товар скрытым из каталога: - `true` — товар скрыт из каталога - `false` — товар не скрыт из каталога
+&Сериализуемое("isShadowed")
+&Тип("Булево")
 Перем isShadowed Экспорт;
 
-// Параметры:
-//   Данные - Соответствие, Структура - исходные значения, разобранные из JSON.
-//
-Процедура ПриСозданииОбъекта(Знач Данные = Неопределено)
-
-	Если Данные <> Неопределено Тогда
-		Заполнить(Данные);
-	КонецЕсли;
-
-КонецПроцедуры
-
-// Заполняет свойства из коллекции, полученной из JSON.
-//
-// Параметры:
-//   Данные - Соответствие, Структура - исходные значения.
-//
-Процедура Заполнить(Знач Данные) Экспорт
-
-	Если Данные = Неопределено Тогда
-		Возврат;
-	КонецЕсли;
-
-	Значения = Новый Соответствие;
-	Для Каждого ЭлементДанных Из Данные Цикл
-		Значения.Вставить(Строка(ЭлементДанных.Ключ), ЭлементДанных.Значение);
-	КонецЦикла;
-	Если Значения.Получить("nmId") <> Неопределено Тогда
-		nmId = Значения.Получить("nmId");
-	КонецЕсли;
-	Если Значения.Получить("title") <> Неопределено Тогда
-		title = Значения.Получить("title");
-	КонецЕсли;
-	Если Значения.Получить("vendorCode") <> Неопределено Тогда
-		vendorCode = Значения.Получить("vendorCode");
-	КонецЕсли;
-	Если Значения.Получить("subjectId") <> Неопределено Тогда
-		subjectId = Значения.Получить("subjectId");
-	КонецЕсли;
-	Если Значения.Получить("subjectName") <> Неопределено Тогда
-		subjectName = Значения.Получить("subjectName");
-	КонецЕсли;
-	Если Значения.Получить("brandName") <> Неопределено Тогда
-		brandName = Значения.Получить("brandName");
-	КонецЕсли;
-	Если Значения.Получить("tagName") <> Неопределено Тогда
-		tagName = Значения.Получить("tagName");
-	КонецЕсли;
-	Если Значения.Получить("tagId") <> Неопределено Тогда
-		tagId = Значения.Получить("tagId");
-	КонецЕсли;
-	Если Значения.Получить("pinnedFeedback") <> Неопределено Тогда
-		pinnedFeedback = Значения.Получить("pinnedFeedback");
-	КонецЕсли;
-	Если Значения.Получить("rating") <> Неопределено Тогда
-		rating = Значения.Получить("rating");
-	КонецЕсли;
-	Если Значения.Получить("feedbackRating") <> Неопределено Тогда
-		feedbackRating = Значения.Получить("feedbackRating");
-	КонецЕсли;
-	Если Значения.Получить("feedbackCount") <> Неопределено Тогда
-		feedbackCount = Значения.Получить("feedbackCount");
-	КонецЕсли;
-	Если Значения.Получить("fiveStar") <> Неопределено Тогда
-		fiveStar = Значения.Получить("fiveStar");
-	КонецЕсли;
-	Если Значения.Получить("fourStar") <> Неопределено Тогда
-		fourStar = Значения.Получить("fourStar");
-	КонецЕсли;
-	Если Значения.Получить("threeStar") <> Неопределено Тогда
-		threeStar = Значения.Получить("threeStar");
-	КонецЕсли;
-	Если Значения.Получить("twoStar") <> Неопределено Тогда
-		twoStar = Значения.Получить("twoStar");
-	КонецЕсли;
-	Если Значения.Получить("oneStar") <> Неопределено Тогда
-		oneStar = Значения.Получить("oneStar");
-	КонецЕсли;
-	Если Значения.Получить("disqualified") <> Неопределено Тогда
-		disqualified = Значения.Получить("disqualified");
-	КонецЕсли;
-	Если Значения.Получить("isShadowed") <> Неопределено Тогда
-		isShadowed = Значения.Получить("isShadowed");
-	КонецЕсли;
-КонецПроцедуры
-
-// Возвращает значения свойств под именами из спецификации.
+// Возвращает JSON-представление модели.
 //
 // Незаполненные свойства пропускаются, поэтому в теле запроса не появится
 // null там, где сервис ожидает отсутствие поля.
 //
 // Возвращаемое значение:
-//   Соответствие
+//   Строка
 //
-Функция Данные() Экспорт
-
-	Результат = Новый Соответствие;
-	Если nmId <> Неопределено Тогда
-		Результат.Вставить("nmId", ЗначениеДляJSON(nmId));
-	КонецЕсли;
-	Если title <> Неопределено Тогда
-		Результат.Вставить("title", ЗначениеДляJSON(title));
-	КонецЕсли;
-	Если vendorCode <> Неопределено Тогда
-		Результат.Вставить("vendorCode", ЗначениеДляJSON(vendorCode));
-	КонецЕсли;
-	Если subjectId <> Неопределено Тогда
-		Результат.Вставить("subjectId", ЗначениеДляJSON(subjectId));
-	КонецЕсли;
-	Если subjectName <> Неопределено Тогда
-		Результат.Вставить("subjectName", ЗначениеДляJSON(subjectName));
-	КонецЕсли;
-	Если brandName <> Неопределено Тогда
-		Результат.Вставить("brandName", ЗначениеДляJSON(brandName));
-	КонецЕсли;
-	Если tagName <> Неопределено Тогда
-		Результат.Вставить("tagName", ЗначениеДляJSON(tagName));
-	КонецЕсли;
-	Если tagId <> Неопределено Тогда
-		Результат.Вставить("tagId", ЗначениеДляJSON(tagId));
-	КонецЕсли;
-	Если pinnedFeedback <> Неопределено Тогда
-		Результат.Вставить("pinnedFeedback", ЗначениеДляJSON(pinnedFeedback));
-	КонецЕсли;
-	Если rating <> Неопределено Тогда
-		Результат.Вставить("rating", ЗначениеДляJSON(rating));
-	КонецЕсли;
-	Если feedbackRating <> Неопределено Тогда
-		Результат.Вставить("feedbackRating", ЗначениеДляJSON(feedbackRating));
-	КонецЕсли;
-	Если feedbackCount <> Неопределено Тогда
-		Результат.Вставить("feedbackCount", ЗначениеДляJSON(feedbackCount));
-	КонецЕсли;
-	Если fiveStar <> Неопределено Тогда
-		Результат.Вставить("fiveStar", ЗначениеДляJSON(fiveStar));
-	КонецЕсли;
-	Если fourStar <> Неопределено Тогда
-		Результат.Вставить("fourStar", ЗначениеДляJSON(fourStar));
-	КонецЕсли;
-	Если threeStar <> Неопределено Тогда
-		Результат.Вставить("threeStar", ЗначениеДляJSON(threeStar));
-	КонецЕсли;
-	Если twoStar <> Неопределено Тогда
-		Результат.Вставить("twoStar", ЗначениеДляJSON(twoStar));
-	КонецЕсли;
-	Если oneStar <> Неопределено Тогда
-		Результат.Вставить("oneStar", ЗначениеДляJSON(oneStar));
-	КонецЕсли;
-	Если disqualified <> Неопределено Тогда
-		Результат.Вставить("disqualified", ЗначениеДляJSON(disqualified));
-	КонецЕсли;
-	Если isShadowed <> Неопределено Тогда
-		Результат.Вставить("isShadowed", ЗначениеДляJSON(isShadowed));
-	КонецЕсли;
-	Возврат Результат;
-
-КонецФункции
-
-Функция ЗначениеДляJSON(Знач Значение)
-
-	Если ТипЗнч(Значение) = Тип("Массив") Тогда
-		Результат = Новый Массив;
-		Для Каждого ЭлементМассива Из Значение Цикл
-			Результат.Добавить(ЗначениеДляJSON(ЭлементМассива));
-		КонецЦикла;
-		Возврат Результат;
-	КонецЕсли;
-
-	// Вложенные модели раскладываются тем же способом.
-	Попытка
-		Возврат Значение.Данные();
-	Исключение
-		Возврат Значение;
-	КонецПопытки;
-
+Функция ВJson() Экспорт
+	Возврат Новый СериализаторJson().Сериализовать(ЭтотОбъект);
 КонецФункции
 
