@@ -466,6 +466,21 @@
 &Тип("Число")
 Перем warehouseLogisticsCoeff Экспорт;
 
+// buyerTaxRegistrationReasonCode - Строка - КПП B2B-покупателя
+&Сериализуемое("buyerTaxRegistrationReasonCode")
+&Тип("Строка")
+Перем buyerTaxRegistrationReasonCode Экспорт;
+
+// utdUcdNumber - Строка - Номер УПД или УКД
+&Сериализуемое("utdUcdNumber")
+&Тип("Строка")
+Перем utdUcdNumber Экспорт;
+
+// utdUcdDate - Дата - Дата УПД или УКД
+&Сериализуемое("utdUcdDate")
+&Тип("Дата")
+Перем utdUcdDate Экспорт;
+
 // orderUid - Строка - ID корзины заказа — транзакции. Заказы в одной корзине покупателя будут иметь одинаковый `orderUid`
 &Сериализуемое("orderUid")
 &Тип("Строка")
