@@ -1,6 +1,6 @@
 #Использовать jason
 
-// AnalyticsPostAnalyticsV1StocksReportSellerWarehousesResponse200
+// OrdersFbsPostV3FbsSettingsAutoreturnsItemsResponse200
 //
 // Класс сформирован автоматически (onescript) из спецификации OpenAPI.
 // Правки будут потеряны при следующей генерации.
@@ -9,10 +9,12 @@
 // в JSON, а из `&Тип` и `&ДляКаждого` — класс, в который разбирать значение,
 // поэтому вложенные модели и массивы моделей восстанавливаются сами собой.
 
-// data - AnalyticsInventorySellerResponse
-&Сериализуемое("data")
-&Тип("AnalyticsInventorySellerResponse")
-Перем data Экспорт;
+// results - Массив
+&Сериализуемое("results")
+&Тип("Массив")
+&ДляКаждого
+&Тип("OrdersFbsPostV3FbsSettingsAutoreturnsItemsResponse200ResultsInner")
+Перем results Экспорт;
 
 // Возвращает JSON-представление модели.
 //

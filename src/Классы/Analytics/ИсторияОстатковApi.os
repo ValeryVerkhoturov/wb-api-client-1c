@@ -39,7 +39,7 @@
 // Возвращаемое значение:
 //   ОтветAPI
 //
-Функция PostAnalyticsV1StocksReportSellerWarehouses(Знач Тело) Экспорт
+Функция PostV1StocksReportSellerWarehouses(Знач Тело) Экспорт
 
 	ПараметрыЗапроса = Новый Соответствие;
 	Заголовки = Новый Соответствие;

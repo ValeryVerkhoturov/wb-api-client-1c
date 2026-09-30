@@ -1,6 +1,6 @@
 #Использовать jason
 
-// OrdersFbsPatchMarketplaceV3FbsSettingsAutoreturnsItemsResponse200ResultsInner
+// ItemsGetV2DirectoryOkpdAllResponse200
 //
 // Класс сформирован автоматически (onescript) из спецификации OpenAPI.
 // Правки будут потеряны при следующей генерации.
@@ -9,22 +9,27 @@
 // в JSON, а из `&Тип` и `&ДляКаждого` — класс, в который разбирать значение,
 // поэтому вложенные модели и массивы моделей восстанавливаются сами собой.
 
-// chrtId - Число - ID размера товара в системе WB
-&Сериализуемое("chrtId")
-&Тип("Число")
-Перем chrtId Экспорт;
-
-// error - Массив - Детали ошибки
-&Сериализуемое("error")
+// data - Массив - Данные
+&Сериализуемое("data")
 &Тип("Массив")
 &ДляКаждого
-&Тип("OrdersFbsPatchMarketplaceV3FbsSettingsAutoreturnsItemsResponse200ResultsInnerErrorInner")
+&Тип("ItemsGetV2DirectoryOkpdResponse200DataInner")
+Перем data Экспорт;
+
+// error - Булево - Флаг наличия ошибки
+&Сериализуемое("error")
+&Тип("Булево")
 Перем error Экспорт;
 
-// success - Булево - - `true` — настройки автовозврата товара обновлены
-&Сериализуемое("success")
-&Тип("Булево")
-Перем success Экспорт;
+// errorText - Строка - Текст ошибки
+&Сериализуемое("errorText")
+&Тип("Строка")
+Перем errorText Экспорт;
+
+// additionalErrors - Строка - Дополнительные ошибки
+&Сериализуемое("additionalErrors")
+&Тип("Строка")
+Перем additionalErrors Экспорт;
 
 // Возвращает JSON-представление модели.
 //

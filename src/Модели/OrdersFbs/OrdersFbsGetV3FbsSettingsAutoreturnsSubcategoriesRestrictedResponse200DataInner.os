@@ -1,6 +1,6 @@
 #Использовать jason
 
-// OrdersFbsPostMarketplaceV3FbsSettingsAutoreturnsItemsResponse200ResultsInnerErrorInner
+// OrdersFbsGetV3FbsSettingsAutoreturnsSubcategoriesRestrictedResponse200DataInner
 //
 // Класс сформирован автоматически (onescript) из спецификации OpenAPI.
 // Правки будут потеряны при следующей генерации.
@@ -9,15 +9,10 @@
 // в JSON, а из `&Тип` и `&ДляКаждого` — класс, в который разбирать значение,
 // поэтому вложенные модели и массивы моделей восстанавливаются сами собой.
 
-// code - Число - Код ошибки
-&Сериализуемое("code")
+// subjectId - Число - ID предмета
+&Сериализуемое("subjectId")
 &Тип("Число")
-Перем code Экспорт;
-
-// detail - Строка - Дополнительная информация об ошибке
-&Сериализуемое("detail")
-&Тип("Строка")
-Перем detail Экспорт;
+Перем subjectId Экспорт;
 
 // Возвращает JSON-представление модели.
 //

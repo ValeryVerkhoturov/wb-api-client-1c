@@ -19,7 +19,9 @@
 // Получить настройки автовозврата продавца
 //
 // Метод [доступен](https://dev.wildberries.ru/openapi/api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API) по
-// **Персональному** токену
+// **Персональному** токену,
+// **Сервисному** токену,
+// **Базовому** токену **с секретом**
 //
 // Метод возвращает информацию о настройках автовозврата, установленных продавцом.
 //
@@ -32,7 +34,7 @@
 // Возвращаемое значение:
 //   ОтветAPI
 //
-Функция GetMarketplaceV3FbsSettingsAutoreturns() Экспорт
+Функция GetV3FbsSettingsAutoreturns() Экспорт
 
 	ПараметрыЗапроса = Новый Соответствие;
 	Заголовки = Новый Соответствие;
@@ -49,7 +51,9 @@
 // Получить предметы, которые не хранятся на складах WB
 //
 // Метод [доступен](https://dev.wildberries.ru/openapi/api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API) по
-// **Персональному** токену
+// **Персональному** токену,
+// **Сервисному** токену,
+// **Базовому** токену **с секретом**
 //
 // Метод возвращает список ID предметов, товары которых не могут храниться на складах WB и будут возвращены в ПВЗ автоматически.
 //
@@ -66,7 +70,7 @@
 // Возвращаемое значение:
 //   ОтветAPI
 //
-Функция GetMarketplaceV3FbsSettingsAutoreturnsSubcategoriesRestricted(Знач next, Знач limit) Экспорт
+Функция GetV3FbsSettingsAutoreturnsSubcategoriesRestricted(Знач next, Знач limit) Экспорт
 
 	ПараметрыЗапроса = Новый Соответствие;
 	ПараметрыЗапроса.Вставить("next", next);
@@ -85,7 +89,9 @@
 // Обновить настройки автовозврата продавца
 //
 // Метод [доступен](https://dev.wildberries.ru/openapi/api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API) по
-// **Персональному** токену
+// **Персональному** токену,
+// **Сервисному** токену,
+// **Базовому** токену **с секретом**
 //
 // Метод устанавливает настройки автовозврата продавца для малогабаритных товаров — `\"cargoType\":1`.
 //
@@ -96,12 +102,12 @@
 // Один запрос с кодами ответов `4XX` учитывается как 10 запросов
 //
 // Параметры:
-//   Тело - OrdersFbsPatchMarketplaceV3FbsSettingsAutoreturnsRequest
+//   Тело - OrdersFbsPatchV3FbsSettingsAutoreturnsRequest
 //
 // Возвращаемое значение:
 //   ОтветAPI
 //
-Функция PatchMarketplaceV3FbsSettingsAutoreturns(Знач Тело) Экспорт
+Функция PatchV3FbsSettingsAutoreturns(Знач Тело) Экспорт
 
 	ПараметрыЗапроса = Новый Соответствие;
 	Заголовки = Новый Соответствие;
@@ -118,7 +124,9 @@
 // Обновить настройки автовозврата товаров
 //
 // Метод [доступен](https://dev.wildberries.ru/openapi/api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API) по
-// **Персональному** токену
+// **Персональному** токену,
+// **Сервисному** токену,
+// **Базовому** токену **с секретом**
 //
 // Метод устанавливает настройки автовозврата малогабаритных товаров — `\"cargoType\":1`.
 //
@@ -129,12 +137,12 @@
 // Один запрос с кодами ответов `4XX` учитывается как 10 запросов
 //
 // Параметры:
-//   Тело - OrdersFbsPatchMarketplaceV3FbsSettingsAutoreturnsItemsRequest
+//   Тело - OrdersFbsPatchV3FbsSettingsAutoreturnsItemsRequest
 //
 // Возвращаемое значение:
 //   ОтветAPI
 //
-Функция PatchMarketplaceV3FbsSettingsAutoreturnsItems(Знач Тело) Экспорт
+Функция PatchV3FbsSettingsAutoreturnsItems(Знач Тело) Экспорт
 
 	ПараметрыЗапроса = Новый Соответствие;
 	Заголовки = Новый Соответствие;
@@ -151,7 +159,9 @@
 // Получить настройки автовозврата товаров
 //
 // Метод [доступен](https://dev.wildberries.ru/openapi/api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API) по
-// **Персональному** токену
+// **Персональному** токену,
+// **Сервисному** токену,
+// **Базовому** токену **с секретом**
 //
 // Метод возвращает настройки автовозврата товаров.
 //
@@ -162,12 +172,12 @@
 // Один запрос с кодами ответов `4XX` учитывается как 10 запросов
 //
 // Параметры:
-//   Тело - OrdersFbsPostMarketplaceV3FbsSettingsAutoreturnsItemsRequest
+//   Тело - OrdersFbsPostV3FbsSettingsAutoreturnsItemsRequest
 //
 // Возвращаемое значение:
 //   ОтветAPI
 //
-Функция PostMarketplaceV3FbsSettingsAutoreturnsItems(Знач Тело) Экспорт
+Функция PostV3FbsSettingsAutoreturnsItems(Знач Тело) Экспорт
 
 	ПараметрыЗапроса = Новый Соответствие;
 	Заголовки = Новый Соответствие;

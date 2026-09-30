@@ -1,6 +1,6 @@
 #Использовать jason
 
-// OrdersFbsPostMarketplaceV3FbsSettingsAutoreturnsItemsRequest
+// CommunicationsGetV1PinsLimitsResponse200
 //
 // Класс сформирован автоматически (onescript) из спецификации OpenAPI.
 // Правки будут потеряны при следующей генерации.
@@ -9,12 +9,10 @@
 // в JSON, а из `&Тип` и `&ДляКаждого` — класс, в который разбирать значение,
 // поэтому вложенные модели и массивы моделей восстанавливаются сами собой.
 
-// chrtIds - Массив - Список ID размеров товаров в системе WB
-&Сериализуемое("chrtIds")
-&Тип("Массив")
-&ДляКаждого
-&Тип("Число")
-Перем chrtIds Экспорт;
+// data - CommunicationsOpenapiSellerLimitsResponseData
+&Сериализуемое("data")
+&Тип("CommunicationsOpenapiSellerLimitsResponseData")
+Перем data Экспорт;
 
 // Возвращает JSON-представление модели.
 //

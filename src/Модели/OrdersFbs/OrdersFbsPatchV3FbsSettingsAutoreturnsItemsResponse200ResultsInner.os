@@ -1,6 +1,6 @@
 #Использовать jason
 
-// OrdersFbsPatchMarketplaceV3FbsSettingsAutoreturnsRequest
+// OrdersFbsPatchV3FbsSettingsAutoreturnsItemsResponse200ResultsInner
 //
 // Класс сформирован автоматически (onescript) из спецификации OpenAPI.
 // Правки будут потеряны при следующей генерации.
@@ -9,10 +9,22 @@
 // в JSON, а из `&Тип` и `&ДляКаждого` — класс, в который разбирать значение,
 // поэтому вложенные модели и массивы моделей восстанавливаются сами собой.
 
-// type - Строка - Тип автовозврата малогабаритных товаров: - `allToWarehouse` — отправлять все товары на склад WB, кроме товаров тех [предметов](https://dev.wildberries.ru/openap…
-&Сериализуемое("type")
-&Тип("Строка")
-Перем type Экспорт;
+// chrtId - Число - ID размера товара в системе WB
+&Сериализуемое("chrtId")
+&Тип("Число")
+Перем chrtId Экспорт;
+
+// error - Массив - Детали ошибки
+&Сериализуемое("error")
+&Тип("Массив")
+&ДляКаждого
+&Тип("OrdersFbsPatchV3FbsSettingsAutoreturnsItemsResponse200ResultsInnerErrorInner")
+Перем error Экспорт;
+
+// success - Булево - - `true` — настройки автовозврата товара обновлены
+&Сериализуемое("success")
+&Тип("Булево")
+Перем success Экспорт;
 
 // Возвращает JSON-представление модели.
 //

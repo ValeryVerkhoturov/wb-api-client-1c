@@ -179,6 +179,92 @@
 
 КонецФункции
 
+// Код ОКПД2 предмета
+//
+// Метод возвращает список кодов ОКПД2 по ID [предмета](https://dev.wildberries.ru/openapi/work-with-products#tag/categoriesSubcategoriesAndCharacteristics/paths/~1content~1v2~1object~1all/get) и фрагменту кода ОКПД2.
+//
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца для всех методов категории **Контент**:
+// | Период | Лимит | Интервал | Всплеск |
+// | --- | --- | --- | --- |
+// | 1 мин | 100 запросов | 600 мс | 5 запросов |
+// Исключение — методы:
+//
+// * [создания карточек товаров](https://dev.wildberries.ru/openapi/item-management#tag/listingItems/operation/postV2CardsUpload)
+// * [создания карточек товаров с присоединением](https://dev.wildberries.ru/openapi/item-management#tag/listingItems/operation/postV2CardsUploadAdd)
+// * [редактирования карточек товаров](https://dev.wildberries.ru/openapi/item-management#tag/listings/operation/postV2CardsUpdate)
+// * [восстановления карточек товаров из корзины](https://dev.wildberries.ru/openapi/item-management#tag/listings/operation/postV2CardsRecover)
+// * [получения списка рекомендаций в карточках товаров](https://dev.wildberries.ru/openapi/item-management#tag/recommendations/operation/postV1RecommendationsList)
+// * [установки рекомендаций для товаров](https://dev.wildberries.ru/openapi/item-management#tag/recommendations/operation/postV1RecommendationsSet)
+//
+// Параметры:
+//   subjectId - Число - ID предмета
+//   ДопПараметры - Структура, Соответствие - необязательные параметры:
+//    * search - Строка - Поиск по фрагменту кода ОКПД2. Работает только в паре с `subjectId`. Укажите первые цифры кода через точку, чтобы найти код по этому фрагменту
+//    * locale - Строка - Язык полей ответа: - `ru` — русский
+//
+// Возвращаемое значение:
+//   ОтветAPI
+//
+Функция GetV2DirectoryOkpd(Знач subjectId, Знач ДопПараметры = Неопределено) Экспорт
+
+	ПараметрыЗапроса = Новый Соответствие;
+	ПараметрыЗапроса.Вставить("subjectId", subjectId);
+	Заголовки = Новый Соответствие;
+
+	ИменаЗаголовков = Новый Массив;
+	Транспорт.РазложитьПараметры(ДопПараметры, ИменаЗаголовков, ПараметрыЗапроса, Заголовки);
+	Возврат Транспорт.ВыполнитьЗапрос(
+		"GET",
+		"/api/content/v2/directory/okpd",
+		ПараметрыЗапроса,
+		Заголовки,
+		Неопределено,
+		"https://content-api.wildberries.ru");
+
+КонецФункции
+
+// Список кодов ОКПД2
+//
+// Метод возвращает справочный список всех кодов ОКПД2. Чтобы найти код по его фрагменту, укажите первые цифры кода через точку в параметре `search`.
+//
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца для всех методов категории **Контент**:
+// | Период | Лимит | Интервал | Всплеск |
+// | --- | --- | --- | --- |
+// | 1 мин | 100 запросов | 600 мс | 5 запросов |
+// Исключение — методы:
+//
+// * [создания карточек товаров](https://dev.wildberries.ru/openapi/item-management#tag/listingItems/operation/postV2CardsUpload)
+// * [создания карточек товаров с присоединением](https://dev.wildberries.ru/openapi/item-management#tag/listingItems/operation/postV2CardsUploadAdd)
+// * [редактирования карточек товаров](https://dev.wildberries.ru/openapi/item-management#tag/listings/operation/postV2CardsUpdate)
+// * [восстановления карточек товаров из корзины](https://dev.wildberries.ru/openapi/item-management#tag/listings/operation/postV2CardsRecover)
+// * [получения списка рекомендаций в карточках товаров](https://dev.wildberries.ru/openapi/item-management#tag/recommendations/operation/postV1RecommendationsList)
+// * [установки рекомендаций для товаров](https://dev.wildberries.ru/openapi/item-management#tag/recommendations/operation/postV1RecommendationsSet)
+//
+// Параметры:
+//   ДопПараметры - Структура, Соответствие - необязательные параметры:
+//    * search - Число - Поиск по фрагменту кода ОКПД2. Укажите первые цифры кода через точку, чтобы найти код по этому фрагменту
+//    * locale - Строка - Язык полей ответа: - `ru` — русский
+//
+// Возвращаемое значение:
+//   ОтветAPI
+//
+Функция GetV2DirectoryOkpdAll(Знач ДопПараметры = Неопределено) Экспорт
+
+	ПараметрыЗапроса = Новый Соответствие;
+	Заголовки = Новый Соответствие;
+
+	ИменаЗаголовков = Новый Массив;
+	Транспорт.РазложитьПараметры(ДопПараметры, ИменаЗаголовков, ПараметрыЗапроса, Заголовки);
+	Возврат Транспорт.ВыполнитьЗапрос(
+		"GET",
+		"/api/content/v2/directory/okpd/all",
+		ПараметрыЗапроса,
+		Заголовки,
+		Неопределено,
+		"https://content-api.wildberries.ru");
+
+КонецФункции
+
 // Сезон
 //
 // Метод возвращает возможные значения [характеристики](https://dev.wildberries.ru/openapi/item-management#tag/categoriesSubcategoriesAndCharacteristics/operation/getV2ObjectCharcsSubjectId) предмета `Сезон`.
@@ -219,9 +305,9 @@
 
 КонецФункции
 
-// ТНВЭД-код
+// Код ТН ВЭД предмета
 //
-// Метод возвращает список ТНВЭД-кодов по ID [предмета](https://dev.wildberries.ru/openapi/item-management#tag/categoriesSubcategoriesAndCharacteristics/operation/getV2ObjectAll) и фрагменту ТНВЭД-кода.
+// Метод возвращает список кодов ТН ВЭД по ID [предмета](https://dev.wildberries.ru/openapi/item-management#tag/categoriesSubcategoriesAndCharacteristics/operation/getV2ObjectAll) и фрагменту кода ТН ВЭД.
 //
 // [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца для всех методов категории **Контент**:
 // | Период | Лимит | Интервал | Всплеск |
@@ -243,7 +329,7 @@
 // Параметры:
 //   subjectID - Число - ID предмета
 //   ДопПараметры - Структура, Соответствие - необязательные параметры:
-//    * search - Число - Поиск по ТНВЭД-коду. Работает только в паре с `subjectID`
+//    * search - Число - Поиск по коду ТН ВЭД. Работает только в паре с `subjectID`
 //    * locale - Строка - Язык полей ответа: - `ru` — русский - `en` — английский - `zh` — китайский Не используется в песочнице. Данные песочницы возвращаются только на русском языке
 //
 // Возвращаемое значение:
@@ -260,6 +346,52 @@
 	Возврат Транспорт.ВыполнитьЗапрос(
 		"GET",
 		"/content/v2/directory/tnved",
+		ПараметрыЗапроса,
+		Заголовки,
+		Неопределено,
+		"https://content-api.wildberries.ru");
+
+КонецФункции
+
+// Список кодов ТН ВЭД
+//
+// Метод возвращает справочный список всех кодов ТН ВЭД. Чтобы найти код по его фрагменту, укажите первые цифры кода в параметре `search`.
+//
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца для всех методов категории **Контент**:
+// | Период | Лимит | Интервал | Всплеск |
+// | --- | --- | --- | --- |
+// | 1 мин | 100 запросов | 600 мс | 5 запросов |
+// Исключение — методы:
+//
+// * [создания карточек товаров](https://dev.wildberries.ru/openapi/item-management#tag/listingItems/operation/postV2CardsUpload)
+// * [создания карточек товаров с присоединением](https://dev.wildberries.ru/openapi/item-management#tag/listingItems/operation/postV2CardsUploadAdd)
+// * [редактирования карточек товаров](https://dev.wildberries.ru/openapi/item-management#tag/listings/operation/postV2CardsUpdate)
+// * [восстановления карточек товаров из корзины](https://dev.wildberries.ru/openapi/item-management#tag/listings/operation/postV2CardsRecover)
+// * [получения списка рекомендаций в карточках товаров](https://dev.wildberries.ru/openapi/item-management#tag/recommendations/operation/postV1RecommendationsList)
+// * [установки рекомендаций для товаров](https://dev.wildberries.ru/openapi/item-management#tag/recommendations/operation/postV1RecommendationsSet)
+//
+// ---
+//
+// В [песочнице](https://dev.wildberries.ru/sandbox) — максимум 1 запрос в секунду суммарно для всех методов **Контента**.
+//
+// Параметры:
+//   ДопПараметры - Структура, Соответствие - необязательные параметры:
+//    * search - Число - Поиск по первым цифрам кода ТН ВЭД. Укажите не более 10 символов
+//    * locale - Строка - Язык полей ответа: - `ru` — русский - `en` — английский
+//
+// Возвращаемое значение:
+//   ОтветAPI
+//
+Функция GetV2DirectoryTnvedAll(Знач ДопПараметры = Неопределено) Экспорт
+
+	ПараметрыЗапроса = Новый Соответствие;
+	Заголовки = Новый Соответствие;
+
+	ИменаЗаголовков = Новый Массив;
+	Транспорт.РазложитьПараметры(ДопПараметры, ИменаЗаголовков, ПараметрыЗапроса, Заголовки);
+	Возврат Транспорт.ВыполнитьЗапрос(
+		"GET",
+		"/api/content/v2/directory/tnved/all",
 		ПараметрыЗапроса,
 		Заголовки,
 		Неопределено,

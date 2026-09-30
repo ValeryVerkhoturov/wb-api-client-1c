@@ -1,6 +1,6 @@
 #Использовать jason
 
-// OrdersFbsGetMarketplaceV3FbsSettingsAutoreturnsSubcategoriesRestrictedResponse200DataInner
+// OrdersFbsGetV3FbsSettingsAutoreturnsResponse200
 //
 // Класс сформирован автоматически (onescript) из спецификации OpenAPI.
 // Правки будут потеряны при следующей генерации.
@@ -9,10 +9,10 @@
 // в JSON, а из `&Тип` и `&ДляКаждого` — класс, в который разбирать значение,
 // поэтому вложенные модели и массивы моделей восстанавливаются сами собой.
 
-// subjectId - Число - ID предмета
-&Сериализуемое("subjectId")
-&Тип("Число")
-Перем subjectId Экспорт;
+// type - Строка - Тип автовозврата: - `allToWarehouse` — все товары отправляются на склад WB, кроме товаров тех [предметов](https://dev.wildberries.ru/openapi/orders-fbs#tag/auto…
+&Сериализуемое("type")
+&Тип("Строка")
+Перем type Экспорт;
 
 // Возвращает JSON-представление модели.
 //

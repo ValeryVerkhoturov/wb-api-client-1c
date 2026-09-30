@@ -1,6 +1,6 @@
 #Использовать jason
 
-// OrdersFbsPostMarketplaceV3FbsSettingsAutoreturnsItemsResponse200
+// OrdersFbsGetV3FbsSettingsAutoreturnsSubcategoriesRestrictedResponse200
 //
 // Класс сформирован автоматически (onescript) из спецификации OpenAPI.
 // Правки будут потеряны при следующей генерации.
@@ -9,12 +9,17 @@
 // в JSON, а из `&Тип` и `&ДляКаждого` — класс, в который разбирать значение,
 // поэтому вложенные модели и массивы моделей восстанавливаются сами собой.
 
-// results - Массив
-&Сериализуемое("results")
+// next - Число - Параметр пагинации. Содержит значение, которое необходимо указать в запросе для получения следующего пакета данных
+&Сериализуемое("next")
+&Тип("Число")
+Перем next Экспорт;
+
+// data - Массив - Список ID предметов, товары которых не хранятся на складах WB
+&Сериализуемое("data")
 &Тип("Массив")
 &ДляКаждого
-&Тип("OrdersFbsPostMarketplaceV3FbsSettingsAutoreturnsItemsResponse200ResultsInner")
-Перем results Экспорт;
+&Тип("OrdersFbsGetV3FbsSettingsAutoreturnsSubcategoriesRestrictedResponse200DataInner")
+Перем data Экспорт;
 
 // Возвращает JSON-представление модели.
 //

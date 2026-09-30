@@ -1,6 +1,6 @@
 #Использовать jason
 
-// OrdersFbsPostMarketplaceV3FbsSettingsAutoreturnsItemsResponse200ResultsInner
+// OrdersFbsPostV3FbsSettingsAutoreturnsItemsResponse200ResultsInner
 //
 // Класс сформирован автоматически (onescript) из спецификации OpenAPI.
 // Правки будут потеряны при следующей генерации.
@@ -33,7 +33,7 @@
 &Сериализуемое("error")
 &Тип("Массив")
 &ДляКаждого
-&Тип("OrdersFbsPostMarketplaceV3FbsSettingsAutoreturnsItemsResponse200ResultsInnerErrorInner")
+&Тип("OrdersFbsPostV3FbsSettingsAutoreturnsItemsResponse200ResultsInnerErrorInner")
 Перем error Экспорт;
 
 // Возвращает JSON-представление модели.

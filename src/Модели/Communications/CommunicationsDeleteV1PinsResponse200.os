@@ -1,6 +1,6 @@
 #Использовать jason
 
-// CommunicationsGetFeedbacksV1PinsLimitsResponse200
+// CommunicationsDeleteV1PinsResponse200
 //
 // Класс сформирован автоматически (onescript) из спецификации OpenAPI.
 // Правки будут потеряны при следующей генерации.
@@ -9,9 +9,11 @@
 // в JSON, а из `&Тип` и `&ДляКаждого` — класс, в который разбирать значение,
 // поэтому вложенные модели и массивы моделей восстанавливаются сами собой.
 
-// data - CommunicationsOpenapiSellerLimitsResponseData
+// data - Массив - Список `pinId` — ID операций закрепления отзывов, которые были успешно откреплены
 &Сериализуемое("data")
-&Тип("CommunicationsOpenapiSellerLimitsResponseData")
+&Тип("Массив")
+&ДляКаждого
+&Тип("Число")
 Перем data Экспорт;
 
 // Возвращает JSON-представление модели.

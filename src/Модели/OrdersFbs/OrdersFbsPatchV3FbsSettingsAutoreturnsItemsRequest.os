@@ -1,6 +1,6 @@
 #Использовать jason
 
-// OrdersFbsPatchMarketplaceV3FbsSettingsAutoreturnsItemsResponse200
+// OrdersFbsPatchV3FbsSettingsAutoreturnsItemsRequest
 //
 // Класс сформирован автоматически (onescript) из спецификации OpenAPI.
 // Правки будут потеряны при следующей генерации.
@@ -9,12 +9,17 @@
 // в JSON, а из `&Тип` и `&ДляКаждого` — класс, в который разбирать значение,
 // поэтому вложенные модели и массивы моделей восстанавливаются сами собой.
 
-// results - Массив
-&Сериализуемое("results")
+// chrtIds - Массив - Список ID размеров товаров в системе WB
+&Сериализуемое("chrtIds")
 &Тип("Массив")
 &ДляКаждого
-&Тип("OrdersFbsPatchMarketplaceV3FbsSettingsAutoreturnsItemsResponse200ResultsInner")
-Перем results Экспорт;
+&Тип("Число")
+Перем chrtIds Экспорт;
+
+// type - Строка - Тип автовозврата малогабаритных товаров: - `byWarehouse` — все товары отправляются на склад WB - `byPickupPoint` — все товары отправляются на пункт выдачи заказ…
+&Сериализуемое("type")
+&Тип("Строка")
+Перем type Экспорт;
 
 // Возвращает JSON-представление модели.
 //

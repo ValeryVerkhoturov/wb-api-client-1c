@@ -19,7 +19,7 @@
 // Открепить отзывы
 //
 // Метод позволяет открепить отзывы в карточке товара или в группе [объединённых](https://dev.wildberries.ru/knowledge-base/articles/019d49a4-1320-71bb-9dac-8ba07e7177ce/rabota-s-tovarami#obuedinenie-i-razuedinenie-kartochek-tovarov) карточек.
-// Чтобы получить `pinId` — ID операций закрепления, используйте метод [Список закреплённых и откреплённых отзывов](https://dev.wildberries.ru/openapi/customer-communication#tag/pinnedFeedbacks/operation/getFeedbacksV1Pins).
+// Чтобы получить `pinId` — ID операций закрепления, используйте метод [Список закреплённых и откреплённых отзывов](https://dev.wildberries.ru/openapi/customer-communication#tag/pinnedFeedbacks/operation/getV1Pins).
 //
 // [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца для всех методов категории **Вопросы и отзывы**:
 // | Тип | Период | Лимит | Интервал | Всплеск |
@@ -35,7 +35,7 @@
 // Возвращаемое значение:
 //   ОтветAPI
 //
-Функция DeleteFeedbacksV1Pins(Знач Тело) Экспорт
+Функция DeleteV1Pins(Знач Тело) Экспорт
 
 	ПараметрыЗапроса = Новый Соответствие;
 	Заголовки = Новый Соответствие;
@@ -78,7 +78,7 @@
 // Возвращаемое значение:
 //   ОтветAPI
 //
-Функция GetFeedbacksV1Pins(Знач ДопПараметры = Неопределено) Экспорт
+Функция GetV1Pins(Знач ДопПараметры = Неопределено) Экспорт
 
 	ПараметрыЗапроса = Новый Соответствие;
 	Заголовки = Новый Соответствие;
@@ -120,7 +120,7 @@
 // Возвращаемое значение:
 //   ОтветAPI
 //
-Функция GetFeedbacksV1PinsCount(Знач ДопПараметры = Неопределено) Экспорт
+Функция GetV1PinsCount(Знач ДопПараметры = Неопределено) Экспорт
 
 	ПараметрыЗапроса = Новый Соответствие;
 	Заголовки = Новый Соответствие;
@@ -152,7 +152,7 @@
 // Возвращаемое значение:
 //   ОтветAPI
 //
-Функция GetFeedbacksV1PinsLimits() Экспорт
+Функция GetV1PinsLimits() Экспорт
 
 	ПараметрыЗапроса = Новый Соответствие;
 	Заголовки = Новый Соответствие;
@@ -169,7 +169,7 @@
 // Закрепить отзывы
 //
 // Метод позволяет закрепить отзывы в карточке товара или в группе [объединённых](https://dev.wildberries.ru/knowledge-base/articles/019d49a4-1320-71bb-9dac-8ba07e7177ce/rabota-s-tovarami#obuedinenie-i-razuedinenie-kartochek-tovarov) карточек.
-// Чтобы получить ID отзывов, используйте метод [Список закреплённых и откреплённых отзывов](https://dev.wildberries.ru/openapi/customer-communication#tag/pinnedFeedbacks/operation/getFeedbacksV1Pins).
+// Чтобы получить ID отзывов, используйте метод [Список закреплённых и откреплённых отзывов](https://dev.wildberries.ru/openapi/customer-communication#tag/pinnedFeedbacks/operation/getV1Pins).
 //
 // Метод доступен по [подписке Джем](https://seller.wildberries.ru/monetization/jam) или c [тарифной опцией](https://seller.wildberries.ru/tariff-constructor) \\*\\*Закрепление отзыва\\*\\*.
 //
@@ -187,7 +187,7 @@
 // Возвращаемое значение:
 //   ОтветAPI
 //
-Функция PostFeedbacksV1Pins(Знач Тело) Экспорт
+Функция PostV1Pins(Знач Тело) Экспорт
 
 	ПараметрыЗапроса = Новый Соответствие;
 	Заголовки = Новый Соответствие;
