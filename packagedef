@@ -4,7 +4,7 @@
 //
 
 Описание.Имя("wb-api-client")
-	.Версия("1.20260930.0")
+	.Версия("1.20261001.0")
 	.Автор("Valery Verkhoturov")
 	.АдресАвтора("valery.verkhoturov1505@gmail.com")
 	.Описание("Клиент Wildberries API для OneScript: 13 категорий WB API в одном пакете")
@@ -568,6 +568,7 @@
 	.ОпределяетКласс("ItemsPostV2CardsUploadAddRequest", "src/Модели/Items/ItemsPostV2CardsUploadAddRequest.os")
 	.ОпределяетКласс("ItemsPostV2CardsUploadAddRequestCardsToAddInner", "src/Модели/Items/ItemsPostV2CardsUploadAddRequestCardsToAddInner.os")
 	.ОпределяетКласс("ItemsPostV2CardsUploadAddRequestCardsToAddInnerDimensions", "src/Модели/Items/ItemsPostV2CardsUploadAddRequestCardsToAddInnerDimensions.os")
+	.ОпределяетКласс("ItemsPostV2CardsUploadAddRequestCardsToAddInnerDocuments", "src/Модели/Items/ItemsPostV2CardsUploadAddRequestCardsToAddInnerDocuments.os")
 	.ОпределяетКласс("ItemsPostV2CardsUploadAddRequestCardsToAddInnerSizesInner", "src/Модели/Items/ItemsPostV2CardsUploadAddRequestCardsToAddInnerSizesInner.os")
 	.ОпределяетКласс("ItemsPostV2CardsUploadAddResponse413", "src/Модели/Items/ItemsPostV2CardsUploadAddResponse413.os")
 	.ОпределяетКласс("ItemsPostV2CardsUploadRequestInner", "src/Модели/Items/ItemsPostV2CardsUploadRequestInner.os")

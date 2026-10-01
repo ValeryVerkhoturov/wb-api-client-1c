@@ -58,9 +58,9 @@
 &Тип("ItemsPostV2CardsUpdateRequestInnerCharacteristicsInner")
 Перем characteristics Экспорт;
 
-// documents - ItemsPostV2CardsUploadRequestInnerVariantsInnerDocuments
+// documents - ItemsPostV2CardsUploadAddRequestCardsToAddInnerDocuments
 &Сериализуемое("documents")
-&Тип("ItemsPostV2CardsUploadRequestInnerVariantsInnerDocuments")
+&Тип("ItemsPostV2CardsUploadAddRequestCardsToAddInnerDocuments")
 Перем documents Экспорт;
 
 // Возвращает JSON-представление модели.
