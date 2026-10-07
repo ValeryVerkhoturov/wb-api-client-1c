@@ -23,7 +23,7 @@
 // - о позициях товара в результатах поиска по каждому запросу
 // Данные указаны в рамках периода для [запрошенного товара](https://dev.wildberries.ru/openapi/analytics#tag/searchQueriesForYourItems/operation/postV2SearchReportProductSearchTexts) и сгруппированы по дням. Максимальный период — 7 дней.
 //
-// Данные отчёта обновляются 1 раз в час.
+// Данные отчёта обновляются 1 раз в 2 часа.
 //
 // Можно получить отчёт максимум за последние 365 дней с момента выполнения запроса
 //
@@ -63,7 +63,7 @@
 // - `topOrderBy` — способ выбора топа запросов
 // Параметры `includeSubstitutedSKUs` и `includeSearchTexts` не могут одновременно иметь значение `false`.
 //
-// Данные отчёта обновляются 1 раз в час.
+// Данные отчёта обновляются 1 раз в 2 часа.
 //
 // [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
@@ -107,7 +107,7 @@
 // - `positionCluster` — средняя позиция в поиске
 // Параметры `includeSubstitutedSKUs` и `includeSearchTexts` не могут одновременно иметь значение `false`.
 //
-// Данные отчёта обновляются 1 раз в час.
+// Данные отчёта обновляются 1 раз в 2 часа.
 //
 // [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
@@ -148,7 +148,7 @@
 // - `positionCluster` — средняя позиция в поиске
 // Параметры `includeSubstitutedSKUs` и `includeSearchTexts` не могут одновременно иметь значение `false`.
 //
-// Данные отчёта обновляются 1 раз в час.
+// Данные отчёта обновляются 1 раз в 2 часа.
 //
 // [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
@@ -186,7 +186,7 @@
 // - `positionCluster` — средняя позиция в поиске
 // Параметры `includeSubstitutedSKUs` и `includeSearchTexts` не могут одновременно иметь значение `false`.
 //
-// Данные отчёта обновляются 1 раз в час.
+// Данные отчёта обновляются 1 раз в 2 часа.
 //
 // [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
