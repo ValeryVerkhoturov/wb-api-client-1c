@@ -34,9 +34,9 @@
 &Тип("Число")
 Перем status Экспорт;
 
-// createTime - Дата - Время создания медиакампании
+// createTime - Строка - Время создания медиакампании
 &Сериализуемое("createTime")
-&Тип("Дата")
+&Тип("Строка")
 Перем createTime Экспорт;
 
 // extended - PromotionGetV1AdvertResponse200Extended

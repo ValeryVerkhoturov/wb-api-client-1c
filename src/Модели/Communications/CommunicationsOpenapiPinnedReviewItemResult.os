@@ -9,9 +9,9 @@
 // в JSON, а из `&Тип` и `&ДляКаждого` — класс, в который разбирать значение,
 // поэтому вложенные модели и массивы моделей восстанавливаются сами собой.
 
-// changeStateAt - Дата - Дата и время закрепления или открепления
+// changeStateAt - Строка - Дата и время закрепления или открепления
 &Сериализуемое("changeStateAt")
-&Тип("Дата")
+&Тип("Строка")
 Перем changeStateAt Экспорт;
 
 // imtId - Число - ID для [объединённых](https://dev.wildberries.ru/knowledge-base/articles/019d49a4-1320-71bb-9dac-8ba07e7177ce/rabota-s-tovarami#obuedinenie-i-razuedinenie-karto…

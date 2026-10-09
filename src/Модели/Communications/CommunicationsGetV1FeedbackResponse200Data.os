@@ -39,9 +39,9 @@
 &Тип("Число")
 Перем productValuation Экспорт;
 
-// createdDate - Дата - Дата и время создания отзыва
+// createdDate - Строка - Дата и время создания отзыва
 &Сериализуемое("createdDate")
-&Тип("Дата")
+&Тип("Строка")
 Перем createdDate Экспорт;
 
 // answer - CommunicationsGetV1FeedbackResponse200DataAnswer
