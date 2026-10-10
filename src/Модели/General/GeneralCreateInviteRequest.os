@@ -13,7 +13,7 @@
 &Сериализуемое("access")
 &Тип("Массив")
 &ДляКаждого
-&Тип("GeneralGetUsersResponseUsersInnerAccessInner")
+&Тип("GeneralCreateInviteRequestAccessInner")
 Перем access Экспорт;
 
 // invite - GeneralCreateInviteRequestInvite

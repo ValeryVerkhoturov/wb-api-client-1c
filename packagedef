@@ -4,7 +4,7 @@
 //
 
 Описание.Имя("wb-api-client")
-	.Версия("1.20261009.0")
+	.Версия("1.20261010.0")
 	.Автор("Valery Verkhoturov")
 	.АдресАвтора("valery.verkhoturov1505@gmail.com")
 	.Описание("Клиент Wildberries API для OneScript: 13 категорий WB API в одном пакете")
@@ -399,6 +399,7 @@
 	.ОпределяетКласс("FinancesSalesReportsDetailedReq", "src/Модели/Finances/FinancesSalesReportsDetailedReq.os")
 	.ОпределяетКласс("FinancesSalesReportsDetailedRes", "src/Модели/Finances/FinancesSalesReportsDetailedRes.os")
 	.ОпределяетКласс("GeneralCreateInviteRequest", "src/Модели/General/GeneralCreateInviteRequest.os")
+	.ОпределяетКласс("GeneralCreateInviteRequestAccessInner", "src/Модели/General/GeneralCreateInviteRequestAccessInner.os")
 	.ОпределяетКласс("GeneralCreateInviteRequestInvite", "src/Модели/General/GeneralCreateInviteRequestInvite.os")
 	.ОпределяетКласс("GeneralCreateInviteResponse", "src/Модели/General/GeneralCreateInviteResponse.os")
 	.ОпределяетКласс("GeneralErrorResponse", "src/Модели/General/GeneralErrorResponse.os")
@@ -858,6 +859,7 @@
 	.ОпределяетКласс("PromotionAdvertBidsKopecks", "src/Модели/Promotion/PromotionAdvertBidsKopecks.os")
 	.ОпределяетКласс("PromotionAdvertNMsSettings", "src/Модели/Promotion/PromotionAdvertNMsSettings.os")
 	.ОпределяетКласс("PromotionAdvertSettings", "src/Модели/Promotion/PromotionAdvertSettings.os")
+	.ОпределяетКласс("PromotionAdvertSettingsPlacements", "src/Модели/Promotion/PromotionAdvertSettingsPlacements.os")
 	.ОпределяетКласс("PromotionAdvertSubcategory", "src/Модели/Promotion/PromotionAdvertSubcategory.os")
 	.ОпределяетКласс("PromotionFullStatsError", "src/Модели/Promotion/PromotionFullStatsError.os")
 	.ОпределяетКласс("PromotionFullStatsErrorErrorsInner", "src/Модели/Promotion/PromotionFullStatsErrorErrorsInner.os")

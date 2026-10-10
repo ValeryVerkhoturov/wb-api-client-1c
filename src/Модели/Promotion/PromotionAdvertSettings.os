@@ -21,9 +21,9 @@
 &Тип("Строка")
 Перем name Экспорт;
 
-// placements - PromotionPutV0AuctionPlacementsRequestPlacementsInnerPlacements
+// placements - PromotionAdvertSettingsPlacements
 &Сериализуемое("placements")
-&Тип("PromotionPutV0AuctionPlacementsRequestPlacementsInnerPlacements")
+&Тип("PromotionAdvertSettingsPlacements")
 Перем placements Экспорт;
 
 // Возвращает JSON-представление модели.
