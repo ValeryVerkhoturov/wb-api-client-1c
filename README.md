@@ -25,19 +25,19 @@ OneScript has no namespaces — a single `#Использовать` brings in e
 
 | Slug | Category | APIs |
 |---|---|---|
-| [`general`](https://dev.wildberries.ru/openapi/api-information) | Общее | `APIНовостейApi`, `ИнформацияОПродавцеApi`, `ПроверкаПодключенияКWBAPIApi`, `УправлениеПользователямиПродавцаApi` |
-| [`items`](https://dev.wildberries.ru/openapi/item-management) | Работа с товарами | `КарточкиТоваровApi`, `КатегорииПредметыИХарактеристикиApi`, `МедиафайлыApi`, `ОстаткиНаСкладахПродавцаApi`, `РекомендацииApi`, `СкладыПродавцаApi`, `СозданиеКарточекТоваровApi`, `ЦеныИСкидкиApi`, `ЯрлыкиApi` |
-| [`orders-fbs`](https://dev.wildberries.ru/openapi/orders-fbs) | Заказы FBS | `ИдентификаторыМаркировкиFBSApi`, `НастройкиАвтовозвратаApi`, `ПоставкиFBSApi`, `ПропускаFBSApi`, `СборочныеЗаданияFBSApi` |
-| [`orders-dbw`](https://dev.wildberries.ru/openapi/orders-dbw) | Заказы DBW | `ИдентификаторыМаркировкиDBWApi`, `СборочныеЗаданияDBWApi` |
-| [`dbs`](https://dev.wildberries.ru/openapi/dbs) | DBS | `ИдентификаторыМаркировкиDBSApi`, `СборочныеЗаданияDBSApi` |
-| [`in-store-pickup`](https://dev.wildberries.ru/openapi/in-store-pickup) | Самовывоз | `ИдентификаторыМаркировкиСамовывозApi`, `СборочныеЗаданияСамовывозApi` |
-| [`orders-fbw`](https://dev.wildberries.ru/openapi/orders-fbw) | Поставки FBW | `ИнформацияДляФормированияПоставокApi`, `ИнформацияОПоставкахApi`, `ЧерновикиПоставокApi` |
-| [`promotion`](https://dev.wildberries.ru/openapi/promotion) | Маркетинг и продвижение | `КалендарьАкцийApi`, `КампанииApi`, `МедиаApi`, `ПоисковыеКластерыApi`, `СозданиеКампанийApi`, `СтатистикаApi`, `УправлениеКампаниямиApi`, `ФинансыApi` |
-| [`communications`](https://dev.wildberries.ru/openapi/customer-communication) | Общение с покупателями | `ВозвратыПокупателямиApi`, `ВопросыApi`, `ЗакреплённыеОтзывыApi`, `ОтзывыApi`, `ЧатСПокупателямиApi` |
-| [`rates`](https://dev.wildberries.ru/openapi/rates) | Тарифы | `КомиссииApi`, `СтоимостьВозвратаПродавцуApi`, `ТарифыНаОстатокApi`, `ТарифыНаПоставкуApi` |
-| [`analytics`](https://dev.wildberries.ru/openapi/analytics) | Аналитика и данные | `АналитикаПродавцаCSVApi`, `ВоронкаПродажApi`, `ИсторияОстатковApi`, `ЛентаЗаказовApi`, `ОценкаТовараApi`, `ПоисковыеЗапросыПоВашимТоварамApi` |
-| [`reports`](https://dev.wildberries.ru/openapi/reports) | Отчёты | `ДоляБрендаВПродажахApi`, `ЗаблокированныеКарточкиApi`, `ОперацииПриПриёмкеApi`, `ОсновныеОтчётыApi`, `ОтчётОВозвратахИПеремещенииТоваровApi`, `ОтчётОТоварахCОбязательнойМаркировкойApi`, `ОтчётОбОстаткахНаСкладахApi`, `ОтчётыОбУдержанияхApi`, `ПлатноеХранениеApi`, `ПродажиПоРегионамApi` |
-| [`finances`](https://dev.wildberries.ru/openapi/documents-and-accounting) | Документы и бухгалтерия | `БалансApi`, `ДокументыApi`, `ФинансовыеОтчётыApi` |
+| [`general`](https://dev.wildberries.ru/openapi/api-information) | Общее | `GeneralApi` |
+| [`items`](https://dev.wildberries.ru/openapi/item-management) | Работа с товарами | `ItemsApi` |
+| [`orders-fbs`](https://dev.wildberries.ru/openapi/orders-fbs) | Заказы FBS | `OrdersFbsApi` |
+| [`orders-dbw`](https://dev.wildberries.ru/openapi/orders-dbw) | Заказы DBW | `OrdersDbwApi` |
+| [`dbs`](https://dev.wildberries.ru/openapi/dbs) | DBS | `DbsApi` |
+| [`in-store-pickup`](https://dev.wildberries.ru/openapi/in-store-pickup) | Самовывоз | `InStorePickupApi` |
+| [`orders-fbw`](https://dev.wildberries.ru/openapi/orders-fbw) | Поставки FBW | `OrdersFbwApi` |
+| [`promotion`](https://dev.wildberries.ru/openapi/promotion) | Маркетинг и продвижение | `PromotionApi` |
+| [`communications`](https://dev.wildberries.ru/openapi/customer-communication) | Общение с покупателями | `CommunicationsApi` |
+| [`rates`](https://dev.wildberries.ru/openapi/rates) | Тарифы | `RatesApi` |
+| [`analytics`](https://dev.wildberries.ru/openapi/analytics) | Аналитика и данные | `AnalyticsApi` |
+| [`reports`](https://dev.wildberries.ru/openapi/reports) | Отчёты | `ReportsApi` |
+| [`finances`](https://dev.wildberries.ru/openapi/documents-and-accounting) | Документы и бухгалтерия | `FinancesApi` |
 
 ## Per-module usage
 
@@ -58,7 +58,7 @@ OneScript has no namespaces — a single `#Использовать` brings in e
 
 **Reference:** https://dev.wildberries.ru/openapi/api-information
 
-**APIs:** `APIНовостейApi`, `ИнформацияОПродавцеApi`, `ПроверкаПодключенияКWBAPIApi`, `УправлениеПользователямиПродавцаApi`
+**APIs:** `GeneralApi`
 
 ```bsl
 #Использовать "wb-api-client"
@@ -66,7 +66,7 @@ OneScript has no namespaces — a single `#Использовать` brings in e
 Настройки = Новый Конфигурация();
 Настройки.УстановитьТокен("<your WB JWT>");
 
-Клиент = Новый APIНовостейApi(Настройки);
+Клиент = Новый GeneralApi(Настройки);
 ```
 
 ### items — Работа с товарами
@@ -85,7 +85,7 @@ OneScript has no namespaces — a single `#Использовать` brings in e
 
 **Reference:** https://dev.wildberries.ru/openapi/item-management
 
-**APIs:** `КарточкиТоваровApi`, `КатегорииПредметыИХарактеристикиApi`, `МедиафайлыApi`, `ОстаткиНаСкладахПродавцаApi`, `РекомендацииApi`, `СкладыПродавцаApi`, `СозданиеКарточекТоваровApi`, `ЦеныИСкидкиApi`, `ЯрлыкиApi`
+**APIs:** `ItemsApi`
 
 ```bsl
 #Использовать "wb-api-client"
@@ -93,7 +93,7 @@ OneScript has no namespaces — a single `#Использовать` brings in e
 Настройки = Новый Конфигурация();
 Настройки.УстановитьТокен("<your WB JWT>");
 
-Клиент = Новый КарточкиТоваровApi(Настройки);
+Клиент = Новый ItemsApi(Настройки);
 ```
 
 ### orders-fbs — Заказы FBS
@@ -111,7 +111,7 @@ OneScript has no namespaces — a single `#Использовать` brings in e
 
 **Reference:** https://dev.wildberries.ru/openapi/orders-fbs
 
-**APIs:** `ИдентификаторыМаркировкиFBSApi`, `НастройкиАвтовозвратаApi`, `ПоставкиFBSApi`, `ПропускаFBSApi`, `СборочныеЗаданияFBSApi`
+**APIs:** `OrdersFbsApi`
 
 ```bsl
 #Использовать "wb-api-client"
@@ -119,7 +119,7 @@ OneScript has no namespaces — a single `#Использовать` brings in e
 Настройки = Новый Конфигурация();
 Настройки.УстановитьТокен("<your WB JWT>");
 
-Клиент = Новый ИдентификаторыМаркировкиFBSApi(Настройки);
+Клиент = Новый OrdersFbsApi(Настройки);
 ```
 
 ### orders-dbw — Заказы DBW
@@ -132,7 +132,7 @@ OneScript has no namespaces — a single `#Использовать` brings in e
 
 **Reference:** https://dev.wildberries.ru/openapi/orders-dbw
 
-**APIs:** `ИдентификаторыМаркировкиDBWApi`, `СборочныеЗаданияDBWApi`
+**APIs:** `OrdersDbwApi`
 
 ```bsl
 #Использовать "wb-api-client"
@@ -140,7 +140,7 @@ OneScript has no namespaces — a single `#Использовать` brings in e
 Настройки = Новый Конфигурация();
 Настройки.УстановитьТокен("<your WB JWT>");
 
-Клиент = Новый ИдентификаторыМаркировкиDBWApi(Настройки);
+Клиент = Новый OrdersDbwApi(Настройки);
 ```
 
 ### dbs — DBS
@@ -153,7 +153,7 @@ OneScript has no namespaces — a single `#Использовать` brings in e
 
 **Reference:** https://dev.wildberries.ru/openapi/dbs
 
-**APIs:** `ИдентификаторыМаркировкиDBSApi`, `СборочныеЗаданияDBSApi`
+**APIs:** `DbsApi`
 
 ```bsl
 #Использовать "wb-api-client"
@@ -161,7 +161,7 @@ OneScript has no namespaces — a single `#Использовать` brings in e
 Настройки = Новый Конфигурация();
 Настройки.УстановитьТокен("<your WB JWT>");
 
-Клиент = Новый ИдентификаторыМаркировкиDBSApi(Настройки);
+Клиент = Новый DbsApi(Настройки);
 ```
 
 ### in-store-pickup — Самовывоз
@@ -172,7 +172,7 @@ OneScript has no namespaces — a single `#Использовать` brings in e
 
 **Reference:** https://dev.wildberries.ru/openapi/in-store-pickup
 
-**APIs:** `ИдентификаторыМаркировкиСамовывозApi`, `СборочныеЗаданияСамовывозApi`
+**APIs:** `InStorePickupApi`
 
 ```bsl
 #Использовать "wb-api-client"
@@ -180,7 +180,7 @@ OneScript has no namespaces — a single `#Использовать` brings in e
 Настройки = Новый Конфигурация();
 Настройки.УстановитьТокен("<your WB JWT>");
 
-Клиент = Новый ИдентификаторыМаркировкиСамовывозApi(Настройки);
+Клиент = Новый InStorePickupApi(Настройки);
 ```
 
 ### orders-fbw — Поставки FBW
@@ -194,7 +194,7 @@ OneScript has no namespaces — a single `#Использовать` brings in e
 
 **Reference:** https://dev.wildberries.ru/openapi/orders-fbw
 
-**APIs:** `ИнформацияДляФормированияПоставокApi`, `ИнформацияОПоставкахApi`, `ЧерновикиПоставокApi`
+**APIs:** `OrdersFbwApi`
 
 ```bsl
 #Использовать "wb-api-client"
@@ -202,7 +202,7 @@ OneScript has no namespaces — a single `#Использовать` brings in e
 Настройки = Новый Конфигурация();
 Настройки.УстановитьТокен("<your WB JWT>");
 
-Клиент = Новый ИнформацияДляФормированияПоставокApi(Настройки);
+Клиент = Новый OrdersFbwApi(Настройки);
 ```
 
 ### promotion — Маркетинг и продвижение
@@ -221,7 +221,7 @@ OneScript has no namespaces — a single `#Использовать` brings in e
 
 **Reference:** https://dev.wildberries.ru/openapi/promotion
 
-**APIs:** `КалендарьАкцийApi`, `КампанииApi`, `МедиаApi`, `ПоисковыеКластерыApi`, `СозданиеКампанийApi`, `СтатистикаApi`, `УправлениеКампаниямиApi`, `ФинансыApi`
+**APIs:** `PromotionApi`
 
 ```bsl
 #Использовать "wb-api-client"
@@ -229,7 +229,7 @@ OneScript has no namespaces — a single `#Использовать` brings in e
 Настройки = Новый Конфигурация();
 Настройки.УстановитьТокен("<your WB JWT>");
 
-Клиент = Новый КалендарьАкцийApi(Настройки);
+Клиент = Новый PromotionApi(Настройки);
 ```
 
 ### communications — Общение с покупателями
@@ -247,7 +247,7 @@ OneScript has no namespaces — a single `#Использовать` brings in e
 
 **Reference:** https://dev.wildberries.ru/openapi/customer-communication
 
-**APIs:** `ВозвратыПокупателямиApi`, `ВопросыApi`, `ЗакреплённыеОтзывыApi`, `ОтзывыApi`, `ЧатСПокупателямиApi`
+**APIs:** `CommunicationsApi`
 
 ```bsl
 #Использовать "wb-api-client"
@@ -255,7 +255,7 @@ OneScript has no namespaces — a single `#Использовать` brings in e
 Настройки = Новый Конфигурация();
 Настройки.УстановитьТокен("<your WB JWT>");
 
-Клиент = Новый ВозвратыПокупателямиApi(Настройки);
+Клиент = Новый CommunicationsApi(Настройки);
 ```
 
 ### rates — Тарифы
@@ -270,7 +270,7 @@ OneScript has no namespaces — a single `#Использовать` brings in e
 
 **Reference:** https://dev.wildberries.ru/openapi/rates
 
-**APIs:** `КомиссииApi`, `СтоимостьВозвратаПродавцуApi`, `ТарифыНаОстатокApi`, `ТарифыНаПоставкуApi`
+**APIs:** `RatesApi`
 
 ```bsl
 #Использовать "wb-api-client"
@@ -278,7 +278,7 @@ OneScript has no namespaces — a single `#Использовать` brings in e
 Настройки = Новый Конфигурация();
 Настройки.УстановитьТокен("<your WB JWT>");
 
-Клиент = Новый КомиссииApi(Настройки);
+Клиент = Новый RatesApi(Настройки);
 ```
 
 ### analytics — Аналитика и данные
@@ -295,7 +295,7 @@ OneScript has no namespaces — a single `#Использовать` brings in e
 
 **Reference:** https://dev.wildberries.ru/openapi/analytics
 
-**APIs:** `АналитикаПродавцаCSVApi`, `ВоронкаПродажApi`, `ИсторияОстатковApi`, `ЛентаЗаказовApi`, `ОценкаТовараApi`, `ПоисковыеЗапросыПоВашимТоварамApi`
+**APIs:** `AnalyticsApi`
 
 ```bsl
 #Использовать "wb-api-client"
@@ -303,7 +303,7 @@ OneScript has no namespaces — a single `#Использовать` brings in e
 Настройки = Новый Конфигурация();
 Настройки.УстановитьТокен("<your WB JWT>");
 
-Клиент = Новый АналитикаПродавцаCSVApi(Настройки);
+Клиент = Новый AnalyticsApi(Настройки);
 ```
 
 ### reports — Отчёты
@@ -323,7 +323,7 @@ OneScript has no namespaces — a single `#Использовать` brings in e
 
 **Reference:** https://dev.wildberries.ru/openapi/reports
 
-**APIs:** `ДоляБрендаВПродажахApi`, `ЗаблокированныеКарточкиApi`, `ОперацииПриПриёмкеApi`, `ОсновныеОтчётыApi`, `ОтчётОВозвратахИПеремещенииТоваровApi`, `ОтчётОТоварахCОбязательнойМаркировкойApi`, `ОтчётОбОстаткахНаСкладахApi`, `ОтчётыОбУдержанияхApi`, `ПлатноеХранениеApi`, `ПродажиПоРегионамApi`
+**APIs:** `ReportsApi`
 
 ```bsl
 #Использовать "wb-api-client"
@@ -331,7 +331,7 @@ OneScript has no namespaces — a single `#Использовать` brings in e
 Настройки = Новый Конфигурация();
 Настройки.УстановитьТокен("<your WB JWT>");
 
-Клиент = Новый ДоляБрендаВПродажахApi(Настройки);
+Клиент = Новый ReportsApi(Настройки);
 ```
 
 ### finances — Документы и бухгалтерия
@@ -342,7 +342,7 @@ OneScript has no namespaces — a single `#Использовать` brings in e
 
 **Reference:** https://dev.wildberries.ru/openapi/documents-and-accounting
 
-**APIs:** `БалансApi`, `ДокументыApi`, `ФинансовыеОтчётыApi`
+**APIs:** `FinancesApi`
 
 ```bsl
 #Использовать "wb-api-client"
@@ -350,6 +350,6 @@ OneScript has no namespaces — a single `#Использовать` brings in e
 Настройки = Новый Конфигурация();
 Настройки.УстановитьТокен("<your WB JWT>");
 
-Клиент = Новый БалансApi(Настройки);
+Клиент = Новый FinancesApi(Настройки);
 ```
 
