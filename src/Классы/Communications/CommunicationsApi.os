@@ -29,6 +29,8 @@
 // | Базовый с секретом | 1 сек | 3 запроса | 333 мс | 6 запросов |
 // | Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/communications/delete-api-feedbacks-v1-pins
+//
 // Параметры:
 //   Тело - Массив - Список `pinId` — ID операций закрепления отзывов
 //
@@ -60,6 +62,8 @@
 // | Сервисный | 1 мин | 20 запросов | 3 сек | 10 запросов |
 // | Базовый с секретом | 1 мин | 20 запросов | 3 сек | 10 запросов |
 // | Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/communications/get-api-v1-claims
 //
 // Параметры:
 //   is_archive - Булево - Состояние заявки: * `false` — на рассмотрении * `true` — в архиве
@@ -102,6 +106,8 @@
 // | Базовый с секретом | 1 сек | 3 запроса | 333 мс | 6 запросов |
 // | Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/communications/get-api-v1-feedback
+//
 // Параметры:
 //   id - Строка - ID отзыва
 //
@@ -140,6 +146,8 @@
 // | Сервисный | 1 сек | 3 запроса | 333 мс | 6 запросов |
 // | Базовый с секретом | 1 сек | 3 запроса | 333 мс | 6 запросов |
 // | Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/communications/get-api-v1-feedbacks
 //
 // Параметры:
 //   isAnswered - Булево - Вернуть только обработанные отзывы: - `true` — да - `false` — нет
@@ -191,6 +199,8 @@
 // | Базовый с секретом | 1 сек | 3 запроса | 333 мс | 6 запросов |
 // | Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/communications/get-api-v1-feedbacks-archive
+//
 // Параметры:
 //   take - Число - Количество отзывов (max. 5 000)
 //   skip - Число - Количество отзывов для пропуска
@@ -235,6 +245,8 @@
 // | Базовый с секретом | 1 сек | 3 запроса | 333 мс | 6 запросов |
 // | Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/communications/get-api-v1-feedbacks-count
+//
 // Параметры:
 //   isAnswered - Булево - Вернуть только обработанные отзывы: - `true` — да - `false` — нет
 //   ДопПараметры - Структура, Соответствие - необязательные параметры:
@@ -275,6 +287,8 @@
 // | Базовый с секретом | 1 сек | 3 запроса | 333 мс | 6 запросов |
 // | Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/communications/get-api-v1-feedbacks-count-unanswered
+//
 // Возвращаемое значение:
 //   ОтветAPI
 //
@@ -303,6 +317,8 @@
 // | Сервисный | 1 сек | 3 запроса | 333 мс | 6 запросов |
 // | Базовый с секретом | 1 сек | 3 запроса | 333 мс | 6 запросов |
 // | Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/communications/get-api-v1-new-feedbacks-questions
 //
 // Возвращаемое значение:
 //   ОтветAPI
@@ -334,6 +350,8 @@
 // | Сервисный | 1 сек | 3 запроса | 333 мс | 6 запросов |
 // | Базовый с секретом | 1 сек | 3 запроса | 333 мс | 6 запросов |
 // | Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/communications/get-api-feedbacks-v1-pins
 //
 // Параметры:
 //   ДопПараметры - Структура, Соответствие - необязательные параметры:
@@ -379,6 +397,8 @@
 // | Базовый с секретом | 1 сек | 3 запроса | 333 мс | 6 запросов |
 // | Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/communications/get-api-feedbacks-v1-pins-count
+//
 // Параметры:
 //   ДопПараметры - Структура, Соответствие - необязательные параметры:
 //    * state - Строка - Закреплён ли отзыв: - `pinned` — да - `unpinned` — нет
@@ -421,6 +441,8 @@
 // | Базовый с секретом | 1 сек | 3 запроса | 333 мс | 6 запросов |
 // | Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/communications/get-api-feedbacks-v1-pins-limits
+//
 // Возвращаемое значение:
 //   ОтветAPI
 //
@@ -449,6 +471,8 @@
 // | Сервисный | 1 сек | 3 запроса | 333 мс | 6 запросов |
 // | Базовый с секретом | 1 сек | 3 запроса | 333 мс | 6 запросов |
 // | Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/communications/get-api-v1-question
 //
 // Параметры:
 //   id - Строка - ID вопроса
@@ -487,6 +511,8 @@
 // | Сервисный | 1 сек | 3 запроса | 333 мс | 6 запросов |
 // | Базовый с секретом | 1 сек | 3 запроса | 333 мс | 6 запросов |
 // | Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/communications/get-api-v1-questions
 //
 // Параметры:
 //   isAnswered - Булево - Есть ли ответ на вопрос: - `true` — да - `false` — нет
@@ -533,6 +559,8 @@
 // | Базовый с секретом | 1 сек | 3 запроса | 333 мс | 6 запросов |
 // | Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/communications/get-api-v1-questions-count
+//
 // Параметры:
 //   ДопПараметры - Структура, Соответствие - необязательные параметры:
 //    * dateFrom - Число - Дата начала периода в формате Unix timestamp
@@ -571,6 +599,8 @@
 // | Базовый с секретом | 1 сек | 3 запроса | 333 мс | 6 запросов |
 // | Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/communications/get-api-v1-questions-count-unanswered
+//
 // Возвращаемое значение:
 //   ОтветAPI
 //
@@ -600,6 +630,8 @@
 // | Базовый с секретом | 10 сек | 10 запросов | 1 сек | 10 запросов |
 // | Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/communications/get-api-v1-seller-chats
+//
 // Возвращаемое значение:
 //   ОтветAPI
 //
@@ -628,6 +660,8 @@
 // | Сервисный | 10 сек | 10 запросов | 1 сек | 10 запросов |
 // | Базовый с секретом | 10 сек | 10 запросов | 1 сек | 10 запросов |
 // | Базовый | 1 ч | 10 запросов | 6 мин | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/communications/get-api-v1-seller-download-id
 //
 // Параметры:
 //   id - Строка - ID файла, см. значение поля `downloadID` в методе [События чатов](./customer-communication#tag/buyersChat/operation/getV1SellerEvents)
@@ -663,6 +697,8 @@
 // | Сервисный | 10 сек | 10 запросов | 1 сек | 10 запросов |
 // | Базовый с секретом | 10 сек | 10 запросов | 1 сек | 10 запросов |
 // | Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/communications/get-api-v1-seller-events
 //
 // Параметры:
 //   ДопПараметры - Структура, Соответствие - необязательные параметры:
@@ -700,6 +736,8 @@
 // | Базовый с секретом | 1 мин | 20 запросов | 3 сек | 10 запросов |
 // | Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/communications/patch-api-v1-claim
+//
 // Параметры:
 //   Тело - CommunicationsPatchV1ClaimRequest - Ответ на заявку
 //
@@ -735,6 +773,8 @@
 // | Сервисный | 1 сек | 3 запроса | 333 мс | 6 запросов |
 // | Базовый с секретом | 1 сек | 3 запроса | 333 мс | 6 запросов |
 // | Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/communications/patch-api-v1-feedbacks-answer
 //
 // Параметры:
 //   Тело - CommunicationsPatchV1FeedbacksAnswerRequest
@@ -775,6 +815,8 @@
 // | Базовый с секретом | 1 сек | 3 запроса | 333 мс | 6 запросов |
 // | Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/communications/patch-api-v1-questions
+//
 // Параметры:
 //   Тело - CommunicationsPatchV1QuestionsRequest
 //
@@ -809,6 +851,8 @@
 // | Базовый с секретом | 1 сек | 3 запроса | 333 мс | 6 запросов |
 // | Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/communications/post-api-v1-feedbacks-answer
+//
 // Параметры:
 //   Тело - CommunicationsPostV1FeedbacksAnswerRequest
 //
@@ -842,6 +886,8 @@
 // | Сервисный | 1 сек | 3 запроса | 333 мс | 6 запросов |
 // | Базовый с секретом | 1 сек | 3 запроса | 333 мс | 6 запросов |
 // | Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/communications/post-api-v1-feedbacks-order-return
 //
 // Параметры:
 //   Тело - CommunicationsPostV1FeedbacksOrderReturnRequest
@@ -878,6 +924,8 @@
 // | Базовый с секретом | 1 сек | 3 запроса | 333 мс | 6 запросов |
 // | Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/communications/post-api-feedbacks-v1-pins
+//
 // Параметры:
 //   Тело - Массив
 //
@@ -909,6 +957,8 @@
 // | Сервисный | 10 сек | 10 запросов | 1 сек | 10 запросов |
 // | Базовый с секретом | 10 сек | 10 запросов | 1 сек | 10 запросов |
 // | Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/communications/post-api-v1-seller-message
 //
 // Параметры:
 //   replySign - Строка - Подпись чата. Можно получить из [информации по чату](./customer-communication#tag/buyersChat/operation/getV1SellerChats) или [данных события](./customer-communi…

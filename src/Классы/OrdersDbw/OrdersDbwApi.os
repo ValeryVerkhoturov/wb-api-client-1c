@@ -33,6 +33,8 @@
 // | 1 мин | 300 запросов | 200 мс | 20 запросов |
 // Один запрос с кодами ответов `4XX` учитывается как 10 запросов
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/orders-dbw/get-api-v3-dbw-orders
+//
 // Параметры:
 //   limit - Число - Параметр пагинации. Устанавливает предельное количество возвращаемых данных
 //   next - Число - Параметр пагинации. Устанавливает значение, с которого надо получить следующий пакет данных. Для получения полного списка данных должен быть равен `0` в первом…
@@ -75,6 +77,8 @@
 // | 1 мин | 300 запросов | 200 мс | 20 запросов |
 // Один запрос с кодами ответов `4XX` учитывается как 10 запросов
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/orders-dbw/get-api-v3-dbw-orders-new
+//
 // Возвращаемое значение:
 //   ОтветAPI
 //
@@ -109,6 +113,8 @@
 // | Базовый с секретом | 1 мин | 300 запросов | 200 мс | 20 запросов |
 // | Базовый | 1 ч | 10 запросов | 6 мин | 1 запрос |
 // Один запрос с кодами ответов `4XX` учитывается как 10 запросов
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/orders-dbw/patch-api-v3-dbw-orders-orderid-cancel
 //
 // Параметры:
 //   orderId - Число - ID сборочного задания
@@ -145,6 +151,8 @@
 // | 1 мин | 300 запросов | 200 мс | 20 запросов |
 // Один запрос с кодами ответов `4XX` учитывается как 10 запросов
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/orders-dbw/patch-api-v3-dbw-orders-orderid-confirm
+//
 // Параметры:
 //   orderId - Число - ID сборочного задания
 //
@@ -179,6 +187,8 @@
 // | --- | --- | --- | --- |
 // | 1 мин | 300 запросов | 200 мс | 20 запросов |
 // Один запрос с кодами ответов `4XX` учитывается как 10 запросов
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/orders-dbw/post-api-marketplace-v3-dbw-orders-client
 //
 // Параметры:
 //   Тело - OrdersDbwOrdersRequestAPI
@@ -216,6 +226,8 @@
 // | 1 мин | 300 запросов | 200 мс | 20 запросов |
 // Один запрос с кодами ответов `4XX` учитывается как 10 запросов
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/orders-dbw/post-api-v3-dbw-orders-courier
+//
 // Параметры:
 //   Тело - OrdersDbwOrdersRequestAPI
 //
@@ -250,6 +262,8 @@
 // | --- | --- | --- | --- |
 // | 1 мин | 300 запросов | 200 мс | 20 запросов |
 // Один запрос с кодами ответов `4XX` учитывается как 10 запросов
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/orders-dbw/post-api-v3-dbw-orders-delivery-date
 //
 // Параметры:
 //   Тело - OrdersDbwDeliveryDatesRequest
@@ -293,6 +307,8 @@
 // | 1 мин | 300 запросов | 200 мс | 20 запросов |
 // Один запрос с кодами ответов `4XX` учитывается как 10 запросов
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/orders-dbw/post-api-marketplace-v3-dbw-orders-meta-delete
+//
 // Параметры:
 //   Тело - OrdersDbwApiOrdersMetaDleteRequestV2
 //
@@ -335,6 +351,8 @@
 // | 1 мин | 300 запросов | 200 мс | 20 запросов |
 // Один запрос с кодами ответов `4XX` учитывается как 10 запросов
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/orders-dbw/post-api-marketplace-v3-dbw-orders-meta-details
+//
 // Параметры:
 //   Тело - OrdersDbwApiOrdersRequestV2
 //
@@ -372,6 +390,8 @@
 // | --- | --- | --- | --- |
 // | 1 мин | 300 запросов | 200 мс | 20 запросов |
 // Один запрос с кодами ответов `4XX` учитывается как 10 запросов
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/orders-dbw/post-api-marketplace-v3-dbw-orders-meta-sgtin
 //
 // Параметры:
 //   Тело - OrdersDbwApiOrdersSGTINsSetRequest
@@ -435,6 +455,8 @@
 // | 1 мин | 300 запросов | 200 мс | 20 запросов |
 // Один запрос с кодами ответов `4XX` учитывается как 10 запросов
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/orders-dbw/post-api-v3-dbw-orders-status
+//
 // Параметры:
 //   Тело - OrdersDbwPostV3DbwOrdersStatusRequest
 //
@@ -471,6 +493,8 @@
 // | --- | --- | --- | --- |
 // | 1 мин | 300 запросов | 200 мс | 20 запросов |
 // Один запрос с кодами ответов `4XX` учитывается как 10 запросов
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/orders-dbw/post-api-marketplace-v3-dbw-orders-status-deliver
 //
 // Параметры:
 //   Тело - OrdersDbwApiOrdersRequestV2
@@ -518,6 +542,8 @@
 // | 1 мин | 300 запросов | 200 мс | 20 запросов |
 // Один запрос с кодами ответов `4XX` учитывается как 10 запросов
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/orders-dbw/post-api-v3-dbw-orders-stickers
+//
 // Параметры:
 //   type - Строка - Тип стикера
 //   width - Число - Ширина стикера
@@ -555,6 +581,8 @@
 // | 1 мин | 1000 запросов | 60 мс | 20 запросов |
 // Один запрос с кодами ответов `4XX` учитывается как 10 запросов
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/orders-dbw/put-api-v3-dbw-orders-orderid-meta-gtin
+//
 // Параметры:
 //   orderId - Число - ID сборочного задания
 //   Тело - OrdersDbwPutV3DbwOrdersOrderIdMetaGtinRequest
@@ -588,6 +616,8 @@
 // | 1 мин | 1000 запросов | 60 мс | 20 запросов |
 // Один запрос с кодами ответов `4XX` учитывается как 10 запросов
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/orders-dbw/put-api-v3-dbw-orders-orderid-meta-imei
+//
 // Параметры:
 //   orderId - Число - ID сборочного задания
 //   Тело - OrdersDbwPutV3DbwOrdersOrderIdMetaImeiRequest
@@ -619,6 +649,8 @@
 // | --- | --- | --- | --- |
 // | 1 мин | 1000 запросов | 60 мс | 20 запросов |
 // Один запрос с кодами ответов `4XX` учитывается как 10 запросов
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/orders-dbw/put-api-v3-dbw-orders-orderid-meta-uin
 //
 // Параметры:
 //   orderId - Число - ID сборочного задания

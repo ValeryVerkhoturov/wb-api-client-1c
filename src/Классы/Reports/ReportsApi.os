@@ -30,6 +30,8 @@
 // | Базовый с секретом | 1 мин | 1 запрос | 1 мин | 1 запрос |
 // | Базовый | 3 ч | 1 запрос | 3 ч | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/reports/get-api-v1-acceptance-report
+//
 // Параметры:
 //   dateFrom - Строка - Начало отчётного периода, `ГГГГ-ММ-ДД`
 //   dateTo - Строка - Конец отчётного периода, `ГГГГ-ММ-ДД`
@@ -65,6 +67,8 @@
 // | Базовый с секретом | 1 мин | 1 запрос | 1 мин | 1 запрос |
 // | Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/reports/get-api-v1-acceptance-report-tasks-task-id-download
+//
 // Параметры:
 //   task_id - Строка - ID задания на генерацию
 //
@@ -96,6 +100,8 @@
 // | Сервисный | 5 сек | 1 запрос | 5 сек | 1 запрос |
 // | Базовый с секретом | 5 сек | 1 запрос | 5 сек | 1 запрос |
 // | Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/reports/get-api-v1-acceptance-report-tasks-task-id-status
 //
 // Параметры:
 //   task_id - Строка - ID задания на генерацию
@@ -134,6 +140,8 @@
 // | Базовый с секретом | 10 мин | 1 запрос | 10 мин | 10 запросов |
 // | Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/reports/get-api-v1-analytics-antifraud-details
+//
 // Параметры:
 //   ДопПараметры - Структура, Соответствие - необязательные параметры:
 //    * date - Строка - Дата, которая входит в отчётный период, `ГГГГ-ММ-ДД`. Чтобы получить данные за всё время с августа 2023, не указывайте этот параметр
@@ -169,6 +177,8 @@
 // | Сервисный | 10 сек | 1 запрос | 10 сек | 6 запросов |
 // | Базовый с секретом | 10 сек | 1 запрос | 10 сек | 6 запросов |
 // | Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/reports/get-api-v1-analytics-banned-products-blocked
 //
 // Параметры:
 //   sort - Строка - Сортировка - `brand` — по бренду - `nmId` — по артикулу WB - `title` — по наименованию товара - `vendorCode` — по артикулу продавца - `reason` — по причине блок…
@@ -206,6 +216,8 @@
 // | Сервисный | 5 сек | 1 запрос | 5 сек | 20 запросов |
 // | Базовый с секретом | 5 сек | 1 запрос | 5 сек | 20 запросов |
 // | Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/reports/get-api-v1-analytics-brand-share
 //
 // Параметры:
 //   parentId - Число - ID родительской категории
@@ -250,6 +262,8 @@
 // | Базовый с секретом | 1 мин | 1 запрос | 1 мин | 10 запросов |
 // | Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/reports/get-api-v1-analytics-brand-share-brands
+//
 // Возвращаемое значение:
 //   ОтветAPI
 //
@@ -280,6 +294,8 @@
 // | Сервисный | 5 сек | 1 запрос | 5 сек | 20 запросов |
 // | Базовый с секретом | 5 сек | 1 запрос | 5 сек | 20 запросов |
 // | Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/reports/get-api-v1-analytics-brand-share-parent-subjects
 //
 // Параметры:
 //   brand - Строка - Бренд
@@ -326,6 +342,8 @@
 // | Базовый с секретом | 1 мин | 1 запрос | 1 мин | 10 запросов |
 // | Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/reports/get-api-v1-analytics-goods-labeling
+//
 // Параметры:
 //   dateFrom - Строка - Начало отчётного периода, `ГГГГ-ММ-ДД`
 //   dateTo - Строка - Конец отчётного периода, `ГГГГ-ММ-ДД`
@@ -353,6 +371,7 @@
 //
 // Метод будет отключен [26 октября](https://dev.wildberries.ru/release-notes?id=577).
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/reports/get-api-v1-analytics-goods-return
 //
 // Параметры:
 //   dateFrom - Строка - Дата начала отчётного периода
@@ -389,6 +408,8 @@
 // | Базовый с секретом | 10 сек | 1 запрос | 10 сек | 5 запросов |
 // | Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/reports/get-api-v1-analytics-region-sale
+//
 // Параметры:
 //   dateFrom - Строка - Начало отчётного периода, `ГГГГ-ММ-ДД`
 //   dateTo - Строка - Конец отчётного периода, `ГГГГ-ММ-ДД`
@@ -423,6 +444,8 @@
 // | Сервисный | 1 мин | 1 запрос | 1 мин | 1 запрос |
 // | Базовый с секретом | 1 мин | 1 запрос | 1 мин | 1 запрос |
 // | Базовый | 1 ч | 4 запроса | 15 мин | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/reports/get-api-analytics-v1-deductions
 //
 // Параметры:
 //   dateTo - Строка - Конец отчётного периода
@@ -459,6 +482,7 @@
 //
 // Метод возвращает отчёт о [возвратах товаров продавцу](https://seller.wildberries.ru/return-transfer-reports).
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/reports/get-api-analytics-v1-item-returns
 //
 // Параметры:
 //   dateFrom - Строка - Дата начала отчётного периода
@@ -501,6 +525,8 @@
 // | Сервисный | 1 мин | 1 запрос | 1 мин | 1 запрос |
 // | Базовый с секретом | 1 мин | 1 запрос | 1 мин | 1 запрос |
 // | Базовый | 6 ч | 1 запрос | 6 ч | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/reports/get-api-analytics-v1-measurement-penalties
 //
 // Параметры:
 //   dateTo - Строка - Конец отчётного периода
@@ -545,6 +571,8 @@
 // | Базовый с секретом | 1 мин | 1 запрос | 1 мин | 5 запросов |
 // | Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/reports/get-api-v1-paid-storage
+//
 // Параметры:
 //   dateFrom - Строка - Начало отчётного периода в формате RFC3339. Можно передать дату или дату со временем. Примеры: * `2019-06-20` * `2019-06-20T23:59:59` * `2019-06-20T00:00:00.123…
 //   dateTo - Строка - Конец отчётного периода в формате RFC3339. Можно передать дату или дату со временем. Примеры: * `2019-06-20` * `2019-06-20T23:59:59` * `2019-06-20T00:00:00.1234…
@@ -580,6 +608,8 @@
 // | Базовый с секретом | 1 мин | 1 запрос | 1 мин | 1 запрос |
 // | Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/reports/get-api-v1-paid-storage-tasks-task-id-download
+//
 // Параметры:
 //   task_id - Строка - ID задания на генерацию
 //
@@ -611,6 +641,8 @@
 // | Сервисный | 5 сек | 1 запрос | 5 сек | 5 запросов |
 // | Базовый с секретом | 5 сек | 1 запрос | 5 сек | 5 запросов |
 // | Базовый | 1 ч | 2 запроса | 30 мин | 2 запроса |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/reports/get-api-v1-paid-storage-tasks-task-id-status
 //
 // Параметры:
 //   task_id - Строка - ID задания на генерацию
@@ -659,6 +691,8 @@
 // | Сервисный | 1 мин | 1 запрос | 1 мин | 10 запросов |
 // | Базовый с секретом | 1 мин | 1 запрос | 1 мин | 10 запросов |
 // | Базовый | 3 ч | 1 запрос | 3 ч | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/reports/get-api-v1-supplier-orders
 //
 // Параметры:
 //   dateFrom - Строка - Дата и время последнего изменения по заказу. Дата в формате RFC3339. Можно передать дату или дату со временем. Время можно указывать с точностью до [секунд](./a…
@@ -717,6 +751,8 @@
 // | Базовый с секретом | 1 мин | 1 запрос | 1 мин | 1 запрос |
 // | Базовый | 2 ч | 1 запрос | 2 ч | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/reports/get-api-v1-supplier-sales
+//
 // Параметры:
 //   dateFrom - Строка - Дата и время последнего изменения по продаже/возврату. Дата в формате RFC3339. Можно передать дату или дату со временем. Время можно указывать с точностью до [с…
 //   ДопПараметры - Структура, Соответствие - необязательные параметры:
@@ -754,6 +790,8 @@
 // | Сервисный | 1 мин | 1 запрос | 1 мин | 1 запрос |
 // | Базовый с секретом | 1 мин | 1 запрос | 1 мин | 1 запрос |
 // | Базовый | 6 ч | 1 запрос | 6 ч | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/reports/get-api-analytics-v1-warehouse-measurements
 //
 // Параметры:
 //   dateTo - Строка - Конец отчётного периода
@@ -797,6 +835,8 @@
 // | Сервисный | 1 мин | 1 запрос | 1 мин | 5 запросов |
 // | Базовый с секретом | 1 мин | 1 запрос | 1 мин | 5 запросов |
 // | Базовый | 1 ч | 4 запроса | 15 мин | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/reports/get-api-v1-warehouse-remains
 //
 // Параметры:
 //   ДопПараметры - Структура, Соответствие - необязательные параметры:
@@ -842,6 +882,8 @@
 // | Базовый с секретом | 1 мин | 1 запрос | 1 мин | 1 запрос |
 // | Базовый | 1 ч | 4 запроса | 15 мин | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/reports/get-api-v1-warehouse-remains-tasks-task-id-download
+//
 // Параметры:
 //   task_id - Строка - ID задания на генерацию
 //
@@ -873,6 +915,8 @@
 // | Сервисный | 5 сек | 1 запрос | 5 сек | 5 запросов |
 // | Базовый с секретом | 5 сек | 1 запрос | 5 сек | 5 запросов |
 // | Базовый | 1 ч | 4 запроса | 15 мин | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/reports/get-api-v1-warehouse-remains-tasks-task-id-status
 //
 // Параметры:
 //   task_id - Строка - ID задания на генерацию
@@ -907,6 +951,8 @@
 // | Сервисный | 5 ч | 10 запросов | 30 мин | 10 запросов |
 // | Базовый с секретом | 5 ч | 10 запросов | 30 мин | 10 запросов |
 // | Базовый | 24 ч | 2 запроса | 12 ч | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/reports/post-api-v1-analytics-excise-report
 //
 // Параметры:
 //   dateFrom - Строка - Начало отчётного периода, `ГГГГ-ММ-ДД`

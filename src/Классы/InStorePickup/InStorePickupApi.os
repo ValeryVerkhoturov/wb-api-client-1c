@@ -32,6 +32,8 @@
 //
 // В [песочнице](https://dev.wildberries.ru/sandbox) — максимум 1 запрос в секунду суммарно для всех методов **Маркетплейса**.
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/in-store-pickup/get-api-v3-click-collect-orders
+//
 // Параметры:
 //   limit - Число - Количество элементов в ответе
 //   next - Число - Параметр пагинации. Чтобы получить полный список данных, укажите `0` в первом запросе. Чтобы получить следующий пакет данных, используйте значение `next` из отв…
@@ -73,6 +75,8 @@
 //
 // В [песочнице](https://dev.wildberries.ru/sandbox) — максимум 1 запрос в секунду суммарно для всех методов **Маркетплейса**.
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/in-store-pickup/get-api-v3-click-collect-orders-new
+//
 // Возвращаемое значение:
 //   ОтветAPI
 //
@@ -107,6 +111,8 @@
 // ---
 //
 // В [песочнице](https://dev.wildberries.ru/sandbox) — максимум 1 запрос в секунду суммарно для всех методов **Маркетплейса**.
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/in-store-pickup/post-api-v3-click-collect-orders-client
 //
 // Параметры:
 //   Тело - InStorePickupApiOrdersRequest
@@ -144,6 +150,8 @@
 //
 // В [песочнице](https://dev.wildberries.ru/sandbox) — максимум 1 запрос в секунду суммарно для всех методов **Маркетплейса**.
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/in-store-pickup/post-api-v3-click-collect-orders-client-identity
+//
 // Параметры:
 //   Тело - InStorePickupApiCheckIdentityRequest
 //
@@ -179,6 +187,8 @@
 // ---
 //
 // В [песочнице](https://dev.wildberries.ru/sandbox) — максимум 1 запрос в секунду суммарно для всех методов **Маркетплейса**.
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/in-store-pickup/post-api-marketplace-v3-click-collect-orders-final-price
 //
 // Параметры:
 //   Тело - InStorePickupApiOrdersRequest
@@ -217,6 +227,8 @@
 // ---
 //
 // В [песочнице](https://dev.wildberries.ru/sandbox) — максимум 1 запрос в секунду суммарно для всех методов **Маркетплейса**.
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/in-store-pickup/post-api-marketplace-v3-click-collect-orders-meta-customs-declaration
 //
 // Параметры:
 //   Тело - InStorePickupPostV3ClickCollectOrdersMetaCustomsDeclarationRequest
@@ -259,6 +271,8 @@
 //
 // В [песочнице](https://dev.wildberries.ru/sandbox) — максимум 1 запрос в секунду суммарно для всех методов **Маркетплейса**.
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/in-store-pickup/post-api-marketplace-v3-click-collect-orders-meta-delete
+//
 // Параметры:
 //   Тело - InStorePickupApiOrdersMetaDeleteRequest
 //
@@ -298,6 +312,8 @@
 // | 1 мин | 150 запросов | 400 мс | 20 запросов |
 // Один запрос с кодами ответов `4XX` учитывается как 10 запросов
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/in-store-pickup/post-api-marketplace-v3-click-collect-orders-meta-details
+//
 // Параметры:
 //   Тело - InStorePickupApiOrdersRequestV2
 //
@@ -332,6 +348,8 @@
 // ---
 //
 // В [песочнице](https://dev.wildberries.ru/sandbox) — максимум 1 запрос в секунду суммарно для всех методов **Маркетплейса**.
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/in-store-pickup/post-api-marketplace-v3-click-collect-orders-meta-gtin
 //
 // Параметры:
 //   Тело - InStorePickupApiOrdersGTINSetRequest
@@ -368,6 +386,8 @@
 // ---
 //
 // В [песочнице](https://dev.wildberries.ru/sandbox) — максимум 1 запрос в секунду суммарно для всех методов **Маркетплейса**.
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/in-store-pickup/post-api-marketplace-v3-click-collect-orders-meta-imei
 //
 // Параметры:
 //   Тело - InStorePickupApiOrdersIMEISetRequest
@@ -406,6 +426,8 @@
 //
 // В [песочнице](https://dev.wildberries.ru/sandbox) — максимум 1 запрос в секунду суммарно для всех методов **Маркетплейса**.
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/in-store-pickup/post-api-marketplace-v3-click-collect-orders-meta-sgtin
+//
 // Параметры:
 //   Тело - InStorePickupApiOrdersSGTINsSetRequest
 //
@@ -441,6 +463,8 @@
 //
 // В [песочнице](https://dev.wildberries.ru/sandbox) — максимум 1 запрос в секунду суммарно для всех методов **Маркетплейса**.
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/in-store-pickup/post-api-marketplace-v3-click-collect-orders-meta-uin
+//
 // Параметры:
 //   Тело - InStorePickupApiOrdersUINSetRequest
 //
@@ -475,6 +499,8 @@
 //
 // В [песочнице](https://dev.wildberries.ru/sandbox) — максимум 1 запрос в секунду суммарно для всех методов **Маркетплейса**.
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/in-store-pickup/post-api-marketplace-v3-click-collect-orders-status-cancel
+//
 // Параметры:
 //   Тело - InStorePickupApiOrdersRequestV2
 //
@@ -508,6 +534,8 @@
 // ---
 //
 // В [песочнице](https://dev.wildberries.ru/sandbox) — максимум 1 запрос в секунду суммарно для всех методов **Маркетплейса**.
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/in-store-pickup/post-api-marketplace-v3-click-collect-orders-status-confirm
 //
 // Параметры:
 //   Тело - InStorePickupApiOrdersRequestV2
@@ -567,6 +595,8 @@
 //
 // В [песочнице](https://dev.wildberries.ru/sandbox) — максимум 1 запрос в секунду суммарно для всех методов **Маркетплейса**.
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/in-store-pickup/post-api-marketplace-v3-click-collect-orders-status-info
+//
 // Параметры:
 //   Тело - InStorePickupApiOrdersRequestV2
 //
@@ -600,6 +630,8 @@
 // ---
 //
 // В [песочнице](https://dev.wildberries.ru/sandbox) — максимум 1 запрос в секунду суммарно для всех методов **Маркетплейса**.
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/in-store-pickup/post-api-marketplace-v3-click-collect-orders-status-prepare
 //
 // Параметры:
 //   Тело - InStorePickupApiOrdersRequestV2
@@ -635,6 +667,8 @@
 //
 // В [песочнице](https://dev.wildberries.ru/sandbox) — максимум 1 запрос в секунду суммарно для всех методов **Маркетплейса**.
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/in-store-pickup/post-api-marketplace-v3-click-collect-orders-status-receive
+//
 // Параметры:
 //   Тело - InStorePickupApiOrdersRequestV2
 //
@@ -668,6 +702,8 @@
 // ---
 //
 // В [песочнице](https://dev.wildberries.ru/sandbox) — максимум 1 запрос в секунду суммарно для всех методов **Маркетплейса**.
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/in-store-pickup/post-api-marketplace-v3-click-collect-orders-status-reject
 //
 // Параметры:
 //   Тело - InStorePickupApiOrdersRequestV2

@@ -28,6 +28,8 @@
 // | Базовый с секретом | 1 мин | 1 запрос | 1 мин | 1 запрос |
 // | Базовый | 24 ч | 1 запрос | 24 ч | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/finances/get-api-v1-account-balance
+//
 // Возвращаемое значение:
 //   ОтветAPI
 //
@@ -56,6 +58,8 @@
 // | Сервисный | 10 сек | 1 запрос | 10 сек | 5 запросов |
 // | Базовый с секретом | 10 сек | 1 запрос | 10 сек | 5 запросов |
 // | Базовый | 24 ч | 1 запрос | 24 ч | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/finances/get-api-v1-documents-categories
 //
 // Параметры:
 //   ДопПараметры - Структура, Соответствие - необязательные параметры:
@@ -93,6 +97,8 @@
 // | Базовый с секретом | 10 сек | 1 запрос | 10 сек | 5 запросов |
 // | Базовый | 24 ч | 1 запрос | 24 ч | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/finances/get-api-v1-documents-download
+//
 // Параметры:
 //   serviceName - Строка - Уникальный ID документа
 //   extension - Строка - Формат документа
@@ -127,6 +133,8 @@
 // | Сервисный | 10 сек | 1 запрос | 10 сек | 5 запросов |
 // | Базовый с секретом | 10 сек | 1 запрос | 10 сек | 5 запросов |
 // | Базовый | 24 ч | 1 запрос | 24 ч | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/finances/get-api-v1-documents-list
 //
 // Параметры:
 //   ДопПараметры - Структура, Соответствие - необязательные параметры:
@@ -173,6 +181,8 @@
 // | --- | --- | --- | --- |
 // | 1 мин | 1 запрос | 1 мин | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/finances/post-api-finance-v1-acquiring-detailed
+//
 // Параметры:
 //   Тело - FinancesAcquiringReportsDetailedReq
 //
@@ -205,6 +215,8 @@
 // | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- |
 // | 1 мин | 1 запрос | 1 мин | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/finances/post-api-finance-v1-acquiring-detailed-reportid
 //
 // Параметры:
 //   reportId - Число - ID отчёта
@@ -240,6 +252,8 @@
 // | --- | --- | --- | --- |
 // | 1 мин | 1 запрос | 1 мин | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/finances/post-api-finance-v1-acquiring-list
+//
 // Параметры:
 //   Тело - FinancesAcquiringReportListReq
 //
@@ -271,6 +285,8 @@
 // | Сервисный | 5 мин | 1 запрос | 5 мин | 5 запросов |
 // | Базовый с секретом | 5 мин | 1 запрос | 5 мин | 5 запросов |
 // | Базовый | 24 ч | 1 запрос | 24 ч | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/finances/post-api-v1-documents-download-all
 //
 // Параметры:
 //   Тело - FinancesRequestDownload
@@ -308,6 +324,8 @@
 // | Базовый с секретом | 1 мин | 1 запрос | 1 мин | 1 запрос |
 // | Базовый | 24 ч | 2 запроса | 12 ч | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/finances/post-api-finance-v1-sales-reports-detailed
+//
 // Параметры:
 //   Тело - FinancesSalesReportsDetailedReq
 //
@@ -342,6 +360,8 @@
 // | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- |
 // | 1 мин | 1 запрос | 1 мин | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/finances/post-api-finance-v1-sales-reports-detailed-reportid
 //
 // Параметры:
 //   reportId - Число - ID отчёта. Для ежедневных отчётов вместо стандартной десериализации рекомендуем использовать нестандартные библиотеки с поддержкой [BigInt](https://www.npmjs.co…
@@ -378,6 +398,8 @@
 // | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- |
 // | 1 мин | 1 запрос | 1 мин | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/finances/post-api-finance-v1-sales-reports-list
 //
 // Параметры:
 //   Тело - FinancesSalesReportListReq

@@ -28,6 +28,8 @@
 // | Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |
 // | Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/analytics/get-api-v2-nm-report-downloads
+//
 // Параметры:
 //   ДопПараметры - Структура, Соответствие - необязательные параметры:
 //    * filter[downloadIds] - Массив - ID отчёта
@@ -66,6 +68,8 @@
 // | Сервисный | 1 мин | 3 запроса | 20 сек | 3 запроса |
 // | Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |
 // | Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/analytics/get-api-v2-nm-report-downloads-file-downloadid
 //
 // Параметры:
 //   downloadId - Строка - ID отчёта
@@ -111,6 +115,8 @@
 // | Базовый с секретом | 1 мин | 1 запрос | 1 мин | 1 запрос |
 // | Базовый | 3 ч | 1 запрос | 3 ч | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/analytics/post-api-analytics-v1-order-feed
+//
 // Параметры:
 //   Тело - AnalyticsOrderFeedRequest
 //
@@ -147,6 +153,8 @@
 // | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- |
 // | 1 мин | 3 запроса | 20 сек | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/analytics/post-api-analytics-v1-stocks-report-seller-warehouses
 //
 // Параметры:
 //   Тело - AnalyticsInventoryRequest
@@ -186,6 +194,8 @@
 // | --- | --- | --- | --- |
 // | 1 мин | 3 запроса | 20 сек | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/analytics/post-api-analytics-v1-stocks-report-wb-warehouses
+//
 // Параметры:
 //   Тело - AnalyticsInventoryRequest
 //
@@ -220,6 +230,8 @@
 // | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- |
 // | 1 мин | 3 запроса | 20 сек | 3 запроса |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/analytics/post-api-analytics-v2-item-rating
 //
 // Параметры:
 //   Тело - AnalyticsItemRatingRequest
@@ -274,6 +286,8 @@
 // | Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |
 // | Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/analytics/post-api-v2-nm-report-downloads
+//
 // Параметры:
 //   Тело - AnalyticsPostV2NmReportDownloadsRequest
 //
@@ -305,6 +319,8 @@
 // | Сервисный | 1 мин | 3 запроса | 20 сек | 3 запроса |
 // | Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |
 // | Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/analytics/post-api-v2-nm-report-downloads-retry
 //
 // Параметры:
 //   Тело - AnalyticsNmReportRetryReportRequest
@@ -345,6 +361,8 @@
 // | Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |
 // | Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/analytics/post-api-v2-search-report-product-orders
+//
 // Параметры:
 //   Тело - AnalyticsItemOrdersRequest
 //
@@ -382,6 +400,8 @@
 // | Сервисный | 1 мин | 3 запроса | 20 сек | 3 запроса |
 // | Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |
 // | Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/analytics/post-api-v2-search-report-product-search-texts
 //
 // Параметры:
 //   Тело - AnalyticsItemSearchTextsRequest
@@ -427,6 +447,8 @@
 // | Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |
 // | Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/analytics/post-api-v2-search-report-report
+//
 // Параметры:
 //   Тело - AnalyticsMainRequest
 //
@@ -468,6 +490,8 @@
 // | Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |
 // | Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/analytics/post-api-v2-search-report-table-details
+//
 // Параметры:
 //   Тело - AnalyticsTableDetailsRequest
 //
@@ -506,6 +530,8 @@
 // | Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |
 // | Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/analytics/post-api-v2-search-report-table-groups
+//
 // Параметры:
 //   Тело - AnalyticsTableGroupRequest
 //
@@ -541,6 +567,8 @@
 // | Сервисный | 1 мин | 3 запроса | 20 сек | 3 запроса |
 // | Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |
 // | Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/analytics/post-api-v2-stocks-report-offices
 //
 // Параметры:
 //   Тело - AnalyticsTableShippingOfficeRequest
@@ -578,6 +606,8 @@
 // | Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |
 // | Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/analytics/post-api-v2-stocks-report-products-groups
+//
 // Параметры:
 //   Тело - AnalyticsTableGroupRequestSt
 //
@@ -613,6 +643,8 @@
 // | Сервисный | 1 мин | 3 запроса | 20 сек | 3 запроса |
 // | Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |
 // | Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/analytics/post-api-v2-stocks-report-products-products
 //
 // Параметры:
 //   Тело - AnalyticsTableItemRequest
@@ -655,6 +687,8 @@
 // | Сервисный | 1 мин | 3 запроса | 20 сек | 3 запроса |
 // | Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |
 // | Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/analytics/post-api-v2-stocks-report-products-sizes
 //
 // Параметры:
 //   Тело - AnalyticsTableSizeRequest
@@ -706,6 +740,8 @@
 // | Сервисный | 1 мин | 3 запроса | 20 сек | 3 запроса |
 // | Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |
 // | Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/analytics/post-api-analytics-v3-sales-funnel-grouped-history
 //
 // Параметры:
 //   Тело - AnalyticsGroupedHistoryRequest
@@ -761,6 +797,8 @@
 // | Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |
 // | Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/analytics/post-api-analytics-v3-sales-funnel-products
+//
 // Параметры:
 //   Тело - AnalyticsItemsRequest
 //
@@ -806,6 +844,8 @@
 // | Сервисный | 1 мин | 3 запроса | 20 сек | 3 запроса |
 // | Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |
 // | Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/analytics/post-api-analytics-v3-sales-funnel-products-history
 //
 // Параметры:
 //   Тело - AnalyticsItemHistoryRequest

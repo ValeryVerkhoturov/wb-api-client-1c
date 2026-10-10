@@ -28,6 +28,8 @@
 // | Базовый с секретом | 1 мин | 6 запросов | 10 сек | 6 запросов |
 // | Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/rates/get-api-tariffs-v1-acceptance-coefficients
+//
 // Параметры:
 //   ДопПараметры - Структура, Соответствие - необязательные параметры:
 //    * warehouseIDs - Строка - ID складов. По умолчанию возвращаются данные по всем складам
@@ -69,6 +71,8 @@
 // | Базовый с секретом | 1 мин | 60 запросов | 1 сек | 5 запросов |
 // | Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/rates/get-api-v1-tariffs-box
+//
 // Параметры:
 //   date - Строка - Дата в формате ГГГГ-ММ-ДД
 //
@@ -101,6 +105,8 @@
 // | Сервисный | 1 мин | 1 запрос | 1 мин | 2 запроса |
 // | Базовый с секретом | 1 мин | 1 запрос | 1 мин | 2 запроса |
 // | Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/rates/get-api-v1-tariffs-commission
 //
 // Параметры:
 //   ДопПараметры - Структура, Соответствие - необязательные параметры:
@@ -143,6 +149,8 @@
 // | Базовый с секретом | 1 мин | 60 запросов | 1 сек | 5 запросов |
 // | Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/rates/get-api-v1-tariffs-pallet
+//
 // Параметры:
 //   date - Строка - Дата в формате ГГГГ-ММ-ДД
 //
@@ -177,6 +185,8 @@
 // | Сервисный | 1 мин | 60 запросов | 1 сек | 5 запросов |
 // | Базовый с секретом | 1 мин | 60 запросов | 1 сек | 5 запросов |
 // | Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/rates/get-api-v1-tariffs-return
 //
 // Параметры:
 //   date - Строка - Дата в формате ГГГГ-ММ-ДД

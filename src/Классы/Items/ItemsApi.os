@@ -32,6 +32,8 @@
 //
 // В песочнице — максимум 1 запрос в секунду суммарно для всех методов **Контента**.
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/delete-content-v2-tag-id
+//
 // Параметры:
 //   id - Число - Числовой ID ярлыка
 //
@@ -68,6 +70,8 @@
 //
 // В [песочнице](https://dev.wildberries.ru/sandbox) — максимум 1 запрос в секунду суммарно для всех методов **Маркетплейса**.
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/delete-api-v3-stocks-warehouseid
+//
 // Параметры:
 //   warehouseId - Число - ID склада продавца
 //   Тело - ItemsDeleteV3StocksWarehouseIdRequest
@@ -103,6 +107,8 @@
 //
 // В [песочнице](https://dev.wildberries.ru/sandbox) — максимум 1 запрос в секунду суммарно для всех методов **Маркетплейса**.
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/delete-api-v3-warehouses-warehouseid
+//
 // Параметры:
 //   warehouseId - Число - ID склада продавца
 //
@@ -134,6 +140,8 @@
 // | Сервисный | 1 сек | 1 запрос | 1 сек | 5 запросов |
 // | Базовый с секретом | 1 сек | 1 запрос | 1 сек | 5 запросов |
 // | Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/get-api-content-v1-brands
 //
 // Параметры:
 //   subjectId - Число - ID предмета
@@ -178,6 +186,8 @@
 // ---
 //
 // В песочнице — максимум 1 запрос в секунду суммарно для всех методов **Контента**.
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/get-api-v2-buffer-goods-task
 //
 // Параметры:
 //   limit - Число - Сколько элементов вывести на одной странице (пагинация)
@@ -225,6 +235,8 @@
 //
 // В песочнице — максимум 1 запрос в секунду суммарно для всех методов **Контента**.
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/get-api-v2-buffer-tasks
+//
 // Параметры:
 //   uploadID - Число - ID загрузки
 //
@@ -270,6 +282,8 @@
 //
 // В песочнице — максимум 1 запрос в секунду суммарно для всех методов **Контента**.
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/get-content-v2-cards-limits
+//
 // Возвращаемое значение:
 //   ОтветAPI
 //
@@ -302,6 +316,8 @@
 // ---
 //
 // В песочнице — максимум 1 запрос в секунду суммарно для всех методов **Контента**.
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/get-content-v2-directory-colors
 //
 // Параметры:
 //   ДопПараметры - Структура, Соответствие - необязательные параметры:
@@ -348,6 +364,8 @@
 //
 // В [песочнице](https://dev.wildberries.ru/sandbox) — максимум 1 запрос в секунду суммарно для всех методов **Контента**.
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/get-content-v2-directory-countries
+//
 // Параметры:
 //   ДопПараметры - Структура, Соответствие - необязательные параметры:
 //    * locale - Строка - Язык полей ответа `subjectName` и `name`: - `ru` — русский - `en` — английский - `zh` — китайский Не используется в песочнице. Данные песочницы возвращаются тол…
@@ -387,6 +405,8 @@
 // ---
 //
 // В песочнице — максимум 1 запрос в секунду суммарно для всех методов **Контента**.
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/get-content-v2-directory-kinds
 //
 // Параметры:
 //   ДопПараметры - Структура, Соответствие - необязательные параметры:
@@ -428,6 +448,8 @@
 // * [восстановления карточек товаров из корзины](https://dev.wildberries.ru/openapi/item-management#tag/listings/operation/postV2CardsRecover)
 // * [получения списка рекомендаций в карточках товаров](https://dev.wildberries.ru/openapi/item-management#tag/recommendations/operation/postV1RecommendationsList)
 // * [установки рекомендаций для товаров](https://dev.wildberries.ru/openapi/item-management#tag/recommendations/operation/postV1RecommendationsSet)
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/get-api-content-v2-directory-okpd
 //
 // Параметры:
 //   subjectId - Число - ID предмета
@@ -473,6 +495,8 @@
 // * [получения списка рекомендаций в карточках товаров](https://dev.wildberries.ru/openapi/item-management#tag/recommendations/operation/postV1RecommendationsList)
 // * [установки рекомендаций для товаров](https://dev.wildberries.ru/openapi/item-management#tag/recommendations/operation/postV1RecommendationsSet)
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/get-api-content-v2-directory-okpd-all
+//
 // Параметры:
 //   ДопПараметры - Структура, Соответствие - необязательные параметры:
 //    * search - Число - Поиск по фрагменту кода ОКПД2. Укажите первые цифры кода через точку, чтобы найти код по этому фрагменту
@@ -513,6 +537,8 @@
 // ---
 //
 // В песочнице — максимум 1 запрос в секунду суммарно для всех методов **Контента**.
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/get-content-v2-directory-seasons
 //
 // Параметры:
 //   ДопПараметры - Структура, Соответствие - необязательные параметры:
@@ -558,6 +584,8 @@
 // ---
 //
 // В [песочнице](https://dev.wildberries.ru/sandbox) — максимум 1 запрос в секунду суммарно для всех методов **Контента**.
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/get-content-v2-directory-tnved
 //
 // Параметры:
 //   subjectID - Число - ID предмета
@@ -607,6 +635,8 @@
 //
 // В [песочнице](https://dev.wildberries.ru/sandbox) — максимум 1 запрос в секунду суммарно для всех методов **Контента**.
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/get-api-content-v2-directory-tnved-all
+//
 // Параметры:
 //   ДопПараметры - Структура, Соответствие - необязательные параметры:
 //    * search - Число - Поиск по первым цифрам кода ТН ВЭД. Укажите не более 10 символов
@@ -647,6 +677,8 @@
 // ---
 //
 // В песочнице — максимум 1 запрос в секунду суммарно для всех методов **Контента**.
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/get-content-v2-directory-vat
 //
 // Параметры:
 //   ДопПараметры - Структура, Соответствие - необязательные параметры:
@@ -689,6 +721,8 @@
 // ---
 //
 // В песочнице — максимум 1 запрос в секунду суммарно для всех методов **Контента**.
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/get-api-v2-history-goods-task
 //
 // Параметры:
 //   limit - Число - Сколько элементов вывести на одной странице (пагинация)
@@ -736,6 +770,8 @@
 //
 // В песочнице — максимум 1 запрос в секунду суммарно для всех методов **Контента**.
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/get-api-v2-history-tasks
+//
 // Параметры:
 //   uploadID - Число - ID загрузки
 //
@@ -780,6 +816,8 @@
 // ---
 //
 // В песочнице — максимум 1 запрос в секунду суммарно для всех методов **Контента**.
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/get-api-v2-list-goods-filter
 //
 // Параметры:
 //   limit - Число - Сколько элементов вывести на одной странице (пагинация)
@@ -827,6 +865,8 @@
 // ---
 //
 // В песочнице — максимум 1 запрос в секунду суммарно для всех методов **Контента**.
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/get-api-v2-list-goods-size-nm
 //
 // Параметры:
 //   limit - Число - Сколько элементов вывести на одной странице (пагинация)
@@ -876,6 +916,8 @@
 // ---
 //
 // В [песочнице](https://dev.wildberries.ru/sandbox) — максимум 1 запрос в секунду суммарно для всех методов **Контента**.
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/get-content-v2-object-all
 //
 // Параметры:
 //   ДопПараметры - Структура, Соответствие - необязательные параметры:
@@ -928,6 +970,8 @@
 //
 // В [песочнице](https://dev.wildberries.ru/sandbox) — максимум 1 запрос в секунду суммарно для всех методов **Контента**.
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/get-content-v2-object-charcs-subjectid
+//
 // Параметры:
 //   subjectId - Число - ID предмета
 //   ДопПараметры - Структура, Соответствие - необязательные параметры:
@@ -973,6 +1017,8 @@
 // ---
 //
 // В [песочнице](https://dev.wildberries.ru/sandbox) — максимум 1 запрос в секунду суммарно для всех методов **Контента**.
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/get-content-v2-object-parent-all
 //
 // Параметры:
 //   ДопПараметры - Структура, Соответствие - необязательные параметры:
@@ -1022,6 +1068,8 @@
 //
 // В песочнице — максимум 1 запрос в секунду суммарно для всех методов **Контента**.
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/get-api-v2-quarantine-goods
+//
 // Параметры:
 //   limit - Число - Сколько элементов вывести на одной странице (пагинация)
 //   ДопПараметры - Структура, Соответствие - необязательные параметры:
@@ -1064,6 +1112,8 @@
 //
 // В песочнице — максимум 1 запрос в секунду суммарно для всех методов **Контента**.
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/get-content-v2-tags
+//
 // Возвращаемое значение:
 //   ОтветAPI
 //
@@ -1097,6 +1147,8 @@
 // | --- | --- | --- | --- |
 // | 1 мин | 300 запросов | 200 мс | 20 запросов |
 // Один запрос с кодами ответов `4XX` учитывается как 10 запросов
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/get-api-v3-dbw-warehouses-warehouseid-contacts
 //
 // Параметры:
 //   warehouseId - Число - ID склада продавца
@@ -1132,6 +1184,8 @@
 //
 // В [песочнице](https://dev.wildberries.ru/sandbox) — максимум 1 запрос в секунду суммарно для всех методов **Маркетплейса**.
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/get-api-v3-offices
+//
 // Возвращаемое значение:
 //   ОтветAPI
 //
@@ -1162,6 +1216,8 @@
 // ---
 //
 // В [песочнице](https://dev.wildberries.ru/sandbox) — максимум 1 запрос в секунду суммарно для всех методов **Маркетплейса**.
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/get-api-v3-warehouses
 //
 // Возвращаемое значение:
 //   ОтветAPI
@@ -1198,6 +1254,8 @@
 //
 // В песочнице — максимум 1 запрос в секунду суммарно для всех методов **Контента**.
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/patch-content-v2-tag-id
+//
 // Параметры:
 //   id - Число - Числовой ID ярлыка
 //   Тело - ItemsPatchV2TagIdRequest
@@ -1232,6 +1290,8 @@
 // | --- | --- | --- | --- |
 // | 1 мин | 100 запросов | 600 мс | 5 запросов |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/post-api-content-v1-recommendations-list
+//
 // Параметры:
 //   Тело - ItemsGetRecomReq
 //
@@ -1264,6 +1324,8 @@
 // | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- |
 // | 1 мин | 100 запросов | 600 мс | 5 запросов |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/post-api-content-v1-recommendations-set
 //
 // Параметры:
 //   Тело - ItemsSetRecomReq
@@ -1300,6 +1362,8 @@
 // | --- | --- | --- | --- | --- |
 // | Персональный | 6 сек | 10 запросов | 600 мс | 5 запросов |
 // | Сервисный | 6 сек | 10 запросов | 600 мс | 5 запросов |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/post-api-discounts-prices-v1-upload-task-b2b-wholesale
 //
 // Параметры:
 //   Тело - ItemsPostV1UploadTaskB2bWholesaleRequest - Установка оптовых скидок для B2B
@@ -1342,6 +1406,8 @@
 //
 // В [песочнице](https://dev.wildberries.ru/sandbox) — максимум 1 запрос в секунду суммарно для всех методов **Контента**.
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/post-content-v2-barcodes
+//
 // Параметры:
 //   Тело - ItemsPostV2BarcodesRequest
 //
@@ -1380,6 +1446,8 @@
 // | Сервисный | 1 мин | 100 запросов | 600 мс | 5 запросов |
 // | Базовый с секретом | 1 мин | 100 запросов | 600 мс | 5 запросов |
 // | Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/post-content-v2-cards-delete-trash
 //
 // Параметры:
 //   Тело - ItemsPostV2CardsDeleteTrashRequest
@@ -1442,6 +1510,8 @@
 //
 // В песочнице — максимум 1 запрос в секунду суммарно для всех методов **Контента**.
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/post-content-v2-cards-error-list
+//
 // Параметры:
 //   Тело - ItemsRequestPublicViewerPublicErrorsTableListV2
 //   ДопПараметры - Структура, Соответствие - необязательные параметры:
@@ -1498,6 +1568,8 @@
 //
 // В [песочнице](https://dev.wildberries.ru/sandbox) — максимум 1 запрос в секунду суммарно для всех методов **Контента**.
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/post-content-v2-cards-movenm
+//
 // Параметры:
 //   Тело - ItemsPostV2CardsMoveNmRequest
 //
@@ -1531,6 +1603,8 @@
 // | Сервисный | 1 мин | 3 запроса | 20 сек | 5 запросов |
 // | Базовый с секретом | 1 мин | 3 запроса | 20 сек | 5 запросов |
 // | Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/post-content-v2-cards-recover
 //
 // Параметры:
 //   Тело - ItemsPostV2CardsDeleteTrashRequest
@@ -1594,6 +1668,8 @@
 // | --- | --- | --- | --- |
 // | 1 мин | 10 запросов | 6 сек | 5 запросов |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/post-content-v2-cards-update
+//
 // Параметры:
 //   Тело - Массив
 //
@@ -1645,6 +1721,8 @@
 // | --- | --- | --- | --- |
 // | 1 мин | 10 запросов | 6 сек | 5 запросов |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/post-content-v2-cards-upload
+//
 // Параметры:
 //   Тело - Массив
 //
@@ -1692,6 +1770,8 @@
 // | Сервисный | 1 мин | 10 запросов | 6 сек | 5 запросов |
 // | Базовый с секретом | 1 мин | 10 запросов | 6 сек | 5 запросов |
 // | Базовый | 2 ч | 1 запрос | 2 ч | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/post-content-v2-cards-upload-add
 //
 // Параметры:
 //   Тело - ItemsPostV2CardsUploadAddRequest
@@ -1760,6 +1840,8 @@
 // | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- |
 // | 1 мин | 100 запросов | 600 мс | 5 запросов |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/post-content-v2-get-cards-list
 //
 // Параметры:
 //   Тело - ItemsPostV2GetCardsListRequest
@@ -1832,6 +1914,8 @@
 //
 // В [песочнице](https://dev.wildberries.ru/sandbox) — максимум 1 запрос в секунду суммарно для всех методов **Контента**.
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/post-content-v2-get-cards-trash
+//
 // Параметры:
 //   Тело - ItemsPostV2GetCardsTrashRequest
 //   ДопПараметры - Структура, Соответствие - необязательные параметры:
@@ -1879,6 +1963,8 @@
 //
 // В песочнице — максимум 1 запрос в секунду суммарно для всех методов **Контента**.
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/post-api-v2-list-goods-filter
+//
 // Параметры:
 //   Тело - ItemsPostV2ListGoodsFilterRequest
 //
@@ -1917,6 +2003,8 @@
 //
 // В песочнице — максимум 1 запрос в секунду суммарно для всех методов **Контента**.
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/post-content-v2-tag
+//
 // Параметры:
 //   Тело - ItemsPostV2TagRequest
 //
@@ -1953,6 +2041,8 @@
 // ---
 //
 // В песочнице — максимум 1 запрос в секунду суммарно для всех методов **Контента**.
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/post-content-v2-tag-nomenclature-link
 //
 // Параметры:
 //   Тело - ItemsPostV2TagNomenclatureLinkRequest
@@ -1994,6 +2084,8 @@
 //
 // В песочнице — максимум 1 запрос в секунду суммарно для всех методов **Контента**.
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/post-api-v2-upload-task
+//
 // Параметры:
 //   Тело - ItemsPostV2UploadTaskRequest
 //
@@ -2031,6 +2123,8 @@
 // ---
 //
 // В песочнице — максимум 1 запрос в секунду суммарно для всех методов **Контента**.
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/post-api-v2-upload-task-club-discount
 //
 // Параметры:
 //   Тело - ItemsPostV2UploadTaskClubDiscountRequest
@@ -2071,6 +2165,8 @@
 // ---
 //
 // В песочнице — максимум 1 запрос в секунду суммарно для всех методов **Контента**.
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/post-api-v2-upload-task-size
 //
 // Параметры:
 //   Тело - ItemsPostV2UploadTaskSizeRequest
@@ -2117,6 +2213,8 @@
 // ---
 //
 // В песочнице — максимум 1 запрос в секунду суммарно для всех методов **Контента**.
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/post-content-v3-media-file
 //
 // Параметры:
 //   XNmId - Строка - Артикул WB
@@ -2180,6 +2278,8 @@
 //
 // В песочнице — максимум 1 запрос в секунду суммарно для всех методов **Контента**.
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/post-content-v3-media-save
+//
 // Параметры:
 //   Тело - ItemsPostV3MediaSaveRequest
 //
@@ -2213,6 +2313,8 @@
 // ---
 //
 // В [песочнице](https://dev.wildberries.ru/sandbox) — максимум 1 запрос в секунду суммарно для всех методов **Маркетплейса**.
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/post-api-v3-stocks-warehouseid
 //
 // Параметры:
 //   warehouseId - Число - ID склада продавца
@@ -2248,6 +2350,8 @@
 // ---
 //
 // В [песочнице](https://dev.wildberries.ru/sandbox) — максимум 1 запрос в секунду суммарно для всех методов **Маркетплейса**.
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/post-api-v3-warehouses
 //
 // Параметры:
 //   Тело - ItemsPostV3WarehousesRequest
@@ -2290,6 +2394,8 @@
 // | 1 мин | 300 запросов | 200 мс | 20 запросов |
 // Один запрос с кодами ответов `4XX` учитывается как 10 запросов
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/put-api-v3-dbw-warehouses-warehouseid-contacts
+//
 // Параметры:
 //   warehouseId - Число - ID склада продавца
 //   Тело - ItemsStoreContactRequestBody
@@ -2327,6 +2433,8 @@
 //
 // В [песочнице](https://dev.wildberries.ru/sandbox) — максимум 1 запрос в секунду суммарно для всех методов **Маркетплейса**.
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/put-api-v3-stocks-warehouseid
+//
 // Параметры:
 //   warehouseId - Число - ID склада продавца
 //   Тело - ItemsPutV3StocksWarehouseIdRequest
@@ -2361,6 +2469,8 @@
 // ---
 //
 // В [песочнице](https://dev.wildberries.ru/sandbox) — максимум 1 запрос в секунду суммарно для всех методов **Маркетплейса**.
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/items/put-api-v3-warehouses-warehouseid
 //
 // Параметры:
 //   warehouseId - Число - ID склада продавца

@@ -31,6 +31,8 @@
 // | Базовый с секретом | 1 сек | 5 запросов | 200 мс | 10 запросов |
 // | Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/promotion/delete-adv-v0-normquery-bids
+//
 // Параметры:
 //   Тело - PromotionV0DeleteNormQueryBidsRequest
 //
@@ -63,6 +65,8 @@
 // | Сервисный | 1 мин | 5 запросов | 12 сек | 5 запросов |
 // | Базовый с секретом | 1 мин | 5 запросов | 12 сек | 5 запросов |
 // | Базовый | 1 ч | 20 запросов | 3 мин | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/promotion/get-api-advert-v0-bids-recommendations
 //
 // Параметры:
 //   nmId - Число - Артикул WB
@@ -101,6 +105,8 @@
 // | Персональный | 1 мин | 5 запросов | 12 сек | 5 запросов |
 // | Сервисный | 1 мин | 5 запросов | 12 сек | 5 запросов |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/promotion/get-api-advert-v0-daily-limits
+//
 // Параметры:
 //   advertIds - Строка - ID кампаний, максимум 100. Укажите значения через запятую
 //
@@ -136,6 +142,8 @@
 // | Базовый с секретом | 1 сек | 5 запросов | 200 мс | 5 запросов |
 // | Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/promotion/get-adv-v0-delete
+//
 // Параметры:
 //   id - Число - ID кампании
 //
@@ -168,6 +176,8 @@
 // | Сервисный | 1 сек | 5 запросов | 200 мс | 5 запросов |
 // | Базовый с секретом | 1 сек | 5 запросов | 200 мс | 5 запросов |
 // | Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/promotion/get-adv-v0-pause
 //
 // Параметры:
 //   id - Число - ID кампании
@@ -202,6 +212,8 @@
 // | Сервисный | 1 сек | 5 запросов | 200 мс | 5 запросов |
 // | Базовый с секретом | 1 сек | 5 запросов | 200 мс | 5 запросов |
 // | Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/promotion/get-adv-v0-start
 //
 // Параметры:
 //   id - Число - ID кампании
@@ -238,6 +250,8 @@
 // | Базовый с секретом | 1 сек | 5 запросов | 200 мс | 5 запросов |
 // | Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/promotion/get-adv-v0-stop
+//
 // Параметры:
 //   id - Число - ID кампании
 //
@@ -271,6 +285,8 @@
 // | Базовый с секретом | 1 сек | 10 запросов | 100 мс | 10 запросов |
 // | Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/promotion/get-adv-v1-advert
+//
 // Параметры:
 //   id - Число - ID медиакампании
 //
@@ -303,6 +319,8 @@
 // | Сервисный | 1 сек | 10 запросов | 100 мс | 10 запросов |
 // | Базовый с секретом | 1 сек | 10 запросов | 100 мс | 10 запросов |
 // | Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/promotion/get-adv-v1-adverts
 //
 // Параметры:
 //   ДопПараметры - Структура, Соответствие - необязательные параметры:
@@ -349,6 +367,8 @@
 // | Базовый с секретом | 1 сек | 1 запрос | 1 сек | 5 запросов |
 // | Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/promotion/get-adv-v1-balance
+//
 // Возвращаемое значение:
 //   ОтветAPI
 //
@@ -377,6 +397,8 @@
 // | Сервисный | 1 сек | 4 запроса | 250 мс | 4 запроса |
 // | Базовый с секретом | 1 сек | 4 запроса | 250 мс | 4 запроса |
 // | Базовый | 1 ч | 4 запроса | 15 мин | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/promotion/get-adv-v1-budget
 //
 // Параметры:
 //   id - Число - ID кампании
@@ -410,6 +432,8 @@
 // | Сервисный | 6 сек | 10 запросов | 600 мс | 5 запросов |
 // | Базовый с секретом | 6 сек | 10 запросов | 600 мс | 5 запросов |
 // | Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/promotion/get-api-v1-calendar-promotions
 //
 // Параметры:
 //   startDateTime - Строка - Начало периода, формат `YYYY-MM-DDTHH:MM:SSZ`
@@ -454,6 +478,8 @@
 // | Базовый с секретом | 6 сек | 10 запросов | 600 мс | 5 запросов |
 // | Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/promotion/get-api-v1-calendar-promotions-details
+//
 // Параметры:
 //   promotionIDs - Массив - ID акций, по которым нужно вернуть информацию
 //
@@ -485,6 +511,8 @@
 // | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- |
 // | 6 сек | 10 запросов | 600 мс | 5 запросов |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/promotion/get-api-v1-calendar-promotions-nomenclatures
 //
 // Параметры:
 //   promotionID - Число - ID акции
@@ -528,6 +556,8 @@
 // | --- | --- | --- | --- |
 // | 1 мин | 1 запрос | 1 мин | 10 запросов |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/promotion/get-api-advert-v1-config
+//
 // Возвращаемое значение:
 //   ОтветAPI
 //
@@ -557,6 +587,8 @@
 // | Базовый с секретом | 1 сек | 10 запросов | 100 мс | 10 запросов |
 // | Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/promotion/get-adv-v1-count
+//
 // Возвращаемое значение:
 //   ОтветAPI
 //
@@ -585,6 +617,8 @@
 // | Сервисный | 1 сек | 1 запрос | 1 сек | 5 запросов |
 // | Базовый с секретом | 1 сек | 1 запрос | 1 сек | 5 запросов |
 // | Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/promotion/get-adv-v1-payments
 //
 // Параметры:
 //   ДопПараметры - Структура, Соответствие - необязательные параметры:
@@ -623,6 +657,8 @@
 // | Базовый с секретом | 1 сек | 5 запросов | 200 мс | 5 запросов |
 // | Базовый | 1 ч | 4 запроса | 15 мин | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/promotion/get-adv-v1-promotion-count
+//
 // Возвращаемое значение:
 //   ОтветAPI
 //
@@ -651,6 +687,8 @@
 // | Сервисный | 12 сек | 1 запрос | 12 сек | 5 запросов |
 // | Базовый с секретом | 12 сек | 1 запрос | 12 сек | 5 запросов |
 // | Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/promotion/get-adv-v1-supplier-subjects
 //
 // Параметры:
 //   ДопПараметры - Структура, Соответствие - необязательные параметры:
@@ -688,6 +726,8 @@
 // | Базовый с секретом | 1 сек | 1 запрос | 1 сек | 5 запросов |
 // | Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/promotion/get-adv-v1-upd
+//
 // Параметры:
 //   from - Строка - Начало интервала
 //   _to - Строка - Конец интервала. (Минимальный интервал 1 день, максимальный 31)
@@ -722,6 +762,8 @@
 // | Сервисный | 1 сек | 5 запросов | 200 мс | 5 запросов |
 // | Базовый с секретом | 1 сек | 5 запросов | 200 мс | 5 запросов |
 // | Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/promotion/get-api-advert-v2-adverts
 //
 // Параметры:
 //   ДопПараметры - Структура, Соответствие - необязательные параметры:
@@ -767,6 +809,8 @@
 // | Базовый с секретом | 1 мин | 3 запроса | 20 сек | 1 запрос |
 // | Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/promotion/get-adv-v3-fullstats
+//
 // Параметры:
 //   ids - Строка - ID кампаний, максимум 50 значений
 //   beginDate - Строка - Дата начала интервала
@@ -808,6 +852,8 @@
 // | Базовый с секретом | 1 сек | 1 запрос | 1 сек | 1 запрос |
 // | Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/promotion/patch-adv-v0-auction-nms
+//
 // Параметры:
 //   Тело - PromotionPatchV0AuctionNmsRequest
 //
@@ -848,6 +894,8 @@
 // | Базовый с секретом | 1 сек | 5 запросов | 200 мс | 5 запросов |
 // | Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/promotion/patch-api-advert-v1-bids
+//
 // Параметры:
 //   Тело - PromotionPatchV1BidsRequest
 //
@@ -883,6 +931,8 @@
 // | Базовый с секретом | 1 сек | 2 запроса | 500 мс | 4 запроса |
 // | Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/promotion/post-adv-v0-normquery-bids
+//
 // Параметры:
 //   Тело - PromotionV0SetNormQueryBidsRequest
 //
@@ -916,6 +966,8 @@
 // | Сервисный | 1 сек | 5 запросов | 200 мс | 10 запросов |
 // | Базовый с секретом | 1 сек | 5 запросов | 200 мс | 10 запросов |
 // | Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/promotion/post-adv-v0-normquery-get-bids
 //
 // Параметры:
 //   Тело - PromotionV0GetNormQueryBidsRequest
@@ -951,6 +1003,8 @@
 // | Базовый с секретом | 1 сек | 5 запросов | 200 мс | 10 запросов |
 // | Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/promotion/post-adv-v0-normquery-get-minus
+//
 // Параметры:
 //   Тело - PromotionV0GetNormQueryMinusRequest
 //
@@ -982,6 +1036,8 @@
 // | Сервисный | 1 сек | 5 запросов | 200 мс | 10 запросов |
 // | Базовый с секретом | 1 сек | 5 запросов | 200 мс | 10 запросов |
 // | Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/promotion/post-adv-v0-normquery-list
 //
 // Параметры:
 //   Тело - PromotionV0GetNormQueryListRequest
@@ -1017,6 +1073,8 @@
 // | Базовый с секретом | 1 сек | 5 запросов | 200 мс | 10 запросов |
 // | Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/promotion/post-adv-v0-normquery-set-minus
+//
 // Параметры:
 //   Тело - PromotionV0SetMinusNormQueryRequest
 //
@@ -1050,6 +1108,8 @@
 // | Базовый с секретом | 1 мин | 10 запросов | 6 сек | 20 запросов |
 // | Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/promotion/post-adv-v0-normquery-stats
+//
 // Параметры:
 //   Тело - PromotionV0GetNormQueryStatsRequest
 //
@@ -1081,6 +1141,8 @@
 // | Сервисный | 1 сек | 5 запросов | 200 мс | 5 запросов |
 // | Базовый с секретом | 1 сек | 5 запросов | 200 мс | 5 запросов |
 // | Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/promotion/post-adv-v0-rename
 //
 // Параметры:
 //   Тело - PromotionPostV0RenameRequest
@@ -1114,6 +1176,8 @@
 // | Базовый с секретом | 1 мин | 20 запросов | 3 сек | 5 запросов |
 // | Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/promotion/post-api-advert-v1-bids-min
+//
 // Параметры:
 //   Тело - PromotionPostV1BidsMinRequest
 //
@@ -1146,6 +1210,8 @@
 // | Сервисный | 1 сек | 1 запрос | 1 сек | 5 запросов |
 // | Базовый с секретом | 1 сек | 1 запрос | 1 сек | 5 запросов |
 // | Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/promotion/post-adv-v1-budget-deposit
 //
 // Параметры:
 //   id - Число - ID кампании
@@ -1184,6 +1250,8 @@
 // | Базовый с секретом | 6 сек | 10 запросов | 600 мс | 5 запросов |
 // | Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/promotion/post-api-v1-calendar-promotions-upload
+//
 // Параметры:
 //   Тело - PromotionPostV1CalendarPromotionsUploadRequest
 //
@@ -1219,6 +1287,8 @@
 // | Персональный | 1 сек | 2 запроса | 500 мс | 4 запроса |
 // | Сервисный | 1 сек | 2 запроса | 500 мс | 4 запроса |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/promotion/post-api-advert-v1-normquery-bids
+//
 // Параметры:
 //   Тело - PromotionV1SetNormQueryBidsRequest
 //
@@ -1252,6 +1322,8 @@
 // | Базовый с секретом | 1 мин | 10 запросов | 6 сек | 20 запросов |
 // | Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/promotion/post-adv-v1-normquery-stats
+//
 // Параметры:
 //   Тело - PromotionV1GetNormQueryStatsRequest
 //
@@ -1283,6 +1355,8 @@
 // | Сервисный | 1 сек | 10 запросов | 100 мс | 10 запросов |
 // | Базовый с секретом | 1 сек | 10 запросов | 100 мс | 10 запросов |
 // | Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/promotion/post-adv-v1-stats
 //
 // Параметры:
 //   Тело - Массив
@@ -1320,6 +1394,8 @@
 // | Базовый с секретом | 1 мин | 20 запросов | 3 сек | 4 запроса |
 // | Базовый | 1 ч | 4 запроса | 15 мин | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/promotion/post-api-advert-v2-budget
+//
 // Параметры:
 //   Тело - PromotionV2BudgetRequest
 //
@@ -1354,6 +1430,8 @@
 // | Базовый с секретом | 1 мин | 5 запросов | 12 сек | 5 запросов |
 // | Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/promotion/post-adv-v2-seacat-save-ad
+//
 // Параметры:
 //   Тело - PromotionPostV2SeacatSaveAdRequest
 //
@@ -1385,6 +1463,8 @@
 // | Сервисный | 1 мин | 5 запросов | 12 сек | 5 запросов |
 // | Базовый с секретом | 1 мин | 5 запросов | 12 сек | 5 запросов |
 // | Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/promotion/post-adv-v2-supplier-nms
 //
 // Параметры:
 //   Тело - Массив - ID предметов, для которых нужно получить карточки товаров
@@ -1420,6 +1500,8 @@
 // | Базовый с секретом | 1 сек | 1 запрос | 1 сек | 1 запрос |
 // | Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/promotion/put-adv-v0-auction-placements
+//
 // Параметры:
 //   Тело - PromotionPutV0AuctionPlacementsRequest
 //
@@ -1453,6 +1535,8 @@
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 5 запросов | 12 сек | 5 запросов |
 // | Сервисный | 1 мин | 5 запросов | 12 сек | 5 запросов |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/promotion/put-api-advert-v0-daily-limits
 //
 // Параметры:
 //   Тело - PromotionV0PutDailyLimitsRequest

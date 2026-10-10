@@ -29,6 +29,8 @@
 // | --- | --- | --- | --- |
 // | 1 мин | 30 запросов | 2 сек | 10 запросов |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/orders-fbw/delete-api-supplies-v1-drafts-draftid
+//
 // Параметры:
 //   draftId - Строка - ID черновика
 //
@@ -64,6 +66,8 @@
 // | --- | --- | --- | --- |
 // | 1 мин | 30 запросов | 2 сек | 10 запросов |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/orders-fbw/delete-api-supplies-v1-drafts-draftid-items
+//
 // Параметры:
 //   draftId - Строка - ID черновика
 //   Тело - OrdersFbwModelsDraftDeleteitemsRequest
@@ -97,6 +101,8 @@
 // | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- |
 // | 1 мин | 30 запросов | 2 сек | 10 запросов |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/orders-fbw/get-api-supplies-v1-drafts
 //
 // Параметры:
 //   ДопПараметры - Структура, Соответствие - необязательные параметры:
@@ -138,6 +144,8 @@
 // | --- | --- | --- | --- |
 // | 1 мин | 30 запросов | 2 сек | 10 запросов |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/orders-fbw/get-api-supplies-v1-drafts-draftid-items
+//
 // Параметры:
 //   draftId - Строка - ID черновика
 //
@@ -169,6 +177,8 @@
 // | Сервисный | 1 мин | 30 запросов | 2 сек | 10 запросов |
 // | Базовый с секретом | 1 мин | 30 запросов | 2 сек | 10 запросов |
 // | Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/orders-fbw/get-api-v1-supplies-id
 //
 // Параметры:
 //   ID - Число - ID поставки или заказа
@@ -206,6 +216,8 @@
 // | Сервисный | 1 мин | 30 запросов | 2 сек | 10 запросов |
 // | Базовый с секретом | 1 мин | 30 запросов | 2 сек | 10 запросов |
 // | Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/orders-fbw/get-api-v1-supplies-id-goods
 //
 // Параметры:
 //   ID - Число - ID поставки или заказа
@@ -245,6 +257,8 @@
 // | Сервисный | 1 мин | 30 запросов | 2 сек | 10 запросов |
 // | Базовый с секретом | 1 мин | 30 запросов | 2 сек | 10 запросов |
 // | Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/orders-fbw/get-api-v1-supplies-id-package
 //
 // Параметры:
 //   ID - Число - ID поставки
@@ -300,6 +314,8 @@
 // | --- | --- | --- | --- |
 // | 1 мин | 1 запрос | 1 мин | 1 запрос |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/orders-fbw/get-api-supplies-v1-discrepancies-supplyid
+//
 // Параметры:
 //   supplyId - Число - ID поставки
 //
@@ -331,6 +347,8 @@
 // | Сервисный | 1 мин | 6 запросов | 10 сек | 10 запросов |
 // | Базовый с секретом | 1 мин | 6 запросов | 10 сек | 10 запросов |
 // | Базовый | 12 ч | 1 запрос | 12 ч | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/orders-fbw/get-api-v1-transit-tariffs
 //
 // Возвращаемое значение:
 //   ОтветAPI
@@ -365,6 +383,8 @@
 //
 // В песочнице — максимум 1 запрос в секунду суммарно для всех методов.
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/orders-fbw/get-api-v1-warehouses
+//
 // Возвращаемое значение:
 //   ОтветAPI
 //
@@ -397,6 +417,8 @@
 // ---
 //
 // В песочнице — максимум 1 запрос в секунду суммарно для всех методов.
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/orders-fbw/post-api-v1-acceptance-options
 //
 // Параметры:
 //   Тело - Массив
@@ -436,6 +458,8 @@
 // | --- | --- | --- | --- |
 // | 1 мин | 30 запросов | 2 сек | 10 запросов |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/orders-fbw/post-api-supplies-v1-drafts
+//
 // Возвращаемое значение:
 //   ОтветAPI
 //
@@ -470,6 +494,8 @@
 // | --- | --- | --- | --- |
 // | 1 мин | 30 запросов | 2 сек | 10 запросов |
 //
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/orders-fbw/post-api-supplies-v1-drafts-draftid-items
+//
 // Параметры:
 //   draftId - Строка - ID черновика
 //   Тело - OrdersFbwModelsDraftAdditemsRequest
@@ -502,6 +528,8 @@
 // | Сервисный | 1 мин | 30 запросов | 2 сек | 10 запросов |
 // | Базовый с секретом | 1 мин | 30 запросов | 2 сек | 10 запросов |
 // | Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/orders-fbw/post-api-v1-supplies
 //
 // Параметры:
 //   Тело - OrdersFbwModelsSuppliesFiltersRequest
