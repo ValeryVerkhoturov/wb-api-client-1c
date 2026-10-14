@@ -49,7 +49,7 @@
 &Сериализуемое("items")
 &Тип("Массив")
 &ДляКаждого
-&Тип("AnalyticsTableItemItem")
+&Тип("AnalyticsTableItem")
 Перем items Экспорт;
 
 // Возвращает JSON-представление модели.

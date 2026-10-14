@@ -884,6 +884,41 @@
 
 КонецФункции
 
+// Перевести сборочные задания из доставки на сборку
+//
+// Метод переводит сборочные задания из статуса `complete` — в доставке в статус `confirm` — на сборке.
+//
+// Используйте метод, чтобы переместить сборочное задание из закрытой поставки в открытую.
+//
+// Сборочное задание можно перевести из доставки на сборку, если выполнены все условия:
+// - сборочное задание находится в статусе `complete` — в доставке
+// - поставка, в которую нужно перенести сборочное задание, [не передана в доставку](https://dev.wildberries.ru/openapi/orders-fbs#tag/fbsSupplies/operation/patchV3SuppliesSupplyIdDeliver)
+// - сборочное задание ранее не переносили из доставки на сборку
+// Чтобы проверить, можно ли перевести сборочное задание из доставки на сборку, используйте [статусы сборочных заданий](https://dev.wildberries.ru/openapi/orders-fbs#tag/fbsAssemblyOrders/operation/postV3OrdersStatus), поле `isTransferable`.
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/orders-fbs/patch-api-marketplace-v3-fbs-supplies-supplyid-orders-transfer
+//
+// Параметры:
+//   supplyId - Строка - ID поставки, из которой будут перемещены заказы
+//   Тело - OrdersFbsPatchV3FbsSuppliesSupplyIdOrdersTransferRequest
+//
+// Возвращаемое значение:
+//   ОтветAPI
+//
+Функция PatchV3FbsSuppliesSupplyIdOrdersTransfer(Знач supplyId, Знач Тело) Экспорт
+
+	ПараметрыЗапроса = Новый Соответствие;
+	Заголовки = Новый Соответствие;
+	Возврат Транспорт.ВыполнитьЗапрос(
+		"PATCH",
+		СтрШаблон("/api/marketplace/v3/fbs/supplies/%1/orders/transfer", Транспорт.ЭкранироватьСегмент(supplyId)),
+		ПараметрыЗапроса,
+		Заголовки,
+		Тело,
+		"https://marketplace-api.wildberries.ru");
+
+КонецФункции
+
 // Отменить сборочное задание
 //
 // Метод отменяет [сборочное задание](https://dev.wildberries.ru/openapi/orders-fbs#tag/fbsAssemblyOrders/operation/getV3Orders) и переводит в [статус](https://dev.wildberries.ru/openapi/orders-fbs#tag/fbsAssemblyOrders/operation/postV3OrdersStatus) `cancel` — отменено продавцом.
@@ -1180,6 +1215,7 @@
 // |-------|----------------------|--------------------------------------|
 // | `new` | \\*\\*Новое сборочное задание\\*\\* | |
 // | `confirm` | \\*\\*На сборке\\*\\* |[Добавить сборочное задание к поставке](https://dev.wildberries.ru/openapi/orders-fbs#tag/fbsSupplies/operation/patchV3SuppliesSupplyIdOrders)
+// [Перевести сборочные задания из доставки на сборку](https://dev.wildberries.ru/openapi/orders-fbs#tag/fbsSupplies/operation/patchV3FbsSuppliesSupplyIdOrdersTransfer)|
 // | `complete` | \\*\\*В доставке\\*\\* | [Передать поставку в доставку](https://dev.wildberries.ru/openapi/orders-fbs#tag/fbsSupplies/operation/patchV3SuppliesSupplyIdDeliver) |
 // | `cancel` | \\*\\*Отменено продавцом\\*\\* | [Отменить сборочное задание](https://dev.wildberries.ru/openapi/orders-fbs#tag/fbsAssemblyOrders/operation/patchV3OrdersOrderIdCancel)|
 // | `cancel\\_carrier` | \\*\\*Отменено перевозчиком\\*\\*

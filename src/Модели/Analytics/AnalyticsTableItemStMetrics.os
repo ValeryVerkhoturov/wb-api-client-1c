@@ -1,6 +1,6 @@
 #Использовать jason
 
-// AnalyticsTableItemItemStMetrics
+// AnalyticsTableItemStMetrics
 //
 // Метрики товара
 //
@@ -103,9 +103,9 @@
 &Тип("Число")
 Перем lostBuyoutsSum Экспорт;
 
-// currentPrice - AnalyticsTableItemItemStMetricsAllOfCurrentPrice
+// currentPrice - AnalyticsTableItemStMetricsAllOfCurrentPrice
 &Сериализуемое("currentPrice")
-&Тип("AnalyticsTableItemItemStMetricsAllOfCurrentPrice")
+&Тип("AnalyticsTableItemStMetricsAllOfCurrentPrice")
 Перем currentPrice Экспорт;
 
 // availability - Строка - Доступность товара: - `deficient` — Дефицит - `actual` — Актуальный - `balanced` — Баланс - `nonActual` — Неактуальный - `nonLiquid` — Неликвид - `invalidData`…

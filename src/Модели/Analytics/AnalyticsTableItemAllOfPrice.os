@@ -1,8 +1,8 @@
 #Использовать jason
 
-// AnalyticsTableItemItemStMetricsAllOfCurrentPrice
+// AnalyticsTableItemAllOfPrice
 //
-// Текущая цена
+// Цена
 //
 // Класс сформирован автоматически (onescript) из спецификации OpenAPI.
 // Правки будут потеряны при следующей генерации.

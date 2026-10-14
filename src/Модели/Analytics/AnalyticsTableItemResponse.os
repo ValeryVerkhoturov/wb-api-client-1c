@@ -13,7 +13,7 @@
 &Сериализуемое("items")
 &Тип("Массив")
 &ДляКаждого
-&Тип("AnalyticsTableItemItemSt")
+&Тип("AnalyticsTableItemSt")
 Перем items Экспорт;
 
 // currency - Строка - Валюта отчёта

@@ -1,6 +1,6 @@
 #Использовать jason
 
-// AnalyticsTableItemItem
+// AnalyticsTableItem
 //
 // Класс сформирован автоматически (onescript) из спецификации OpenAPI.
 // Правки будут потеряны при следующей генерации.
@@ -64,9 +64,9 @@
 &Тип("Число")
 Перем feedbackRating Экспорт;
 
-// price - AnalyticsTableItemItemAllOfPrice
+// price - AnalyticsTableItemAllOfPrice
 &Сериализуемое("price")
-&Тип("AnalyticsTableItemItemAllOfPrice")
+&Тип("AnalyticsTableItemAllOfPrice")
 Перем price Экспорт;
 
 // avgPosition - AnalyticsTableGroupItemMetricsAvgPosition

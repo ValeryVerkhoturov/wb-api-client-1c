@@ -1,6 +1,6 @@
 #Использовать jason
 
-// AnalyticsTableItemItemSt
+// AnalyticsTableItemSt
 //
 // Данные по товару
 //
@@ -51,9 +51,9 @@
 &Тип("Булево")
 Перем hasSizes Экспорт;
 
-// metrics - AnalyticsTableItemItemStMetrics
+// metrics - AnalyticsTableItemStMetrics
 &Сериализуемое("metrics")
-&Тип("AnalyticsTableItemItemStMetrics")
+&Тип("AnalyticsTableItemStMetrics")
 Перем metrics Экспорт;
 
 // Возвращает JSON-представление модели.

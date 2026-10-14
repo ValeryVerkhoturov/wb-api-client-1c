@@ -54,9 +54,9 @@
 &Тип("Число")
 Перем feedbackRating Экспорт;
 
-// price - AnalyticsTableItemItemAllOfPrice
+// price - AnalyticsTableItemAllOfPrice
 &Сериализуемое("price")
-&Тип("AnalyticsTableItemItemAllOfPrice")
+&Тип("AnalyticsTableItemAllOfPrice")
 Перем price Экспорт;
 
 // frequency - AnalyticsTableSearchTextItemAllOfFrequency

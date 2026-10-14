@@ -103,9 +103,9 @@
 &Тип("Число")
 Перем lostBuyoutsSum Экспорт;
 
-// currentPrice - AnalyticsTableItemItemStMetricsAllOfCurrentPrice
+// currentPrice - AnalyticsTableItemStMetricsAllOfCurrentPrice
 &Сериализуемое("currentPrice")
-&Тип("AnalyticsTableItemItemStMetricsAllOfCurrentPrice")
+&Тип("AnalyticsTableItemStMetricsAllOfCurrentPrice")
 Перем currentPrice Экспорт;
 
 // Возвращает JSON-представление модели.
