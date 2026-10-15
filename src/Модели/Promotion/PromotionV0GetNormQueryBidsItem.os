@@ -24,17 +24,17 @@
 &Тип("Строка")
 Перем norm_query Экспорт;
 
-// bid - Число - Текущая ставка в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances) за тысячу показов
+// bid - Число - Текущая ставка в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances) за тысячу показов
 &Сериализуемое("bid")
 &Тип("Число")
 Перем bid Экспорт;
 
-// bid_kopecks - Число - Текущая ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances) за тысячу показов
+// bid_kopecks - Число - Текущая ставка в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances) за тысячу показов
 &Сериализуемое("bid_kopecks")
 &Тип("Число")
 Перем bid_kopecks Экспорт;
 
-// currency - Строка - Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+// currency - Строка - Валюта [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
 &Сериализуемое("currency")
 &Тип("Строка")
 Перем currency Экспорт;

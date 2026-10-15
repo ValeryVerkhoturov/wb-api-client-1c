@@ -14,7 +14,7 @@
 &Тип("Число")
 Перем nm_id Экспорт;
 
-// bid_kopecks - Число - Ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+// bid_kopecks - Число - Ставка в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
 &Сериализуемое("bid_kopecks")
 &Тип("Число")
 Перем bid_kopecks Экспорт;

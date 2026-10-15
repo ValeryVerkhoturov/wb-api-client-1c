@@ -22,7 +22,7 @@
 //
 // Можно получить отчёт максимум за 31 день.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 1 запрос | 1 мин | 1 запрос |
@@ -59,7 +59,7 @@
 //
 // Метод возвращает отчёт об [операциях при приёмке](https://seller.wildberries.ru/analytics-reports/acceptance-report) по ID [задания на генерацию](https://dev.wildberries.ru/openapi/reports#tag/acceptanceExpenses/operation/getV1AcceptanceReport).
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 1 запрос | 1 мин | 1 запрос |
@@ -93,7 +93,7 @@
 //
 // Метод возвращает статус [задания на генерацию](https://dev.wildberries.ru/openapi/reports#tag/acceptanceExpenses/operation/getV1AcceptanceReport) отчёта об [операциях при приёмке](https://dev.wildberries.ru/openapi/reports#tag/acceptanceExpenses/operation/getV1AcceptanceReportTasksTaskIdDownload).
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 5 сек | 1 запрос | 5 сек | 1 запрос |
@@ -132,7 +132,7 @@
 //
 // Данные доступны с августа 2023.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 10 мин | 1 запрос | 10 мин | 10 запросов |
@@ -170,7 +170,7 @@
 //
 // Метод возвращает список [заблокированных карточек товаров продавца](https://seller.wildberries.ru/analytics-reports/banned-products) с причинами блокировки.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 10 сек | 1 запрос | 10 сек | 6 запросов |
@@ -209,7 +209,7 @@
 //
 // Можно получить отчёт максимум за 365 дней. Данные доступны с 1 ноября 2022.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 5 сек | 1 запрос | 5 сек | 20 запросов |
@@ -254,7 +254,7 @@
 // - Продавались за последние 90 дней
 // - Есть в наличии, вне зависимости от склада хранения
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 1 запрос | 1 мин | 10 запросов |
@@ -287,7 +287,7 @@
 //
 // Можно получить отчёт максимум за 365 дней. Данные доступны с 1 ноября 2022.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 5 сек | 1 запрос | 5 сек | 20 запросов |
@@ -334,7 +334,7 @@
 //
 // Можно получить данные максимум за 31 день. Данные доступны с марта 2024.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 1 запрос | 1 мин | 10 запросов |
@@ -400,7 +400,7 @@
 //
 // Метод будет отключен [3 ноября](https://dev.wildberries.ru/release-notes?id=590).
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 10 сек | 1 запрос | 10 сек | 5 запросов |
@@ -437,7 +437,7 @@
 //
 // Метод возвращает отчёт об удержаниях за [подмены и неверные вложения](https://seller.wildberries.ru/analytics-reports/dimensions-penalties/retentions)
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 1 запрос | 1 мин | 1 запрос |
@@ -518,7 +518,7 @@
 //
 // Метод возвращает отчёт об [удержаниях за занижение габаритов упаковки](https://seller.wildberries.ru/analytics-reports/dimensions-penalties)
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 1 запрос | 1 мин | 1 запрос |
@@ -563,7 +563,7 @@
 //
 // Можно получить отчёт максимум за 8 дней.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 1 запрос | 1 мин | 5 запросов |
@@ -600,7 +600,7 @@
 //
 // Метод возвращает отчёт о [платном хранении](https://seller.wildberries.ru/analytics-reports/paid-storage/storage) по ID [задания на генерацию](https://dev.wildberries.ru/openapi/reports#tag/paidStorage/operation/getV1PaidStorage).
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 1 запрос | 1 мин | 1 запрос |
@@ -634,7 +634,7 @@
 //
 // Метод возвращает статус [задания на генерацию](https://dev.wildberries.ru/openapi/reports#tag/paidStorage/operation/getV1PaidStorage) отчёта о [платном хранении](https://dev.wildberries.ru/openapi/reports#tag/paidStorage/operation/getV1PaidStorageTasksTaskIdDownload).
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 5 сек | 1 запрос | 5 сек | 5 запросов |
@@ -684,7 +684,7 @@
 //
 // В песочнице для параметров `dateFrom` и `dateTo` можно задать диапазон только за последние 4 месяца от текущей даты.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 1 запрос | 1 мин | 10 запросов |
@@ -743,7 +743,7 @@
 //
 // В песочнице для параметров `dateFrom` и `dateTo` можно задать диапазон только за последние 4 месяца от текущей даты.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 1 запрос | 1 мин | 1 запрос |
@@ -783,7 +783,7 @@
 //
 // Метод возвращает отчёт о [замерах склада](https://seller.wildberries.ru/analytics-reports/dimensions-penalties/warehouse-measurements)
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 1 запрос | 1 мин | 1 запрос |
@@ -828,7 +828,7 @@
 //
 // Параметры `groupBy` и `filter` (группировки и фильтры) можно задать в любой комбинации — аналогично [версии](https://seller.wildberries.ru/analytics-reports/warehouse-remains) в личном кабинете.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 1 запрос | 1 мин | 5 запросов |
@@ -874,7 +874,7 @@
 //
 // Метод возвращает отчёт об [остатках на складах WB](https://seller.wildberries.ru/analytics-reports/warehouse-remains) по ID [задания на генерацию](https://dev.wildberries.ru/openapi/reports#tag/warehousesInventoryReport/operation/getV1WarehouseRemains).
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 1 запрос | 1 мин | 1 запрос |
@@ -908,7 +908,7 @@
 //
 // Метод возвращает статус [задания на генерацию](https://dev.wildberries.ru/openapi/reports#tag/warehousesInventoryReport/operation/getV1WarehouseRemains) отчёта об [остатках на складах WB](https://dev.wildberries.ru/openapi/reports#tag/warehousesInventoryReport/operation/getV1WarehouseRemainsTasksTaskIdDownload).
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 5 сек | 1 запрос | 5 сек | 5 запросов |
@@ -944,7 +944,7 @@
 //
 // Данный отчёт можно сохранить в [формате таблиц](https://dev.wildberries.ru/knowledge-base/articles/019d49a4-650c-7b04-9596-ba441936f9d3).
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 5 ч | 10 запросов | 30 мин | 10 запросов |

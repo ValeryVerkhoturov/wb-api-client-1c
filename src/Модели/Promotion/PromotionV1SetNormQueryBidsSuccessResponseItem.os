@@ -24,7 +24,7 @@
 &Тип("Строка")
 Перем normQuery Экспорт;
 
-// currency - Строка - Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+// currency - Строка - Валюта [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
 &Сериализуемое("currency")
 &Тип("Строка")
 Перем currency Экспорт;

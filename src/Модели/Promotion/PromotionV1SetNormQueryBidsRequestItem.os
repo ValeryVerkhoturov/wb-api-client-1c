@@ -24,7 +24,7 @@
 &Тип("Строка")
 Перем normQuery Экспорт;
 
-// bidMinorUnits - Число - Ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances). Допустимый шаг ставки указан в ответе м…
+// bidMinorUnits - Число - Ставка в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances). Допустимый шаг ставки указан в ответе ме…
 &Сериализуемое("bidMinorUnits")
 &Тип("Число")
 Перем bidMinorUnits Экспорт;

@@ -20,7 +20,7 @@
 //
 // Метод возвращает список отчётов с расширенной аналитикой продавца. Ответ содержит ID [созданных отчётов](https://dev.wildberries.ru/openapi/analytics#tag/sellerAnalyticsCsv/operation/postV2NmReportDownloads) и статусы генерации.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |
@@ -61,7 +61,7 @@
 // Можно получить отчёт, который сгенерирован за последние 48 часов.
 // Отчёт будет загружен внутри архива ZIP в формате CSV.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |
@@ -107,7 +107,7 @@
 //
 // Можно использовать пагинацию.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 1 запрос | 1 мин | 1 запрос |
@@ -149,7 +149,7 @@
 //
 // 1 строка ответа — данные об 1 размере товара на 1 складе продавца.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- |
 // | 1 мин | 3 запроса | 20 сек | 1 запрос |
@@ -189,7 +189,7 @@
 //
 // 1 строка ответа — данные об 1 размере товара на 1 складе WB.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- |
 // | 1 мин | 3 запроса | 20 сек | 1 запрос |
@@ -226,7 +226,7 @@
 //
 // Данные отчёта обновляются 1 раз в час.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- |
 // | 1 мин | 3 запроса | 20 сек | 3 запроса |
@@ -278,7 +278,7 @@
 //
 // Отчёты по [остаткам](https://seller.wildberries.ru/content-analytics/history-remains) — типы `STOCK_HISTORY_REPORT_CSV` и `STOCK_HISTORY_DAILY_CSV` — можно создать без подписки [Джем](https://seller.wildberries.ru/monetization/jam)
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |
@@ -312,7 +312,7 @@
 //
 // Метод создает повторное [задание на генерацию](https://dev.wildberries.ru/openapi/analytics#tag/sellerAnalyticsCsv/operation/postV2NmReportDownloads) отчёта с расширенной аналитикой продавца. Необходимо, если при генерации отчёта вы [получили статус](https://dev.wildberries.ru/openapi/analytics#tag/sellerAnalyticsCsv/operation/getV2NmReportDownloads) `FAILED`.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |
@@ -353,7 +353,7 @@
 //
 // Можно получить отчёт максимум за последние 365 дней с момента выполнения запроса
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |
@@ -393,7 +393,7 @@
 //
 // Данные отчёта обновляются 1 раз в 2 часа.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |
@@ -439,7 +439,7 @@
 //
 // Данные отчёта обновляются 1 раз в 2 часа.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |
@@ -482,7 +482,7 @@
 //
 // Данные отчёта обновляются 1 раз в 2 часа.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |
@@ -522,7 +522,7 @@
 //
 // Данные отчёта обновляются 1 раз в 2 часа.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |
@@ -560,7 +560,7 @@
 //
 // Данные отчёта обновляются 1 раз в 2 часа.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |
@@ -598,7 +598,7 @@
 //
 // Данные отчёта обновляются 1 раз в 2 часа.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |
@@ -636,7 +636,7 @@
 //
 // Данные отчёта обновляются 1 раз в 2 часа.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |
@@ -680,7 +680,7 @@
 //
 // Данные отчёта обновляются 1 раз в 2 часа.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |
@@ -733,7 +733,7 @@
 //
 // Чтобы получать отчёты за период до года, используйте методы [Аналитика продавца CSV](https://dev.wildberries.ru/openapi/analytics#tag/sellerAnalyticsCsv) — тип `GROUPED_HISTORY_REPORT`. Отчёты этого типа доступны только с подпиской [Джем](https://seller.wildberries.ru/monetization/jam)
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |
@@ -789,7 +789,7 @@
 // \\* Если дата начала `pastPeriod` раньше, чем год назад от текущей даты, она будет приведена к виду: `pastPeriod.start = текущая дата — 365 дней`
 // Можно использовать пагинацию.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |
@@ -837,7 +837,7 @@
 //
 // Чтобы получать отчёты за период до года, используйте методы [Аналитика продавца CSV](https://dev.wildberries.ru/openapi/analytics#tag/sellerAnalyticsCsv) — тип `DETAIL_HISTORY_REPORT`. Отчёты этого типа доступны только с подпиской [Джем](https://seller.wildberries.ru/monetization/jam)
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |

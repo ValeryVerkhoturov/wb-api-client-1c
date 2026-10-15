@@ -20,7 +20,7 @@
 //
 // Метод [временно отключён](https://dev.wildberries.ru/release-notes?id=570)
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 6 запросов | 10 сек | 6 запросов |
@@ -63,7 +63,7 @@
 //
 // Тарифы для коробов совпадают с тарифами для **Суперсейфа**
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 60 запросов | 1 сек | 5 запросов |
@@ -98,7 +98,7 @@
 //
 // Метод возвращает данные о [комиссии](https://seller.wildberries.ru/dynamic-product-categories/commission) WB по [родительским категориям товаров](https://dev.wildberries.ru/openapi/item-management#tag/categoriesSubcategoriesAndCharacteristics/operation/getV2ObjectParentAll) согласно модели продаж.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 1 запрос | 1 мин | 2 запроса |
@@ -141,7 +141,7 @@
 //
 // Тарифы для монопаллет совпадают с тарифами для **Поштучных паллет**
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 60 запросов | 1 сек | 5 запросов |
@@ -178,7 +178,7 @@
 // - на перевозку товаров со склада WB или из пункта приёма до продавца
 // - на обратную перевозку возвратов, которые не забрал продавец
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 60 запросов | 1 сек | 5 запросов |

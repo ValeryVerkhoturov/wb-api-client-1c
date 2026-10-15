@@ -23,7 +23,7 @@
 // - ручной ставкой
 // - моделью оплаты `cpm` — за показы
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 сек | 5 запросов | 200 мс | 10 запросов |
@@ -58,7 +58,7 @@
 // Метод возвращает рекомендуемые ставки для карточек товаров и поисковых кластеров кампании.
 // Можно использовать для кампаний с типами оплаты `cpm` — за показы и `cpc` — за клики.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 5 запросов | 12 сек | 5 запросов |
@@ -99,7 +99,7 @@
 //
 // Метод возвращает текущие настройки [дневных лимитов кампаний CPC](https://cmp.wildberries.ru/campaigns/help/knowledge-base/options#%D0%94%D0%BD%D0%B5%D0%B2%D0%BD%D0%BE%D0%B9%D0%BB%D0%B8%D0%BC%D0%B8%D1%82%D0%B2%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F%D1%85%D1%81%D0%BE%D0%BF%D0%BB%D0%B0%D1%82%D0%BE%D0%B9%D0%B7%D0%B0%D0%BA%D0%BB%D0%B8%D0%BA%D0%B8%D0%A1%D0%A0%D0%A1) — максимальных сумм, которые кампании могут потратить на продвижение в течение суток.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 5 запросов | 12 сек | 5 запросов |
@@ -134,7 +134,7 @@
 //
 // После удаления кампания некоторое время будет находиться в статусе `-1` — кампания в процессе удаления. Полное удаление кампании занимает от 3 до 10 минут.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 сек | 5 запросов | 200 мс | 5 запросов |
@@ -169,7 +169,7 @@
 //
 // Метод ставит [кампании](https://dev.wildberries.ru/openapi/promotion#tag/campaigns/operation/getV2Adverts) в статусе `9` — активна — на паузу.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 сек | 5 запросов | 200 мс | 5 запросов |
@@ -205,7 +205,7 @@
 // Метод запускает [кампании](https://dev.wildberries.ru/openapi/promotion#tag/campaigns/operation/getV2Adverts) в статусах `4` — готово к запуску — или `11` — пауза.
 // Чтобы запустить кампанию, проверьте ее бюджет. Если бюджета недостаточно, [пополните его](https://dev.wildberries.ru/openapi/promotion#tag/finances/operation/postV1BudgetDeposit).
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 сек | 5 запросов | 200 мс | 5 запросов |
@@ -242,7 +242,7 @@
 // - `9` — активна
 // - `11` — пауза
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 сек | 5 запросов | 200 мс | 5 запросов |
@@ -277,7 +277,7 @@
 //
 // Метод возвращает информацию о кампании [WB Медиа](https://cmp.wildberries.ru/cmpf/list). Вместо карточек товаров в медиакампаниях продвигаются рекламные баннеры продавца на сайте и в приложении WB.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 сек | 10 запросов | 100 мс | 10 запросов |
@@ -312,7 +312,7 @@
 //
 // Метод возвращает список всех [медиакампаний](https://dev.wildberries.ru/openapi/promotion#tag/media/operation/getV1Advert) продавца по их типам и статусам.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 сек | 10 запросов | 100 мс | 10 запросов |
@@ -359,7 +359,7 @@
 // - бонусных начислениях WB.
 // Чтобы получить информацию о бюджетах кампаний, используйте метод [Бюджеты кампаний](https://dev.wildberries.ru/openapi/promotion#tag/finances/operation/postV2Budget).
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 сек | 1 запрос | 1 сек | 5 запросов |
@@ -390,7 +390,7 @@
 //
 // Метод будет отключен [16 ноября](https://dev.wildberries.ru/release-notes?id=582).
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 сек | 4 запроса | 250 мс | 4 запроса |
@@ -425,7 +425,7 @@
 //
 // Метод возвращает список [акций](https://dev.wildberries.ru/openapi/promotion#tag/promoCalendar/operation/getV1CalendarPromotionsDetails) в WB с датами и временем проведения.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца для всех методов категории **Календарь акций**:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца для всех методов категории **Календарь акций**:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 6 сек | 10 запросов | 600 мс | 5 запросов |
@@ -470,7 +470,7 @@
 //
 // Метод возвращает подробную информацию об [акции](https://dev.wildberries.ru/openapi/promotion#tag/promoCalendar/operation/getV1CalendarPromotionsDetails) по ID.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца для всех методов категории **Календарь акций**:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца для всех методов категории **Календарь акций**:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 6 сек | 10 запросов | 600 мс | 5 запросов |
@@ -507,7 +507,7 @@
 //
 // Данный метод неприменим для автоакций.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца для всех методов категории **Календарь акций**:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца для всех методов категории **Календарь акций**:
 // | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- |
 // | 6 сек | 10 запросов | 600 мс | 5 запросов |
@@ -545,13 +545,13 @@
 
 // Конфигурационные значения продвижения
 //
-// Метод возвращает валюту, код валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances) и допустимые шаги ставок для метода [POST /api/advert/v1/normquery/bids](https://dev.wildberries.ru/openapi/promotion#tag/searchClusters/operation/postV1NormqueryBids)
+// Метод возвращает валюту, код валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances) и допустимые шаги ставок для метода [POST /api/advert/v1/normquery/bids](https://dev.wildberries.ru/openapi/promotion#tag/searchClusters/operation/postV1NormqueryBids)
 //
 // Метод [доступен](https://dev.wildberries.ru/openapi/api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API) по
 // **Персональному** токену,
 // **Сервисному** токену
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- |
 // | 1 мин | 1 запрос | 1 мин | 10 запросов |
@@ -579,7 +579,7 @@
 //
 // Метод возвращает количество [медиакампаний](https://dev.wildberries.ru/openapi/promotion#tag/media/operation/getV1Advert) продавца с группировкой по статусам.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 сек | 10 запросов | 100 мс | 10 запросов |
@@ -610,7 +610,7 @@
 //
 // Метод возвращает историю пополнений счёта \\*\\*WB Продвижение\\*\\* за заданный период.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 сек | 1 запрос | 1 сек | 5 запросов |
@@ -649,7 +649,7 @@
 //
 // Метод возвращает списки всех [рекламных кампаний](https://dev.wildberries.ru/openapi/promotion#tag/campaigns/operation/getV2Adverts) продавца с их ID. Кампании сгруппированы по типу и статусу, у каждой указана дата последнего изменения.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 сек | 5 запросов | 200 мс | 5 запросов |
@@ -680,7 +680,7 @@
 //
 // Метод возвращает список [предметов](https://dev.wildberries.ru/openapi/item-management#tag/categoriesSubcategoriesAndCharacteristics/operation/getV2ObjectAll), которые можно добавить в рекламную [кампанию](https://dev.wildberries.ru/openapi/promotion#tag/campaigns/operation/getV2Adverts).
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 12 сек | 1 запрос | 12 сек | 5 запросов |
@@ -718,7 +718,7 @@
 //
 // Метод формирует список фактических затрат на рекламные кампании за заданный период.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 сек | 1 запрос | 1 сек | 5 запросов |
@@ -755,7 +755,7 @@
 //
 // Метод возвращает информацию о рекламных кампаниях с единой или ручной ставкой по их статусам, типам оплаты и ID.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 сек | 5 запросов | 200 мс | 5 запросов |
@@ -801,7 +801,7 @@
 //
 // В песочнице статистика кампаний доступна за последние 30 дней. Генерируется только для компаний в статусе `9`, тип `8`, 9 раз в сутки
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 3 запроса | 20 сек | 1 запрос |
@@ -844,7 +844,7 @@
 //
 // Для добавляемых товаров устанавливается текущая минимальная ставка.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 сек | 1 запрос | 1 сек | 1 запрос |
@@ -886,7 +886,7 @@
 // - `combined` — в поиске и рекомендациях для кампаний с единой ставкой
 // - `search `или `recommendations` — в поиске или рекомендациях для кампаний с ручной ставкой
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 сек | 5 запросов | 200 мс | 5 запросов |
@@ -923,7 +923,7 @@
 // - ручной ставкой
 // - моделью оплаты `cpm` — за показы
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 сек | 2 запроса | 500 мс | 4 запроса |
@@ -959,7 +959,7 @@
 // - ID кампаний
 // - артикулам WB
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 сек | 5 запросов | 200 мс | 10 запросов |
@@ -995,7 +995,7 @@
 // - ID кампаний
 // - артикулам WB
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 сек | 5 запросов | 200 мс | 10 запросов |
@@ -1029,7 +1029,7 @@
 //
 // Метод возвращает списки активных и неактивных поисковых кластеров, по которым было не меньше 100 показов.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 сек | 5 запросов | 200 мс | 10 запросов |
@@ -1065,7 +1065,7 @@
 //
 // Отправка пустого массива удаляет все минус-фразы
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 сек | 5 запросов | 200 мс | 10 запросов |
@@ -1100,7 +1100,7 @@
 // Метод формирует статистику по поисковым кластерам за указанный период.
 // Можно использовать для кампаний с моделями оплаты `cpm` — за показы и `cpc` — за клики.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 10 запросов | 6 сек | 20 запросов |
@@ -1134,7 +1134,7 @@
 //
 // Метод меняет название [кампании](https://dev.wildberries.ru/openapi/promotion#tag/campaigns/operation/getV2Adverts). Это можно сделать в любой момент существования кампании.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 сек | 5 запросов | 200 мс | 5 запросов |
@@ -1166,9 +1166,9 @@
 
 // Минимальные ставки для карточек товаров
 //
-// Метод возвращает минимальные ставки для карточек товаров в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances) — по типу оплаты и местам размещения.
+// Метод возвращает минимальные ставки для карточек товаров в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances) — по типу оплаты и местам размещения.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 20 запросов | 3 сек | 5 запросов |
@@ -1203,7 +1203,7 @@
 // Метод пополняет [бюджет](https://dev.wildberries.ru/openapi/promotion#tag/finances/operation/postV2Budget) кампании.
 // Чтобы запустить кампанию после пополнения бюджета, используйте метод [Запуск кампании](https://dev.wildberries.ru/openapi/promotion#tag/campaignManagement/operation/getV0Start).
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 сек | 1 запрос | 1 сек | 5 запросов |
@@ -1242,7 +1242,7 @@
 //
 // Данный метод неприменим для автоакций.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца для всех методов категории **Календарь акций**:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца для всех методов категории **Календарь акций**:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 6 сек | 10 запросов | 600 мс | 5 запросов |
@@ -1272,16 +1272,16 @@
 
 КонецФункции
 
-// Установить ставки для поисковых кластеров в валюте аккаунта продавца
+// Установить ставки для поисковых кластеров в валюте профиля продавца
 //
 // Метод [доступен](https://dev.wildberries.ru/openapi/api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API) по
 // **Персональному** токену,
 // **Сервисному** токену
 //
-// Метод устанавливает ставки на поисковые кластеры в валюте [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances).
+// Метод устанавливает ставки на поисковые кластеры в валюте [профиля продавца](https://cmp.wildberries.ru/campaigns/finances).
 // Можно использовать только для кампаний c ручной ставкой и моделью оплаты `cpm` — за показы.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 сек | 2 запроса | 500 мс | 4 запроса |
@@ -1314,7 +1314,7 @@
 // Метод формирует статистику по поисковым кластерам за указанный период с детализацией по дням.
 // Можно использовать для кампаний с моделями оплаты `cpm` — за показы и `cpc` — за клики.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 10 запросов | 6 сек | 20 запросов |
@@ -1348,7 +1348,7 @@
 //
 // Метод формирует статистику кампаний сервиса [WB Медиа](https://cmp.wildberries.ru/cmpf/statistics). Статистику можно группировать по датам и/или интервалам.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 сек | 10 запросов | 100 мс | 10 запросов |
@@ -1386,7 +1386,7 @@
 // - `9` — активна
 // - `11` — на паузе
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 20 запросов | 3 сек | 4 запроса |
@@ -1422,7 +1422,7 @@
 // - с ручной ставкой для продвижения товаров в поиске и/или рекомендациях
 // - с единой ставкой для продвижения товаров одновременно в поиске и рекомендациях
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 5 запросов | 12 сек | 5 запросов |
@@ -1456,7 +1456,7 @@
 //
 // Метод возвращает список [карточек товаров](https://dev.wildberries.ru/openapi/item-management#tag/listings/operation/postV2GetCardsList), которые можно добавить в рекламную [кампанию](https://dev.wildberries.ru/openapi/promotion#tag/campaigns/operation/getV2Adverts). Для получения карточек необходимы ID [предметов](https://dev.wildberries.ru/openapi/promotion#tag/creatingCampaigns/operation/getV1SupplierSubjects), также доступных для добавления в кампанию.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 5 запросов | 12 сек | 5 запросов |
@@ -1492,7 +1492,7 @@
 //
 // Для кампаний в статусах `4`, `9` и `11`.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 сек | 1 запрос | 1 сек | 1 запрос |
@@ -1530,7 +1530,7 @@
 //
 // Метод включает, выключает и обновляет дневной лимит кампаний.
 //
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один аккаунт продавца:
+// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 5 запросов | 12 сек | 5 запросов |

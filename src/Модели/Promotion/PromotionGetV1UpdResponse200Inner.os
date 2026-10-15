@@ -19,7 +19,7 @@
 &Тип("Строка")
 Перем updTime Экспорт;
 
-// updSum - Число - Выставленная сумма в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+// updSum - Число - Выставленная сумма в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
 &Сериализуемое("updSum")
 &Тип("Число")
 Перем updSum Экспорт;

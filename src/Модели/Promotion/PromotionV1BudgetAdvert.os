@@ -14,12 +14,12 @@
 &Тип("Число")
 Перем advertId Экспорт;
 
-// currency - Строка - Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+// currency - Строка - Валюта [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
 &Сериализуемое("currency")
 &Тип("Строка")
 Перем currency Экспорт;
 
-// total - Число - Бюджет кампании в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+// total - Число - Бюджет кампании в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
 &Сериализуемое("total")
 &Тип("Число")
 Перем total Экспорт;

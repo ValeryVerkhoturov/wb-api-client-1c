@@ -29,7 +29,7 @@
 &Тип("Число")
 Перем clicks Экспорт;
 
-// cpc - Число - Средняя стоимость клика в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+// cpc - Число - Средняя стоимость клика в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
 &Сериализуемое("cpc")
 &Тип("Число")
 Перем cpc Экспорт;
@@ -61,12 +61,12 @@
 &Тип("Число")
 Перем shks Экспорт;
 
-// sum - Число - Затраты в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+// sum - Число - Затраты в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
 &Сериализуемое("sum")
 &Тип("Число")
 Перем sum Экспорт;
 
-// sum_price - Число - Заказов на сумму в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+// sum_price - Число - Заказов на сумму в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
 &Сериализуемое("sum_price")
 &Тип("Число")
 Перем sum_price Экспорт;

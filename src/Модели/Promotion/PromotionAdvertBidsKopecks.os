@@ -2,7 +2,7 @@
 
 // PromotionAdvertBidsKopecks
 //
-// Ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+// Ставка в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
 //
 //
 // Класс сформирован автоматически (onescript) из спецификации OpenAPI.

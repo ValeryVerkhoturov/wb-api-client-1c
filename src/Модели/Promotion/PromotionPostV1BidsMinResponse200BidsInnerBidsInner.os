@@ -9,7 +9,7 @@
 // в JSON, а из `&Тип` и `&ДляКаждого` — класс, в который разбирать значение,
 // поэтому вложенные модели и массивы моделей восстанавливаются сами собой.
 
-// currency - Строка - Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+// currency - Строка - Валюта [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
 &Сериализуемое("currency")
 &Тип("Строка")
 Перем currency Экспорт;
@@ -19,7 +19,7 @@
 &Тип("PromotionPlacementType")
 Перем type Экспорт;
 
-// value - Число - Минимальная ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+// value - Число - Минимальная ставка в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
 &Сериализуемое("value")
 &Тип("Число")
 Перем value Экспорт;

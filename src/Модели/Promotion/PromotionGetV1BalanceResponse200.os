@@ -9,22 +9,22 @@
 // в JSON, а из `&Тип` и `&ДляКаждого` — класс, в который разбирать значение,
 // поэтому вложенные модели и массивы моделей восстанавливаются сами собой.
 
-// balance - Число - Счёт в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+// balance - Число - Счёт в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
 &Сериализуемое("balance")
 &Тип("Число")
 Перем balance Экспорт;
 
-// net - Число - Баланс в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+// net - Число - Баланс в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
 &Сериализуемое("net")
 &Тип("Число")
 Перем net Экспорт;
 
-// currency - Строка - Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+// currency - Строка - Валюта [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
 &Сериализуемое("currency")
 &Тип("Строка")
 Перем currency Экспорт;
 
-// bonus - Число - Бонусы в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+// bonus - Число - Бонусы в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
 &Сериализуемое("bonus")
 &Тип("Число")
 Перем bonus Экспорт;
