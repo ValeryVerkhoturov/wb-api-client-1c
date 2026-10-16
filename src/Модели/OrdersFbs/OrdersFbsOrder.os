@@ -133,6 +133,11 @@
 &Тип("Булево")
 Перем isZeroOrder Экспорт;
 
+// trackNumber - Строка - Трек-номер для трансграничной поставки
+&Сериализуемое("trackNumber")
+&Тип("Строка")
+Перем trackNumber Экспорт;
+
 // options - OrdersFbsOrderOptions
 &Сериализуемое("options")
 &Тип("OrdersFbsOrderOptions")
