@@ -338,7 +338,7 @@
 
 // Транзитные направления
 //
-// Метод [временно отключён](https://dev.wildberries.ru/release-notes?id=570)
+// Метод ]временно отключён](https://dev.wildberries.ru/release-notes?id=570)
 //
 // [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
@@ -369,7 +369,7 @@
 
 // Список складов
 //
-// Метод [временно отключён](https://dev.wildberries.ru/release-notes?id=570)
+// Метод ]временно отключён](https://dev.wildberries.ru/release-notes?id=570)
 //
 // [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
@@ -404,7 +404,7 @@
 
 // Опции приёмки
 //
-// Метод [временно отключён](https://dev.wildberries.ru/release-notes?id=570)
+// Метод ]временно отключён](https://dev.wildberries.ru/release-notes?id=570)
 //
 // [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |

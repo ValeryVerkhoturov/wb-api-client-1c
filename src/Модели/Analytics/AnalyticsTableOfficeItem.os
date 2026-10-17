@@ -11,17 +11,17 @@
 // в JSON, а из `&Тип` и `&ДляКаждого` — класс, в который разбирать значение,
 // поэтому вложенные модели и массивы моделей восстанавливаются сами собой.
 
-// regionName - Строка - Регион отгрузки. [На данный момент](https://dev.wildberries.ru/release-notes?id=570) для складов WB может быть только `Склад WB`
+// regionName - Строка - Регион отгрузки. ]На данный момент](https://dev.wildberries.ru/release-notes?id=570) для складов WB может быть только `Склад WB`
 &Сериализуемое("regionName")
 &Тип("Строка")
 Перем regionName Экспорт;
 
-// officeID - Число - ID склада. [На данный момент](https://dev.wildberries.ru/release-notes?id=570) для складов WB может быть только `-999999`
+// officeID - Число - ID склада. ]На данный момент](https://dev.wildberries.ru/release-notes?id=570) для складов WB может быть только `-999999`
 &Сериализуемое("officeID")
 &Тип("Число")
 Перем officeID Экспорт;
 
-// officeName - Строка - Название склада. [На данный момент](https://dev.wildberries.ru/release-notes?id=570) для складов WB может быть только `\"\"`
+// officeName - Строка - Название склада. ]На данный момент](https://dev.wildberries.ru/release-notes?id=570) для складов WB может быть только `\"\"`
 &Сериализуемое("officeName")
 &Тип("Строка")
 Перем officeName Экспорт;

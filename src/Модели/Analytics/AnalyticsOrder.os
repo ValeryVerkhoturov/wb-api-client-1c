@@ -46,12 +46,12 @@
 &Тип("Строка")
 Перем cancelType Экспорт;
 
-// warehouseName - Строка - Название склада. [На данный момент](https://dev.wildberries.ru/release-notes?id=570) для складов WB может быть только `Склад WB`
+// warehouseName - Строка - Название склада. ]На данный момент](https://dev.wildberries.ru/release-notes?id=570) для складов WB может быть только `Склад WB`
 &Сериализуемое("warehouseName")
 &Тип("Строка")
 Перем warehouseName Экспорт;
 
-// warehouseRegion - Строка - Федеральный округ склада. Если склад не в России, возвращается страна. [На данный момент](https://dev.wildberries.ru/release-notes?id=570) для складов WB может…
+// warehouseRegion - Строка - Федеральный округ склада. Если склад не в России, возвращается страна. ]На данный момент](https://dev.wildberries.ru/release-notes?id=570) для складов WB может…
 &Сериализуемое("warehouseRegion")
 &Тип("Строка")
 Перем warehouseRegion Экспорт;

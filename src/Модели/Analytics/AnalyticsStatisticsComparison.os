@@ -74,7 +74,7 @@
 &Тип("AnalyticsComparisonTimeToReadyDynamic")
 Перем timeToReadyDynamic Экспорт;
 
-// localizationPercentDynamic - Число - Динамика локальных заказов в рамках одного региона. [На данный момент](https://dev.wildberries.ru/release-notes?id=570) может быть только `0`
+// localizationPercentDynamic - Число - Динамика локальных заказов в рамках одного региона. ]На данный момент](https://dev.wildberries.ru/release-notes?id=570) может быть только `0`
 &Сериализуемое("localizationPercentDynamic")
 &Тип("Число")
 Перем localizationPercentDynamic Экспорт;

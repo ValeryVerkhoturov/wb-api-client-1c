@@ -19,7 +19,7 @@
 &Тип("Булево")
 Перем isCancellable Экспорт;
 
-// isTransferable - Булево - Можно ли [перевести сборочное задание](./orders-fbs#tag/fbsSupplies/operation/patchV3PortalSuppliesSupplyOrdersTransfer) из доставки на сборку: - `false` — нет…
+// isTransferable - Булево - Можно ли [перевести сборочное задание](./orders-fbs#tag/fbsSupplies/operation/patchV3FbsSuppliesSupplyIdOrdersTransfer) из доставки на сборку: - `false` — нет -…
 &Сериализуемое("isTransferable")
 &Тип("Булево")
 Перем isTransferable Экспорт;
