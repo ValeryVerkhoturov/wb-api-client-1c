@@ -19,17 +19,17 @@
 &Тип("Число")
 Перем chrtId Экспорт;
 
-// warehouseId - Число - ID склада. ]На данный момент](https://dev.wildberries.ru/release-notes?id=570) может быть только `-999999`
+// warehouseId - Число - ID склада. [На данный момент](https://dev.wildberries.ru/release-notes?id=570) может быть только `-999999`
 &Сериализуемое("warehouseId")
 &Тип("Число")
 Перем warehouseId Экспорт;
 
-// warehouseName - Строка - Название склада. ]На данный момент](https://dev.wildberries.ru/release-notes?id=570) может быть только `Склад WB`
+// warehouseName - Строка - Название склада. [На данный момент](https://dev.wildberries.ru/release-notes?id=570) может быть только `Склад WB`
 &Сериализуемое("warehouseName")
 &Тип("Строка")
 Перем warehouseName Экспорт;
 
-// regionName - Строка - Регион отгрузки. ]На данный момент](https://dev.wildberries.ru/release-notes?id=570) может быть только `Склад WB`
+// regionName - Строка - Регион отгрузки. [На данный момент](https://dev.wildberries.ru/release-notes?id=570) может быть только `Склад WB`
 &Сериализуемое("regionName")
 &Тип("Строка")
 Перем regionName Экспорт;

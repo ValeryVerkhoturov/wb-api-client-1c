@@ -4,7 +4,7 @@
 //
 
 Описание.Имя("wb-api-client")
-	.Версия("1.20261017.0")
+	.Версия("1.20261020.0")
 	.Автор("Valery Verkhoturov")
 	.АдресАвтора("valery.verkhoturov1505@gmail.com")
 	.Описание("Клиент Wildberries API для OneScript: 13 категорий WB API в одном пакете")
@@ -528,6 +528,7 @@
 	.ОпределяетКласс("ItemsGetV2ObjectAll403Response", "src/Модели/Items/ItemsGetV2ObjectAll403Response.os")
 	.ОпределяетКласс("ItemsGetV2ObjectAllResponse200", "src/Модели/Items/ItemsGetV2ObjectAllResponse200.os")
 	.ОпределяетКласс("ItemsGetV2ObjectAllResponse200DataInner", "src/Модели/Items/ItemsGetV2ObjectAllResponse200DataInner.os")
+	.ОпределяетКласс("ItemsGetV2ObjectCharcsSubjectId400Response", "src/Модели/Items/ItemsGetV2ObjectCharcsSubjectId400Response.os")
 	.ОпределяетКласс("ItemsGetV2ObjectCharcsSubjectIdResponse200", "src/Модели/Items/ItemsGetV2ObjectCharcsSubjectIdResponse200.os")
 	.ОпределяетКласс("ItemsGetV2ObjectCharcsSubjectIdResponse200DataInner", "src/Модели/Items/ItemsGetV2ObjectCharcsSubjectIdResponse200DataInner.os")
 	.ОпределяетКласс("ItemsGetV2ObjectParentAll401Response", "src/Модели/Items/ItemsGetV2ObjectParentAll401Response.os")

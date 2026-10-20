@@ -36,22 +36,22 @@
 &Тип("Строка")
 Перем updatedAt Экспорт;
 
-// status - Строка - Статус заказа: - `created` — оформлен - `buyout` — продан - `cancel` — отменён - `return` — возвращён - `returnDefective` — возвращён по причине брака
+// status - Строка - [Статус заказа](https://seller.wildberries.ru/instructions/ru/ru/material/order-feed-report#a92fa9b0-86ab-4990-b905-33f6c38b385c): - `created` — оформлен - `buy…
 &Сериализуемое("status")
 &Тип("Строка")
 Перем status Экспорт;
 
-// cancelType - Строка - Тип отмены (при `\"status\":\"cancel\"`): - `app` — отказ до получения - `receipt` — отказ при получении - `expire` — истёк срок получения - `other` — техническ…
+// cancelType - Строка - [Тип отмены](https://seller.wildberries.ru/instructions/ru/ru/material/order-feed-report#a92fa9b0-86ab-4990-b905-33f6c38b385c) (при `\"status\":\"cancel\"`): -…
 &Сериализуемое("cancelType")
 &Тип("Строка")
 Перем cancelType Экспорт;
 
-// warehouseName - Строка - Название склада. ]На данный момент](https://dev.wildberries.ru/release-notes?id=570) для складов WB может быть только `Склад WB`
+// warehouseName - Строка - Название склада. [На данный момент](https://dev.wildberries.ru/release-notes?id=570) для складов WB может быть только `Склад WB`
 &Сериализуемое("warehouseName")
 &Тип("Строка")
 Перем warehouseName Экспорт;
 
-// warehouseRegion - Строка - Федеральный округ склада. Если склад не в России, возвращается страна. ]На данный момент](https://dev.wildberries.ru/release-notes?id=570) для складов WB может…
+// warehouseRegion - Строка - Федеральный округ склада. Если склад не в России, возвращается страна. [На данный момент](https://dev.wildberries.ru/release-notes?id=570) для складов WB может…
 &Сериализуемое("warehouseRegion")
 &Тип("Строка")
 Перем warehouseRegion Экспорт;

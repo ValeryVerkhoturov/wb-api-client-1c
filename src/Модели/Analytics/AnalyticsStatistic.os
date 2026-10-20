@@ -79,7 +79,7 @@
 &Тип("AnalyticsStatisticTimeToReady")
 Перем timeToReady Экспорт;
 
-// localizationPercent - Число - Локальные заказы в рамках одного региона. ]На данный момент](https://dev.wildberries.ru/release-notes?id=570) может быть только `100`
+// localizationPercent - Число - Локальные заказы в рамках одного региона. [На данный момент](https://dev.wildberries.ru/release-notes?id=570) может быть только `100`
 &Сериализуемое("localizationPercent")
 &Тип("Число")
 Перем localizationPercent Экспорт;

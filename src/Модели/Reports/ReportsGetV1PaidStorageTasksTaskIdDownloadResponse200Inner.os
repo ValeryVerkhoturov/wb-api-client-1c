@@ -14,17 +14,17 @@
 &Тип("Строка")
 Перем date Экспорт;
 
-// logWarehouseCoef - Число - Коэффициент логистики и хранения. ]На данный момент](https://dev.wildberries.ru/release-notes?id=570) может быть только `0`
+// logWarehouseCoef - Число - Коэффициент логистики и хранения. [На данный момент](https://dev.wildberries.ru/release-notes?id=570) может быть только `0`
 &Сериализуемое("logWarehouseCoef")
 &Тип("Число")
 Перем logWarehouseCoef Экспорт;
 
-// officeId - Число - ID склада. ]На данный момент](https://dev.wildberries.ru/release-notes?id=570) может быть только `0`
+// officeId - Число - ID склада. [На данный момент](https://dev.wildberries.ru/release-notes?id=570) может быть только `0`
 &Сериализуемое("officeId")
 &Тип("Число")
 Перем officeId Экспорт;
 
-// warehouse - Строка - Название склада. ]На данный момент](https://dev.wildberries.ru/release-notes?id=570) может быть только `Склад WB РФ`
+// warehouse - Строка - Название склада. [На данный момент](https://dev.wildberries.ru/release-notes?id=570) может быть только `Склад WB РФ`
 &Сериализуемое("warehouse")
 &Тип("Строка")
 Перем warehouse Экспорт;
@@ -94,7 +94,7 @@
 &Тип("Число")
 Перем barcodesCount Экспорт;
 
-// palletPlaceCode - Число - Код паллетоместа. ]На данный момент](https://dev.wildberries.ru/release-notes?id=570) может быть только `0`
+// palletPlaceCode - Число - Код паллетоместа. [На данный момент](https://dev.wildberries.ru/release-notes?id=570) может быть только `0`
 &Сериализуемое("palletPlaceCode")
 &Тип("Число")
 Перем palletPlaceCode Экспорт;
