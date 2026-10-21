@@ -1,6 +1,6 @@
 #Использовать jason
 
-// OrdersFbsGetV3FbsShippingPoints403Response
+// OrdersFbsGetV3FbsSuppliesSupplyIdShippingPoints403Response
 //
 // Класс сформирован автоматически (onescript) из спецификации OpenAPI.
 // Правки будут потеряны при следующей генерации.

@@ -4,7 +4,7 @@
 //
 
 Описание.Имя("wb-api-client")
-	.Версия("1.20261020.0")
+	.Версия("1.20261021.0")
 	.Автор("Valery Verkhoturov")
 	.АдресАвтора("valery.verkhoturov1505@gmail.com")
 	.Описание("Клиент Wildberries API для OneScript: 13 категорий WB API в одном пакете")
@@ -735,7 +735,7 @@
 	.ОпределяетКласс("OrdersFbsGetV3FbsSettingsAutoreturnsResponse200", "src/Модели/OrdersFbs/OrdersFbsGetV3FbsSettingsAutoreturnsResponse200.os")
 	.ОпределяетКласс("OrdersFbsGetV3FbsSettingsAutoreturnsSubcategoriesRestrictedResponse200", "src/Модели/OrdersFbs/OrdersFbsGetV3FbsSettingsAutoreturnsSubcategoriesRestrictedResponse200.os")
 	.ОпределяетКласс("OrdersFbsGetV3FbsSettingsAutoreturnsSubcategoriesRestrictedResponse200DataInner", "src/Модели/OrdersFbs/OrdersFbsGetV3FbsSettingsAutoreturnsSubcategoriesRestrictedResponse200DataInner.os")
-	.ОпределяетКласс("OrdersFbsGetV3FbsShippingPoints403Response", "src/Модели/OrdersFbs/OrdersFbsGetV3FbsShippingPoints403Response.os")
+	.ОпределяетКласс("OrdersFbsGetV3FbsSuppliesSupplyIdShippingPoints403Response", "src/Модели/OrdersFbs/OrdersFbsGetV3FbsSuppliesSupplyIdShippingPoints403Response.os")
 	.ОпределяетКласс("OrdersFbsGetV3OrdersNewResponse200", "src/Модели/OrdersFbs/OrdersFbsGetV3OrdersNewResponse200.os")
 	.ОпределяетКласс("OrdersFbsGetV3OrdersResponse200", "src/Модели/OrdersFbs/OrdersFbsGetV3OrdersResponse200.os")
 	.ОпределяетКласс("OrdersFbsGetV3PassesOffices401Response", "src/Модели/OrdersFbs/OrdersFbsGetV3PassesOffices401Response.os")
@@ -802,6 +802,8 @@
 	.ОпределяетКласс("OrdersFbsShippingPoint", "src/Модели/OrdersFbs/OrdersFbsShippingPoint.os")
 	.ОпределяетКласс("OrdersFbsShippingPointsResponse", "src/Модели/OrdersFbs/OrdersFbsShippingPointsResponse.os")
 	.ОпределяетКласс("OrdersFbsSupply", "src/Модели/OrdersFbs/OrdersFbsSupply.os")
+	.ОпределяетКласс("OrdersFbsSupplyShippingPoint", "src/Модели/OrdersFbs/OrdersFbsSupplyShippingPoint.os")
+	.ОпределяетКласс("OrdersFbsSupplyShippingPointsResponse", "src/Модели/OrdersFbs/OrdersFbsSupplyShippingPointsResponse.os")
 	.ОпределяетКласс("OrdersFbsSupplySpotData", "src/Модели/OrdersFbs/OrdersFbsSupplySpotData.os")
 	.ОпределяетКласс("OrdersFbsSupplySpotDataResponse", "src/Модели/OrdersFbs/OrdersFbsSupplySpotDataResponse.os")
 	.ОпределяетКласс("OrdersFbsSupplySpotDataResponseSuppliesInner", "src/Модели/OrdersFbs/OrdersFbsSupplySpotDataResponseSuppliesInner.os")
