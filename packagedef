@@ -4,7 +4,7 @@
 //
 
 Описание.Имя("wb-api-client")
-	.Версия("1.20261022.0")
+	.Версия("1.20261027.0")
 	.Автор("Valery Verkhoturov")
 	.АдресАвтора("valery.verkhoturov1505@gmail.com")
 	.Описание("Клиент Wildberries API для OneScript: 13 категорий WB API в одном пакете")
@@ -414,6 +414,8 @@
 	.ОпределяетКласс("GeneralGetUsersResponseUsersInner", "src/Модели/General/GeneralGetUsersResponseUsersInner.os")
 	.ОпределяетКласс("GeneralGetUsersResponseUsersInnerAccessInner", "src/Модели/General/GeneralGetUsersResponseUsersInnerAccessInner.os")
 	.ОпределяетКласс("GeneralGetUsersResponseUsersInnerInviteeInfo", "src/Модели/General/GeneralGetUsersResponseUsersInnerInviteeInfo.os")
+	.ОпределяетКласс("GeneralGetV1Notifications403Response", "src/Модели/General/GeneralGetV1Notifications403Response.os")
+	.ОпределяетКласс("GeneralGetV1NotificationsResponse200", "src/Модели/General/GeneralGetV1NotificationsResponse200.os")
 	.ОпределяетКласс("GeneralGetV1SellerInfo402Response", "src/Модели/General/GeneralGetV1SellerInfo402Response.os")
 	.ОпределяетКласс("GeneralGetV1SellerInfoResponse200", "src/Модели/General/GeneralGetV1SellerInfoResponse200.os")
 	.ОпределяетКласс("GeneralGetV2NewsResponse200", "src/Модели/General/GeneralGetV2NewsResponse200.os")
@@ -427,6 +429,10 @@
 	.ОпределяетКласс("GeneralPlanBuilderPackage", "src/Модели/General/GeneralPlanBuilderPackage.os")
 	.ОпределяетКласс("GeneralPlanBuilderPromotion", "src/Модели/General/GeneralPlanBuilderPromotion.os")
 	.ОпределяетКласс("GeneralResponse4XX", "src/Модели/General/GeneralResponse4XX.os")
+	.ОпределяетКласс("GeneralSellerNotificationsError", "src/Модели/General/GeneralSellerNotificationsError.os")
+	.ОпределяетКласс("GeneralSellerNotificationsErrorErrorsInner", "src/Модели/General/GeneralSellerNotificationsErrorErrorsInner.os")
+	.ОпределяетКласс("GeneralSellerNotificationsResponse", "src/Модели/General/GeneralSellerNotificationsResponse.os")
+	.ОпределяетКласс("GeneralSellerNotificationsResponseLinkData", "src/Модели/General/GeneralSellerNotificationsResponseLinkData.os")
 	.ОпределяетКласс("GeneralSubscriptionsJamInfo", "src/Модели/General/GeneralSubscriptionsJamInfo.os")
 	.ОпределяетКласс("GeneralSupplierRatingModel", "src/Модели/General/GeneralSupplierRatingModel.os")
 	.ОпределяетКласс("GeneralUpdateUserAccessRequest", "src/Модели/General/GeneralUpdateUserAccessRequest.os")
