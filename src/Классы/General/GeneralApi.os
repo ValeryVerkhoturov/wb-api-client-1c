@@ -90,6 +90,10 @@
 
 // Получить уведомления портала продавцов
 //
+// Метод [доступен](https://dev.wildberries.ru/openapi/api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API) по
+// **Персональному** токену,
+// **Сервисному** токену
+//
 // Метод возвращает список уведомлений из [профиля](https://seller.wildberries.ru) продавца на русском языке. Порядок уведомлений в ответе — от новых к старым.
 // Доступно только для продавцов из РФ.
 //
@@ -98,8 +102,6 @@
 // | --- | --- | --- | --- | --- |
 // | Персональный | 1 мин | 1 запрос | 1 мин | 10 запросов |
 // | Сервисный | 1 мин | 1 запрос | 1 мин | 10 запросов |
-// | Базовый с секретом | 1 мин | 1 запрос | 1 мин | 10 запросов |
-// | Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
 //
 // Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/general/get-api-communications-v1-notifications
 //
