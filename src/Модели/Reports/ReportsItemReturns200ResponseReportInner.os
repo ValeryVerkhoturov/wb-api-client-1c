@@ -1,6 +1,6 @@
 #Использовать jason
 
-// ReportsGoodsReturn200ResponseReportInner
+// ReportsItemReturns200ResponseReportInner
 //
 // Класс сформирован автоматически (onescript) из спецификации OpenAPI.
 // Правки будут потеряны при следующей генерации.

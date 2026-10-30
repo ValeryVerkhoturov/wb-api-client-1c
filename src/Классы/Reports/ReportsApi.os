@@ -369,35 +369,6 @@
 
 // Получить отчёт
 //
-// Метод будет отключен [26 октября](https://dev.wildberries.ru/release-notes?id=577).
-//
-// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/reports/get-api-v1-analytics-goods-return
-//
-// Параметры:
-//   dateFrom - Строка - Дата начала отчётного периода
-//   dateTo - Строка - Дата окончания отчётного периода
-//
-// Возвращаемое значение:
-//   ОтветAPI
-//
-Функция GetV1AnalyticsGoodsReturn(Знач dateFrom, Знач dateTo) Экспорт
-
-	ПараметрыЗапроса = Новый Соответствие;
-	ПараметрыЗапроса.Вставить("dateFrom", dateFrom);
-	ПараметрыЗапроса.Вставить("dateTo", dateTo);
-	Заголовки = Новый Соответствие;
-	Возврат Транспорт.ВыполнитьЗапрос(
-		"GET",
-		"/api/v1/analytics/goods-return",
-		ПараметрыЗапроса,
-		Заголовки,
-		Неопределено,
-		"https://seller-analytics-api.wildberries.ru");
-
-КонецФункции
-
-// Получить отчёт
-//
 // Метод будет отключен [3 ноября](https://dev.wildberries.ru/release-notes?id=590).
 //
 // [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
@@ -503,7 +474,7 @@
 // Возвращаемое значение:
 //   ОтветAPI
 //
-Функция GetV1GoodsReturn(Знач dateFrom, Знач dateTo, Знач ДопПараметры = Неопределено) Экспорт
+Функция GetV1ItemReturns(Знач dateFrom, Знач dateTo, Знач ДопПараметры = Неопределено) Экспорт
 
 	ПараметрыЗапроса = Новый Соответствие;
 	ПараметрыЗапроса.Вставить("dateFrom", dateFrom);
