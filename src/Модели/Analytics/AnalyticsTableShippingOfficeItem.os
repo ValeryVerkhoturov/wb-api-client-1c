@@ -11,7 +11,7 @@
 // в JSON, а из `&Тип` и `&ДляКаждого` — класс, в который разбирать значение,
 // поэтому вложенные модели и массивы моделей восстанавливаются сами собой.
 
-// regionName - Строка - Регион отгрузки. [На данный момент](https://dev.wildberries.ru/release-notes?id=570) для складов WB может быть только `Склад WB`
+// regionName - Строка - [Страна отгрузки](https://dev.wildberries.ru/release-notes?id=605)
 &Сериализуемое("regionName")
 &Тип("Строка")
 Перем regionName Экспорт;
@@ -21,7 +21,7 @@
 &Тип("AnalyticsTableShippingOfficeMetrics")
 Перем metrics Экспорт;
 
-// offices - Массив - Данные по складам. [На данный момент](https://dev.wildberries.ru/release-notes?id=570) может быть только `[]`
+// offices - Массив - [Данные по складам](https://dev.wildberries.ru/release-notes?id=605)
 &Сериализуемое("offices")
 &Тип("Массив")
 &ДляКаждого

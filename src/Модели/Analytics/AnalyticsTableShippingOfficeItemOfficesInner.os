@@ -9,12 +9,12 @@
 // в JSON, а из `&Тип` и `&ДляКаждого` — класс, в который разбирать значение,
 // поэтому вложенные модели и массивы моделей восстанавливаются сами собой.
 
-// officeID - Число - ID склада
+// officeID - Число - [ID склада](https://dev.wildberries.ru/release-notes?id=605)
 &Сериализуемое("officeID")
 &Тип("Число")
 Перем officeID Экспорт;
 
-// officeName - Строка - Название склада
+// officeName - Строка - [Название склада](https://dev.wildberries.ru/release-notes?id=605)
 &Сериализуемое("officeName")
 &Тип("Строка")
 Перем officeName Экспорт;
