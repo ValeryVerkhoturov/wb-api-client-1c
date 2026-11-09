@@ -130,7 +130,7 @@
 
 // Удаление кампании
 //
-// Метод удаляет [кампании](https://dev.wildberries.ru/openapi/promotion#tag/campaigns/operation/getV2Adverts) в статусе `4` — готова к запуску.
+// Метод удаляет [кампании](https://dev.wildberries.ru/openapi/promotion#tag/campaigns/operation/getV3Adverts) в статусе `4` — готова к запуску.
 //
 // После удаления кампания некоторое время будет находиться в статусе `-1` — кампания в процессе удаления. Полное удаление кампании занимает от 3 до 10 минут.
 //
@@ -167,7 +167,7 @@
 
 // Пауза кампании
 //
-// Метод ставит [кампании](https://dev.wildberries.ru/openapi/promotion#tag/campaigns/operation/getV2Adverts) в статусе `9` — активна — на паузу.
+// Метод ставит [кампании](https://dev.wildberries.ru/openapi/promotion#tag/campaigns/operation/getV3Adverts) в статусе `9` — активна — на паузу.
 //
 // [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
@@ -202,7 +202,7 @@
 
 // Запуск кампании
 //
-// Метод запускает [кампании](https://dev.wildberries.ru/openapi/promotion#tag/campaigns/operation/getV2Adverts) в статусах `4` — готово к запуску — или `11` — пауза.
+// Метод запускает [кампании](https://dev.wildberries.ru/openapi/promotion#tag/campaigns/operation/getV3Adverts) в статусах `4` — готово к запуску — или `11` — пауза.
 // Чтобы запустить кампанию, проверьте ее бюджет. Если бюджета недостаточно, [пополните его](https://dev.wildberries.ru/openapi/promotion#tag/finances/operation/postV1BudgetDeposit).
 //
 // [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
@@ -238,7 +238,7 @@
 
 // Завершение кампании
 //
-// Метод завершает [кампании](https://dev.wildberries.ru/openapi/promotion#tag/campaigns/operation/getV2Adverts) в статусах:
+// Метод завершает [кампании](https://dev.wildberries.ru/openapi/promotion#tag/campaigns/operation/getV3Adverts) в статусах:
 // - `9` — активна
 // - `11` — пауза
 //
@@ -545,7 +545,7 @@
 
 // Конфигурационные значения продвижения
 //
-// Метод возвращает валюту, код валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances) и допустимые шаги ставок для метода [POST /api/advert/v1/normquery/bids](https://dev.wildberries.ru/openapi/promotion#tag/searchClusters/operation/postV1NormqueryBids)
+// Метод возвращает валюту, код валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances) и допустимые шаги ставок для метода [установки ставок для поисковых кластеров в валюте профиля продавца](https://dev.wildberries.ru/openapi/promotion#tag/searchClusters/operation/postV1NormqueryBids)
 //
 // Метод [доступен](https://dev.wildberries.ru/openapi/api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API) по
 // **Персональному** токену,
@@ -647,7 +647,7 @@
 
 // Списки кампаний
 //
-// Метод возвращает списки всех [рекламных кампаний](https://dev.wildberries.ru/openapi/promotion#tag/campaigns/operation/getV2Adverts) продавца с их ID. Кампании сгруппированы по типу и статусу, у каждой указана дата последнего изменения.
+// Метод возвращает списки всех [кампаний](https://dev.wildberries.ru/openapi/promotion#tag/campaigns/operation/getV3Adverts) продавца с их ID. Кампании сгруппированы по типу и статусу, у каждой указана дата последнего изменения.
 //
 // [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
@@ -678,7 +678,7 @@
 
 // Предметы для кампаний
 //
-// Метод возвращает список [предметов](https://dev.wildberries.ru/openapi/item-management#tag/categoriesSubcategoriesAndCharacteristics/operation/getV2ObjectAll), которые можно добавить в рекламную [кампанию](https://dev.wildberries.ru/openapi/promotion#tag/campaigns/operation/getV2Adverts).
+// Метод возвращает список [предметов](https://dev.wildberries.ru/openapi/item-management#tag/categoriesSubcategoriesAndCharacteristics/operation/getV2ObjectAll), которые можно добавить в рекламную [кампанию](https://dev.wildberries.ru/openapi/promotion#tag/campaigns/operation/getV3Adverts).
 //
 // [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
@@ -753,7 +753,7 @@
 
 // Информация о кампаниях
 //
-// Метод возвращает информацию о рекламных кампаниях с единой или ручной ставкой по их статусам, типам оплаты и ID.
+// Метод будет отключен [10 января](https://dev.wildberries.ru/release-notes?id=597).
 //
 // [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
@@ -784,6 +784,49 @@
 	Возврат Транспорт.ВыполнитьЗапрос(
 		"GET",
 		"/api/advert/v2/adverts",
+		ПараметрыЗапроса,
+		Заголовки,
+		Неопределено,
+		"https://advert-api.wildberries.ru");
+
+КонецФункции
+
+// Информация о кампаниях
+//
+// Метод возвращает информацию о кампаниях с единой или ручной ставкой по их статусам, типам оплаты или списку ID.
+//
+// Чтобы получить все кампании:
+// 1. Сделайте первый запрос без параметра `next`.
+// 2. Повторяйте запрос со значением параметра `next` из ответа на предыдущий запрос, пока `next` не вернётся пустым `\"\"`. Это будет означать, что вы получили все кампании.
+//
+// Чтобы получить конкретные кампании, передайте их ID в параметре `advertIds`.
+// Не передавайте `advertIds` в одном запросе с другими параметрами.
+//
+// RL
+//
+// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/promotion/get-api-advert-v3-adverts
+//
+// Параметры:
+//   ДопПараметры - Структура, Соответствие - необязательные параметры:
+//    * advertIds - Строка - ID кампаний
+//    * statuses - Строка - Статусы кампаний: - `4` — готова к запуску - `7` — кампания завершена - `9` — идут показы - `11` — кампания на паузе
+//    * next - Строка - Параметр пагинации
+//    * limit - Число - Количество кампаний в ответе
+//    * paymentType - Строка - Тип оплаты: - `cpm` — за показы - `cpc` — за клик
+//
+// Возвращаемое значение:
+//   ОтветAPI
+//
+Функция GetV3Adverts(Знач ДопПараметры = Неопределено) Экспорт
+
+	ПараметрыЗапроса = Новый Соответствие;
+	Заголовки = Новый Соответствие;
+
+	ИменаЗаголовков = Новый Массив;
+	Транспорт.РазложитьПараметры(ДопПараметры, ИменаЗаголовков, ПараметрыЗапроса, Заголовки);
+	Возврат Транспорт.ВыполнитьЗапрос(
+		"GET",
+		"/api/advert/v3/adverts",
 		ПараметрыЗапроса,
 		Заголовки,
 		Неопределено,
@@ -1130,7 +1173,7 @@
 
 // Переименование кампании
 //
-// Метод меняет название [кампании](https://dev.wildberries.ru/openapi/promotion#tag/campaigns/operation/getV2Adverts). Это можно сделать в любой момент существования кампании.
+// Метод меняет название [кампании](https://dev.wildberries.ru/openapi/promotion#tag/campaigns/operation/getV3Adverts). Это можно сделать в любой момент существования кампании.
 //
 // [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |
@@ -1378,7 +1421,7 @@
 
 // Остатки бюджетов кампаний
 //
-// Метод возвращает информацию об остатках бюджетов [кампаний](https://dev.wildberries.ru/openapi/promotion#tag/campaigns/operation/getV2Adverts).
+// Метод возвращает информацию об остатках бюджетов [кампаний](https://dev.wildberries.ru/openapi/promotion#tag/campaigns/operation/getV3Adverts).
 // Для кампаний в [статусах](https://dev.wildberries.ru/openapi/promotion#tag/campaigns/operation/getV1PromotionCount):
 // - `4` — готова к запуску
 // - `9` — активна
@@ -1452,7 +1495,7 @@
 
 // Карточки товаров для кампаний
 //
-// Метод возвращает список [карточек товаров](https://dev.wildberries.ru/openapi/item-management#tag/listings/operation/postV2GetCardsList), которые можно добавить в рекламную [кампанию](https://dev.wildberries.ru/openapi/promotion#tag/campaigns/operation/getV2Adverts). Для получения карточек необходимы ID [предметов](https://dev.wildberries.ru/openapi/promotion#tag/creatingCampaigns/operation/getV1SupplierSubjects), также доступных для добавления в кампанию.
+// Метод возвращает список [карточек товаров](https://dev.wildberries.ru/openapi/item-management#tag/listings/operation/postV2GetCardsList), которые можно добавить в рекламную [кампанию](https://dev.wildberries.ru/openapi/promotion#tag/campaigns/operation/getV3Adverts). Для получения карточек необходимы ID [предметов](https://dev.wildberries.ru/openapi/promotion#tag/creatingCampaigns/operation/getV1SupplierSubjects), также доступных для добавления в кампанию.
 //
 // [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
 // | Тип | Период | Лимит | Интервал | Всплеск |

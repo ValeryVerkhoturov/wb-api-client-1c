@@ -4,7 +4,7 @@
 //
 
 Описание.Имя("wb-api-client")
-	.Версия("1.20261104.0")
+	.Версия("1.20261109.0")
 	.Автор("Valery Verkhoturov")
 	.АдресАвтора("valery.verkhoturov1505@gmail.com")
 	.Описание("Клиент Wildberries API для OneScript: 13 категорий WB API в одном пакете")
@@ -1038,6 +1038,14 @@
 	.ОпределяетКласс("PromotionV2BudgetRequest", "src/Модели/Promotion/PromotionV2BudgetRequest.os")
 	.ОпределяетКласс("PromotionV2BudgetResponse", "src/Модели/Promotion/PromotionV2BudgetResponse.os")
 	.ОпределяетКласс("PromotionV2GetConfigResponse", "src/Модели/Promotion/PromotionV2GetConfigResponse.os")
+	.ОпределяетКласс("PromotionV3AdvertBidsKopecks", "src/Модели/Promotion/PromotionV3AdvertBidsKopecks.os")
+	.ОпределяетКласс("PromotionV3AdvertNMsSettings", "src/Модели/Promotion/PromotionV3AdvertNMsSettings.os")
+	.ОпределяетКласс("PromotionV3AdvertSettings", "src/Модели/Promotion/PromotionV3AdvertSettings.os")
+	.ОпределяетКласс("PromotionV3AdvertSubject", "src/Модели/Promotion/PromotionV3AdvertSubject.os")
+	.ОпределяетКласс("PromotionV3GetAdverts", "src/Модели/Promotion/PromotionV3GetAdverts.os")
+	.ОпределяетКласс("PromotionV3GetAdvertsResponse", "src/Модели/Promotion/PromotionV3GetAdvertsResponse.os")
+	.ОпределяетКласс("PromotionV3GetAdvertsRestrictions", "src/Модели/Promotion/PromotionV3GetAdvertsRestrictions.os")
+	.ОпределяетКласс("PromotionV3Placements", "src/Модели/Promotion/PromotionV3Placements.os")
 	.ОпределяетКласс("RatesApi", "src/Классы/Rates/RatesApi.os")
 	.ОпределяетКласс("RatesBadRequest", "src/Модели/Rates/RatesBadRequest.os")
 	.ОпределяетКласс("RatesFee", "src/Модели/Rates/RatesFee.os")
