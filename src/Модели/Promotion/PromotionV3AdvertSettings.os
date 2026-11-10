@@ -21,8 +21,10 @@
 &Тип("Строка")
 Перем name Экспорт;
 
-// placements - PromotionV3Placements
+// placements - Массив
 &Сериализуемое("placements")
+&Тип("Массив")
+&ДляКаждого
 &Тип("PromotionV3Placements")
 Перем placements Экспорт;
 

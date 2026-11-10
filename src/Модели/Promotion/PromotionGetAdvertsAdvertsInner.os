@@ -46,9 +46,9 @@
 &Тип("Число")
 Перем status Экспорт;
 
-// timestamps - PromotionTimestamps
+// timestamps - PromotionTimestampsV2
 &Сериализуемое("timestamps")
-&Тип("PromotionTimestamps")
+&Тип("PromotionTimestampsV2")
 Перем timestamps Экспорт;
 
 // Возвращает JSON-представление модели.

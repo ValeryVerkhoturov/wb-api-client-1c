@@ -19,8 +19,10 @@
 &Тип("PromotionV3AdvertSubject")
 Перем subject Экспорт;
 
-// bids - PromotionV3AdvertBidsKopecks
+// bids - Массив - Ставки
 &Сериализуемое("bids")
+&Тип("Массив")
+&ДляКаждого
 &Тип("PromotionV3AdvertBidsKopecks")
 Перем bids Экспорт;
 

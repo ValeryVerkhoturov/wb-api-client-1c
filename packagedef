@@ -4,7 +4,7 @@
 //
 
 Описание.Имя("wb-api-client")
-	.Версия("1.20261109.0")
+	.Версия("1.20261110.0")
 	.Автор("Valery Verkhoturov")
 	.АдресАвтора("valery.verkhoturov1505@gmail.com")
 	.Описание("Клиент Wildberries API для OneScript: 13 категорий WB API в одном пакете")
@@ -841,6 +841,7 @@
 	.ОпределяетКласс("OrdersFbsV3TransferOrdersToAssemblyResponse", "src/Модели/OrdersFbs/OrdersFbsV3TransferOrdersToAssemblyResponse.os")
 	.ОпределяетКласс("OrdersFbwApi", "src/Классы/OrdersFbw/OrdersFbwApi.os")
 	.ОпределяетКласс("OrdersFbwErrorsDraftError", "src/Модели/OrdersFbw/OrdersFbwErrorsDraftError.os")
+	.ОпределяетКласс("OrdersFbwGetV1SuppliesSupplyIdDiscrepanciesQuantity403Response", "src/Модели/OrdersFbw/OrdersFbwGetV1SuppliesSupplyIdDiscrepanciesQuantity403Response.os")
 	.ОпределяетКласс("OrdersFbwModelsBox", "src/Модели/OrdersFbw/OrdersFbwModelsBox.os")
 	.ОпределяетКласс("OrdersFbwModelsDateFilterRequest", "src/Модели/OrdersFbw/OrdersFbwModelsDateFilterRequest.os")
 	.ОпределяетКласс("OrdersFbwModelsDiscrepancyResponseItem", "src/Модели/OrdersFbw/OrdersFbwModelsDiscrepancyResponseItem.os")
@@ -984,6 +985,7 @@
 	.ОпределяетКласс("PromotionStatsBlok2DailyStatsInnerAppTypeStatsInner", "src/Модели/Promotion/PromotionStatsBlok2DailyStatsInnerAppTypeStatsInner.os")
 	.ОпределяетКласс("PromotionStatsBlok2DailyStatsInnerAppTypeStatsInnerStatsInner", "src/Модели/Promotion/PromotionStatsBlok2DailyStatsInnerAppTypeStatsInnerStatsInner.os")
 	.ОпределяетКласс("PromotionTimestamps", "src/Модели/Promotion/PromotionTimestamps.os")
+	.ОпределяетКласс("PromotionTimestampsV2", "src/Модели/Promotion/PromotionTimestampsV2.os")
 	.ОпределяетКласс("PromotionV0BidRecommendationBase", "src/Модели/Promotion/PromotionV0BidRecommendationBase.os")
 	.ОпределяетКласс("PromotionV0BidRecommendationBaseBid", "src/Модели/Promotion/PromotionV0BidRecommendationBaseBid.os")
 	.ОпределяетКласс("PromotionV0BidRecommendationBaseBidCompetitiveBid", "src/Модели/Promotion/PromotionV0BidRecommendationBaseBidCompetitiveBid.os")
