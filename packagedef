@@ -4,7 +4,7 @@
 //
 
 Описание.Имя("wb-api-client")
-	.Версия("1.20261110.0")
+	.Версия("1.20261112.0")
 	.Автор("Valery Verkhoturov")
 	.АдресАвтора("valery.verkhoturov1505@gmail.com")
 	.Описание("Клиент Wildberries API для OneScript: 13 категорий WB API в одном пакете")
@@ -1097,8 +1097,6 @@
 	.ОпределяетКласс("ReportsGetV1AnalyticsBrandShareParentSubjects200ResponseDataInner", "src/Модели/Reports/ReportsGetV1AnalyticsBrandShareParentSubjects200ResponseDataInner.os")
 	.ОпределяетКласс("ReportsGetV1AnalyticsGoodsLabeling200Response", "src/Модели/Reports/ReportsGetV1AnalyticsGoodsLabeling200Response.os")
 	.ОпределяетКласс("ReportsGetV1AnalyticsGoodsLabeling200ResponseReportInner", "src/Модели/Reports/ReportsGetV1AnalyticsGoodsLabeling200ResponseReportInner.os")
-	.ОпределяетКласс("ReportsGetV1AnalyticsRegionSale200Response", "src/Модели/Reports/ReportsGetV1AnalyticsRegionSale200Response.os")
-	.ОпределяетКласс("ReportsGetV1AnalyticsRegionSale200ResponseReportInner", "src/Модели/Reports/ReportsGetV1AnalyticsRegionSale200ResponseReportInner.os")
 	.ОпределяетКласс("ReportsGetV1Deductions200Response", "src/Модели/Reports/ReportsGetV1Deductions200Response.os")
 	.ОпределяетКласс("ReportsGetV1Deductions200ResponseData", "src/Модели/Reports/ReportsGetV1Deductions200ResponseData.os")
 	.ОпределяетКласс("ReportsGetV1Deductions200ResponseDataReportsInner", "src/Модели/Reports/ReportsGetV1Deductions200ResponseDataReportsInner.os")

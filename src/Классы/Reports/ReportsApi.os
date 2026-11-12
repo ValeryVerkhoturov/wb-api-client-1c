@@ -367,43 +367,6 @@
 
 КонецФункции
 
-// Получить отчёт
-//
-// Метод будет отключен [3 ноября](https://dev.wildberries.ru/release-notes?id=590).
-//
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
-// | Тип | Период | Лимит | Интервал | Всплеск |
-// | --- | --- | --- | --- | --- |
-// | Персональный | 10 сек | 1 запрос | 10 сек | 5 запросов |
-// | Сервисный | 10 сек | 1 запрос | 10 сек | 5 запросов |
-// | Базовый с секретом | 10 сек | 1 запрос | 10 сек | 5 запросов |
-// | Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
-//
-// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/reports/get-api-v1-analytics-region-sale
-//
-// Параметры:
-//   dateFrom - Строка - Начало отчётного периода, `ГГГГ-ММ-ДД`
-//   dateTo - Строка - Конец отчётного периода, `ГГГГ-ММ-ДД`
-//
-// Возвращаемое значение:
-//   ОтветAPI
-//
-Функция GetV1AnalyticsRegionSale(Знач dateFrom, Знач dateTo) Экспорт
-
-	ПараметрыЗапроса = Новый Соответствие;
-	ПараметрыЗапроса.Вставить("dateFrom", dateFrom);
-	ПараметрыЗапроса.Вставить("dateTo", dateTo);
-	Заголовки = Новый Соответствие;
-	Возврат Транспорт.ВыполнитьЗапрос(
-		"GET",
-		"/api/v1/analytics/region-sale",
-		ПараметрыЗапроса,
-		Заголовки,
-		Неопределено,
-		"https://seller-analytics-api.wildberries.ru");
-
-КонецФункции
-
 // Подмены и неверные вложения
 //
 // Метод возвращает отчёт об удержаниях за [подмены и неверные вложения](https://seller.wildberries.ru/analytics-reports/dimensions-penalties/retentions)
