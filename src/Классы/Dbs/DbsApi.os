@@ -488,7 +488,7 @@
 //
 // ---
 //
-// В песочнице — максимум 1 запрос в секунду суммарно для всех методов **Маркетплейса**.
+// В [песочнице](https://dev.wildberries.ru/sandbox) — максимум 1 запрос в секунду суммарно для всех методов **Маркетплейса**.
 //
 // Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/dbs/post-api-marketplace-v3-dbs-orders-meta-sgtin
 //
