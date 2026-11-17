@@ -19,7 +19,7 @@
 &Тип("Строка")
 Перем ddate Экспорт;
 
-// sellerDate - Строка - Рекомендуемая дата доставки СГТ в сортировочный центр или на склад. Поле отображается для сборочных заданий со сверхгабаритными товарами `СГТ`, `cargoType: 2`
+// sellerDate - Строка - Дата, когда [нужно отгрузить](https://seller.wildberries.ru/instructions/ru/ru/material/packing-and-delivery-of-oversized-items-in-fbs) сверхгабаритный товар (С…
 &Сериализуемое("sellerDate")
 &Тип("Строка")
 Перем sellerDate Экспорт;
