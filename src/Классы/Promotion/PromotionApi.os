@@ -428,41 +428,6 @@
 
 КонецФункции
 
-// Бюджет кампании
-//
-// Метод будет отключен [16 ноября](https://dev.wildberries.ru/release-notes?id=582).
-//
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца:
-// | Тип | Период | Лимит | Интервал | Всплеск |
-// | --- | --- | --- | --- | --- |
-// | Персональный | 1 сек | 4 запроса | 250 мс | 4 запроса |
-// | Сервисный | 1 сек | 4 запроса | 250 мс | 4 запроса |
-// | Базовый с секретом | 1 сек | 4 запроса | 250 мс | 4 запроса |
-// | Базовый | 1 ч | 4 запроса | 15 мин | 1 запрос |
-//
-// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/promotion/get-adv-v1-budget
-//
-// Параметры:
-//   id - Число - ID кампании
-//
-// Возвращаемое значение:
-//   ОтветAPI
-//
-Функция GetV1Budget(Знач id) Экспорт
-
-	ПараметрыЗапроса = Новый Соответствие;
-	ПараметрыЗапроса.Вставить("id", id);
-	Заголовки = Новый Соответствие;
-	Возврат Транспорт.ВыполнитьЗапрос(
-		"GET",
-		"/adv/v1/budget",
-		ПараметрыЗапроса,
-		Заголовки,
-		Неопределено,
-		"https://advert-api.wildberries.ru");
-
-КонецФункции
-
 // Список акций
 //
 // Метод возвращает список [акций](https://dev.wildberries.ru/openapi/promotion#tag/promoCalendar/operation/getV1CalendarPromotionsDetails) в WB с датами и временем проведения.

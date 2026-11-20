@@ -173,35 +173,6 @@
 
 КонецФункции
 
-// Получить список стран ОКСМ
-//
-// Метод возвращает список стран ОКСМ — Общероссийского классификатора стран мира — с полными названиями и кодами.
-//
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца для методов **сборочных заданий, поставок, пропусков и настроек автовозврата FBS**:
-// | Период | Лимит | Интервал | Всплеск |
-// | --- | --- | --- | --- |
-// | 1 мин | 300 запросов | 200 мс | 20 запросов |
-// Один запрос с кодами ответов `4XX` учитывается как 10 запросов
-//
-// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/orders-fbs/get-api-marketplace-v3-fbs-dictionaries-countries-oksm
-//
-// Возвращаемое значение:
-//   ОтветAPI
-//
-Функция GetV3FbsDictionariesCountriesOksm() Экспорт
-
-	ПараметрыЗапроса = Новый Соответствие;
-	Заголовки = Новый Соответствие;
-	Возврат Транспорт.ВыполнитьЗапрос(
-		"GET",
-		"/api/marketplace/v3/fbs/dictionaries/countries/oksm",
-		ПараметрыЗапроса,
-		Заголовки,
-		Неопределено,
-		"https://marketplace-api.wildberries.ru");
-
-КонецФункции
-
 // Получить список архивных сборочных заданий
 //
 // Метод возвращает сборочные задания, созданные более 3 месяцев назад.
@@ -317,41 +288,6 @@
 
 КонецФункции
 
-// Получить список пунктов отгрузки поставок
-//
-// Метод будет отключен [20 ноября](https://dev.wildberries.ru/release-notes?id=585).
-//
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца для методов **сборочных заданий, поставок, пропусков и настроек автовозврата FBS**:
-// | Период | Лимит | Интервал | Всплеск |
-// | --- | --- | --- | --- |
-// | 1 мин | 300 запросов | 200 мс | 20 запросов |
-// Один запрос с кодами ответов `4XX` учитывается как 10 запросов
-//
-// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/orders-fbs/get-api-marketplace-v3-fbs-shipping-points
-//
-// Параметры:
-//   city - Строка - Населённый пункт отгрузки поставки, кириллица
-//   cargoType - Число - Тип товара, который принимает пункт отгрузки: - `1` — малогабаритный товар (МГТ) - `2` — сверхгабаритный товар (СГТ) - `3` — крупногабаритный товар (КГТ+)
-//
-// Возвращаемое значение:
-//   ОтветAPI
-//
-Функция GetV3FbsShippingPoints(Знач city, Знач cargoType) Экспорт
-
-	ПараметрыЗапроса = Новый Соответствие;
-	ПараметрыЗапроса.Вставить("city", city);
-	ПараметрыЗапроса.Вставить("cargoType", cargoType);
-	Заголовки = Новый Соответствие;
-	Возврат Транспорт.ВыполнитьЗапрос(
-		"GET",
-		"/api/marketplace/v3/fbs/shipping-points",
-		ПараметрыЗапроса,
-		Заголовки,
-		Неопределено,
-		"https://marketplace-api.wildberries.ru");
-
-КонецФункции
-
 // Получить список пунктов отгрузки поставки
 //
 // Метод возвращает доступные пункты отгрузки для указанной поставки.
@@ -387,39 +323,6 @@
 	Возврат Транспорт.ВыполнитьЗапрос(
 		"GET",
 		СтрШаблон("/api/marketplace/v3/fbs/supplies/%1/shipping-points", Транспорт.ЭкранироватьСегмент(supplyId)),
-		ПараметрыЗапроса,
-		Заголовки,
-		Неопределено,
-		"https://marketplace-api.wildberries.ru");
-
-КонецФункции
-
-// Получить QR-код СПОТ
-//
-// Метод возвращает сформированный QR-код СПОТ для поставки в формате PNG, кодировка base64.
-// Вы можете получить QR-код, когда в методе [получения данных СПОТ](https://dev.wildberries.ru/openapi/orders-fbs#tag/fbsSupplies/operation/postV3FbsSuppliesSpotList) будет признак `\"status\":\"completed\"`.
-//
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца для методов **сборочных заданий, поставок, пропусков и настроек автовозврата FBS**:
-// | Период | Лимит | Интервал | Всплеск |
-// | --- | --- | --- | --- |
-// | 1 мин | 300 запросов | 200 мс | 20 запросов |
-// Один запрос с кодами ответов `4XX` учитывается как 10 запросов
-//
-// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/orders-fbs/get-api-marketplace-v3-fbs-supplies-supplyid-stickers-spot
-//
-// Параметры:
-//   supplyId - Строка - ID поставки
-//
-// Возвращаемое значение:
-//   ОтветAPI
-//
-Функция GetV3FbsSuppliesSupplyIdStickersSpot(Знач supplyId) Экспорт
-
-	ПараметрыЗапроса = Новый Соответствие;
-	Заголовки = Новый Соответствие;
-	Возврат Транспорт.ВыполнитьЗапрос(
-		"GET",
-		СтрШаблон("/api/marketplace/v3/fbs/supplies/%1/stickers/spot", Транспорт.ЭкранироватьСегмент(supplyId)),
 		ПараметрыЗапроса,
 		Заголовки,
 		Неопределено,
@@ -1129,43 +1032,6 @@
 
 КонецФункции
 
-// Получить данные СПОТ для списка поставок
-//
-// Метод возвращает данные СПОТ для списка поставок.
-//
-// Вы можете получить данные СПОТ, только если выполняются все условия:
-// - поставка находится на этапе доставки
-// - продавец зарегистрирован в любой стране ЕАЭС кроме РФ
-// - склад назначения находится в РФ
-//
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца для методов **сборочных заданий, поставок, пропусков и настроек автовозврата FBS**:
-// | Период | Лимит | Интервал | Всплеск |
-// | --- | --- | --- | --- |
-// | 1 мин | 300 запросов | 200 мс | 20 запросов |
-// Один запрос с кодами ответов `4XX` учитывается как 10 запросов
-//
-// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/orders-fbs/post-api-marketplace-v3-fbs-supplies-spot-list
-//
-// Параметры:
-//   Тело - OrdersFbsPostV3FbsSuppliesSpotListRequest
-//
-// Возвращаемое значение:
-//   ОтветAPI
-//
-Функция PostV3FbsSuppliesSpotList(Знач Тело) Экспорт
-
-	ПараметрыЗапроса = Новый Соответствие;
-	Заголовки = Новый Соответствие;
-	Возврат Транспорт.ВыполнитьЗапрос(
-		"POST",
-		"/api/marketplace/v3/fbs/supplies/spot/list",
-		ПараметрыЗапроса,
-		Заголовки,
-		Тело,
-		"https://marketplace-api.wildberries.ru");
-
-КонецФункции
-
 // Заказы с информацией по клиенту
 //
 // Метод позволяет получать информацию о покупателе по ID сборочного задания.
@@ -1251,6 +1117,7 @@
 // Получить статусы сборочных заданий
 //
 // Метод возвращает статусы [сборочных заданий](https://dev.wildberries.ru/openapi/orders-fbs#tag/fbsAssemblyOrders/operation/getV3Orders) по их ID.
+// Чтобы получить статусы сборочных заданий, созданных более 3 месяцев назад, используйте метод получения [архивных сборочных заданий](https://dev.wildberries.ru/openapi/orders-fbs#tag/fbsAssemblyOrders/operation/getV3FbsOrdersArchive).
 //
 // `supplierStatus` — статус сборочного задания. Триггер его изменения — действие самого продавца.
 // Возможные значения `supplierStatus`:
@@ -1600,41 +1467,6 @@
 	Возврат Транспорт.ВыполнитьЗапрос(
 		"POST",
 		СтрШаблон("/api/v3/supplies/%1/trbx/stickers", Транспорт.ЭкранироватьСегмент(supplyId)),
-		ПараметрыЗапроса,
-		Заголовки,
-		Тело,
-		"https://marketplace-api.wildberries.ru");
-
-КонецФункции
-
-// Добавить данные СПОТ в поставку
-//
-// Метод добавляет данные СПОТ в поставку.
-//
-// СПОТ можно добавить только в [поставку](https://dev.wildberries.ru/openapi/orders-fbs#tag/fbsSupplies/operation/getV3SuppliesSupplyId) с признаком `\"spotAvailable\":true`.
-//
-// [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца для методов **сборочных заданий, поставок, пропусков и настроек автовозврата FBS**:
-// | Период | Лимит | Интервал | Всплеск |
-// | --- | --- | --- | --- |
-// | 1 мин | 300 запросов | 200 мс | 20 запросов |
-// Один запрос с кодами ответов `4XX` учитывается как 10 запросов
-//
-// Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/orders-fbs/put-api-marketplace-v3-fbs-supplies-supplyid-spot
-//
-// Параметры:
-//   supplyId - Строка - ID поставки
-//   Тело - OrdersFbsPutV3FbsSuppliesSupplyIdSpotRequest
-//
-// Возвращаемое значение:
-//   ОтветAPI
-//
-Функция PutV3FbsSuppliesSupplyIdSpot(Знач supplyId, Знач Тело) Экспорт
-
-	ПараметрыЗапроса = Новый Соответствие;
-	Заголовки = Новый Соответствие;
-	Возврат Транспорт.ВыполнитьЗапрос(
-		"PUT",
-		СтрШаблон("/api/marketplace/v3/fbs/supplies/%1/spot", Транспорт.ЭкранироватьСегмент(supplyId)),
 		ПараметрыЗапроса,
 		Заголовки,
 		Тело,
