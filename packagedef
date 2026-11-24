@@ -4,7 +4,7 @@
 //
 
 Описание.Имя("wb-api-client")
-	.Версия("2.0.1")
+	.Версия("3.0.0")
 	.Автор("Valery Verkhoturov")
 	.АдресАвтора("valery.verkhoturov1505@gmail.com")
 	.Описание("Клиент Wildberries API для OneScript: 13 категорий WB API в одном пакете")
@@ -756,6 +756,7 @@
 	.ОпределяетКласс("OrdersFbsOrder", "src/Модели/OrdersFbs/OrdersFbsOrder.os")
 	.ОпределяетКласс("OrdersFbsOrderAddress", "src/Модели/OrdersFbs/OrdersFbsOrderAddress.os")
 	.ОпределяетКласс("OrdersFbsOrderNew", "src/Модели/OrdersFbs/OrdersFbsOrderNew.os")
+	.ОпределяетКласс("OrdersFbsOrderNewAddress", "src/Модели/OrdersFbs/OrdersFbsOrderNewAddress.os")
 	.ОпределяетКласс("OrdersFbsOrderOptions", "src/Модели/OrdersFbs/OrdersFbsOrderOptions.os")
 	.ОпределяетКласс("OrdersFbsOrdersRequestAPI", "src/Модели/OrdersFbs/OrdersFbsOrdersRequestAPI.os")
 	.ОпределяетКласс("OrdersFbsPass", "src/Модели/OrdersFbs/OrdersFbsPass.os")

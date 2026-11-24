@@ -9,9 +9,9 @@
 // в JSON, а из `&Тип` и `&ДляКаждого` — класс, в который разбирать значение,
 // поэтому вложенные модели и массивы моделей восстанавливаются сами собой.
 
-// address - OrdersFbsOrderAddress
+// address - OrdersFbsOrderNewAddress
 &Сериализуемое("address")
-&Тип("OrdersFbsOrderAddress")
+&Тип("OrdersFbsOrderNewAddress")
 Перем address Экспорт;
 
 // ddate - Строка - Планируемая дата доставки заказа покупателю. Поле отображается для сборочных заданий со сверхгабаритными товарами `СГТ`, `cargoType: 2`

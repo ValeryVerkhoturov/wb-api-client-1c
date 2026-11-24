@@ -36,22 +36,22 @@
 &Тип("Строка")
 Перем updatedAt Экспорт;
 
-// status - Строка - [Статус заказа](https://seller.wildberries.ru/instructions/ru/ru/material/order-feed-report#a92fa9b0-86ab-4990-b905-33f6c38b385c): - `created` — оформлен - `buy…
+// status - Строка - [Статус заказа](https://seller.wildberries.ru/instructions/material/order-feed-report#a92fa9b0-86ab-4990-b905-33f6c38b385c): - `created` — оформлен - `buyout` —…
 &Сериализуемое("status")
 &Тип("Строка")
 Перем status Экспорт;
 
-// cancelType - Строка - [Тип отмены](https://seller.wildberries.ru/instructions/ru/ru/material/order-feed-report#a92fa9b0-86ab-4990-b905-33f6c38b385c) (при `\"status\":\"cancel\"`): -…
+// cancelType - Строка - [Тип отмены](https://seller.wildberries.ru/instructions/material/order-feed-report#a92fa9b0-86ab-4990-b905-33f6c38b385c) (при `\"status\":\"cancel\"`): - `app`…
 &Сериализуемое("cancelType")
 &Тип("Строка")
 Перем cancelType Экспорт;
 
-// warehouseName - Строка - Название склада. [На данный момент](https://dev.wildberries.ru/release-notes?id=570) для складов WB может быть только `Склад WB`
+// warehouseName - Строка - Название склада. Для складов WB в России может быть только `Склад WB РФ` или `Склад WB СГТ РФ`
 &Сериализуемое("warehouseName")
 &Тип("Строка")
 Перем warehouseName Экспорт;
 
-// warehouseRegion - Строка - Федеральный округ склада. Если склад не в России, возвращается страна. [На данный момент](https://dev.wildberries.ru/release-notes?id=570) для складов WB может…
+// warehouseRegion - Строка - Регион отгрузки. Если склад принадлежит WB или продавцу не в России, возвращается страна
 &Сериализуемое("warehouseRegion")
 &Тип("Строка")
 Перем warehouseRegion Экспорт;

@@ -44,7 +44,7 @@
 &Тип("Булево")
 Перем isAdvertised Экспорт;
 
-// isSubstitutedSKU - Булево - Искали ли товар по подменному артикулу. Поле будет в ответе при наличии в запросе `includeSubstitutedSKUs` и/или `includeSearchTexts`
+// isSubstitutedSKU - Булево - Искали ли товар по подменному артикулу
 &Сериализуемое("isSubstitutedSKU")
 &Тип("Булево")
 Перем isSubstitutedSKU Экспорт;

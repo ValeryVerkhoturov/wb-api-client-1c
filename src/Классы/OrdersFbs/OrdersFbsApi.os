@@ -291,7 +291,7 @@
 // Получить список пунктов отгрузки поставки
 //
 // Метод возвращает доступные пункты отгрузки для указанной поставки.
-// Используйте данные этого метода, чтобы устанавливать [параметры отгрузки поставок](https://dev.wildberries.ru/openapi/orders-fbs#tag/fbsSupplies/operation/patchV3FbsSuppliesShippingMethod).
+// Предназначен для продавцов из РФ. Используйте данные этого метода, чтобы устанавливать [параметры отгрузки поставок](https://dev.wildberries.ru/openapi/orders-fbs#tag/fbsSupplies/operation/patchV3FbsSuppliesShippingMethod).
 //
 // [Лимит запросов](https://dev.wildberries.ru/openapi/api-information#tag/introduction/Limity-zaprosov) на один профиль продавца для методов **сборочных заданий, поставок, пропусков и настроек автовозврата FBS**:
 // | Период | Лимит | Интервал | Всплеск |
