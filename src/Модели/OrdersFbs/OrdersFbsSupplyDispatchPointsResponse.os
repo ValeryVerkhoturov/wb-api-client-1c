@@ -1,8 +1,6 @@
 #Использовать jason
 
-// AnalyticsTableShippingOfficeMetrics
-//
-// Общие метрики по регионам/складам отгрузки
+// OrdersFbsSupplyDispatchPointsResponse
 //
 // Класс сформирован автоматически (onescript) из спецификации OpenAPI.
 // Правки будут потеряны при следующей генерации.
@@ -11,30 +9,12 @@
 // в JSON, а из `&Тип` и `&ДляКаждого` — класс, в который разбирать значение,
 // поэтому вложенные модели и массивы моделей восстанавливаются сами собой.
 
-// stockCount - Число - Остатки на текущий день, шт.
-&Сериализуемое("stockCount")
-&Тип("Число")
-Перем stockCount Экспорт;
-
-// stockSum - Число - Остатки на текущий день, сумма
-&Сериализуемое("stockSum")
-&Тип("Число")
-Перем stockSum Экспорт;
-
-// saleRate - AnalyticsTableCommonMetricsSaleRate
-&Сериализуемое("saleRate")
-&Тип("AnalyticsTableCommonMetricsSaleRate")
-Перем saleRate Экспорт;
-
-// toClientCount - Число - В пути к клиенту, шт.
-&Сериализуемое("toClientCount")
-&Тип("Число")
-Перем toClientCount Экспорт;
-
-// fromClientCount - Число - В пути от клиента, шт.
-&Сериализуемое("fromClientCount")
-&Тип("Число")
-Перем fromClientCount Экспорт;
+// shippingPoints - Массив - Список пунктов отгрузки для указанной поставки
+&Сериализуемое("shippingPoints")
+&Тип("Массив")
+&ДляКаждого
+&Тип("OrdersFbsSupplyDispatchPoint")
+Перем shippingPoints Экспорт;
 
 // Возвращает JSON-представление модели.
 //

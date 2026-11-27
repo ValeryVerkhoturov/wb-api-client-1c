@@ -19,10 +19,10 @@
 &Тип("Булево")
 Перем isB2b Экспорт;
 
-// isPickupPointShipmentAllowed - Булево - Можно ли отгрузить заказ на ПВЗ: - `false` — нет - `true` — да
-&Сериализуемое("isPickupPointShipmentAllowed")
+// isPickupPointDispatchAllowed - Булево - Можно ли отгрузить заказ на ПВЗ: - `false` — нет - `true` — да
+&Сериализуемое("isPickupPointDispatchAllowed")
 &Тип("Булево")
-Перем isPickupPointShipmentAllowed Экспорт;
+Перем isPickupPointDispatchAllowed Экспорт;
 
 // done - Булево - Флаг закрытия поставки: - `true` — закрыта - `false` — открыта
 &Сериализуемое("done")

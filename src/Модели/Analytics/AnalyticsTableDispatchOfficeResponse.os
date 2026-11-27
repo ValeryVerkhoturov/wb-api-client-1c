@@ -1,6 +1,6 @@
 #Использовать jason
 
-// OrdersFbsUpdateSuppliesShippingMethodRequest
+// AnalyticsTableDispatchOfficeResponse
 //
 // Класс сформирован автоматически (onescript) из спецификации OpenAPI.
 // Правки будут потеряны при следующей генерации.
@@ -9,12 +9,17 @@
 // в JSON, а из `&Тип` и `&ДляКаждого` — класс, в который разбирать значение,
 // поэтому вложенные модели и массивы моделей восстанавливаются сами собой.
 
-// data - Массив
-&Сериализуемое("data")
+// regions - Массив - Множество данных по регионам отгрузки
+&Сериализуемое("regions")
 &Тип("Массив")
 &ДляКаждого
-&Тип("OrdersFbsUpdateSupplyShippingMethod")
-Перем data Экспорт;
+&Тип("AnalyticsTableDispatchOfficeItem")
+Перем regions Экспорт;
+
+// currency - Строка - Валюта отчёта
+&Сериализуемое("currency")
+&Тип("Строка")
+Перем currency Экспорт;
 
 // Возвращает JSON-представление модели.
 //

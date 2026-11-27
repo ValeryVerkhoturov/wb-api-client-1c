@@ -1,6 +1,8 @@
 #Использовать jason
 
-// AnalyticsTableShippingOfficeItemOfficesInner
+// AnalyticsTableDispatchOfficeMetrics
+//
+// Общие метрики по регионам/складам отгрузки
 //
 // Класс сформирован автоматически (onescript) из спецификации OpenAPI.
 // Правки будут потеряны при следующей генерации.
@@ -9,20 +11,30 @@
 // в JSON, а из `&Тип` и `&ДляКаждого` — класс, в который разбирать значение,
 // поэтому вложенные модели и массивы моделей восстанавливаются сами собой.
 
-// officeID - Число - [ID склада](https://dev.wildberries.ru/release-notes?id=605)
-&Сериализуемое("officeID")
+// stockCount - Число - Остатки на текущий день, шт.
+&Сериализуемое("stockCount")
 &Тип("Число")
-Перем officeID Экспорт;
+Перем stockCount Экспорт;
 
-// officeName - Строка - [Название склада](https://dev.wildberries.ru/release-notes?id=605)
-&Сериализуемое("officeName")
-&Тип("Строка")
-Перем officeName Экспорт;
+// stockSum - Число - Остатки на текущий день, сумма
+&Сериализуемое("stockSum")
+&Тип("Число")
+Перем stockSum Экспорт;
 
-// metrics - AnalyticsTableShippingOfficeMetrics - Метрики по складу
-&Сериализуемое("metrics")
-&Тип("AnalyticsTableShippingOfficeMetrics")
-Перем metrics Экспорт;
+// saleRate - AnalyticsTableCommonMetricsSaleRate
+&Сериализуемое("saleRate")
+&Тип("AnalyticsTableCommonMetricsSaleRate")
+Перем saleRate Экспорт;
+
+// toClientCount - Число - В пути к клиенту, шт.
+&Сериализуемое("toClientCount")
+&Тип("Число")
+Перем toClientCount Экспорт;
+
+// fromClientCount - Число - В пути от клиента, шт.
+&Сериализуемое("fromClientCount")
+&Тип("Число")
+Перем fromClientCount Экспорт;
 
 // Возвращает JSON-представление модели.
 //

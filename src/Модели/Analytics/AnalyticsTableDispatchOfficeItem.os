@@ -1,6 +1,6 @@
 #Использовать jason
 
-// AnalyticsTableShippingOfficeItem
+// AnalyticsTableDispatchOfficeItem
 //
 // Данные по региону отгрузки
 //
@@ -16,16 +16,16 @@
 &Тип("Строка")
 Перем regionName Экспорт;
 
-// metrics - AnalyticsTableShippingOfficeMetrics - Метрики по региону
+// metrics - AnalyticsTableDispatchOfficeMetrics - Метрики по региону
 &Сериализуемое("metrics")
-&Тип("AnalyticsTableShippingOfficeMetrics")
+&Тип("AnalyticsTableDispatchOfficeMetrics")
 Перем metrics Экспорт;
 
 // offices - Массив - [Данные по складам](https://dev.wildberries.ru/release-notes?id=605)
 &Сериализуемое("offices")
 &Тип("Массив")
 &ДляКаждого
-&Тип("AnalyticsTableShippingOfficeItemOfficesInner")
+&Тип("AnalyticsTableDispatchOfficeItemOfficesInner")
 Перем offices Экспорт;
 
 // Возвращает JSON-представление модели.

@@ -1,6 +1,6 @@
 #Использовать jason
 
-// OrdersFbsSupplyShippingPoint
+// OrdersFbsSupplyDispatchPoint
 //
 // Данные пункта отгрузки
 //

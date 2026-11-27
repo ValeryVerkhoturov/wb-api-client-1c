@@ -1,6 +1,6 @@
 #Использовать jason
 
-// OrdersFbsUpdatedSuppliesShippingMethodError
+// OrdersFbsUpdatedSuppliesDispatchMethodError
 //
 // Ошибка обработки запроса для поставки. Возможные варианты ошибок:
 // - `400 IncorrectRequestBody`:

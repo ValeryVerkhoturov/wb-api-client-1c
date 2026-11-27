@@ -1,6 +1,8 @@
 #Использовать jason
 
-// OrdersFbsUpdateSuppliesShippingMethodResponse
+// OrdersFbsUpdatedSuppliesDispatchMethod
+//
+// Результат обработки запроса для одной поставки
 //
 // Класс сформирован автоматически (onescript) из спецификации OpenAPI.
 // Правки будут потеряны при следующей генерации.
@@ -9,12 +11,20 @@
 // в JSON, а из `&Тип` и `&ДляКаждого` — класс, в который разбирать значение,
 // поэтому вложенные модели и массивы моделей восстанавливаются сами собой.
 
-// results - Массив
-&Сериализуемое("results")
-&Тип("Массив")
-&ДляКаждого
-&Тип("OrdersFbsUpdatedSuppliesShippingMethod")
-Перем results Экспорт;
+// error - OrdersFbsUpdatedSuppliesDispatchMethodError
+&Сериализуемое("error")
+&Тип("OrdersFbsUpdatedSuppliesDispatchMethodError")
+Перем error Экспорт;
+
+// success - Булево - Успешна ли обработка запроса для данной поставки. Может быть только `true`
+&Сериализуемое("success")
+&Тип("Булево")
+Перем success Экспорт;
+
+// supplyId - Строка - ID поставки
+&Сериализуемое("supplyId")
+&Тип("Строка")
+Перем supplyId Экспорт;
 
 // Возвращает JSON-представление модели.
 //

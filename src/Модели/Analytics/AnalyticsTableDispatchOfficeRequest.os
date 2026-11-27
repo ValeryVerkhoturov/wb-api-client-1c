@@ -1,8 +1,6 @@
 #Использовать jason
 
-// AnalyticsCommonShippingOfficeFilters
-//
-// Общие фильтры по регионам отгрузки
+// AnalyticsTableDispatchOfficeRequest
 //
 // Класс сформирован автоматически (onescript) из спецификации OpenAPI.
 // Правки будут потеряны при следующей генерации.

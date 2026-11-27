@@ -167,10 +167,10 @@
 &Тип("Булево")
 Перем isZeroOrder Экспорт;
 
-// isPickupPointShipmentAllowed - Булево - Можно ли отгрузить заказ на ПВЗ: - `false` — нет - `true` — да
-&Сериализуемое("isPickupPointShipmentAllowed")
+// isPickupPointDispatchAllowed - Булево - Можно ли отгрузить заказ на ПВЗ: - `false` — нет - `true` — да
+&Сериализуемое("isPickupPointDispatchAllowed")
 &Тип("Булево")
-Перем isPickupPointShipmentAllowed Экспорт;
+Перем isPickupPointDispatchAllowed Экспорт;
 
 // options - OrdersFbsOrderOptions
 &Сериализуемое("options")

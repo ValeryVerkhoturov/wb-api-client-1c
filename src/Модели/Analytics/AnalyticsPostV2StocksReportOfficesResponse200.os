@@ -9,9 +9,9 @@
 // в JSON, а из `&Тип` и `&ДляКаждого` — класс, в который разбирать значение,
 // поэтому вложенные модели и массивы моделей восстанавливаются сами собой.
 
-// data - AnalyticsTableShippingOfficeResponse
+// data - AnalyticsTableDispatchOfficeResponse
 &Сериализуемое("data")
-&Тип("AnalyticsTableShippingOfficeResponse")
+&Тип("AnalyticsTableDispatchOfficeResponse")
 Перем data Экспорт;
 
 // Возвращает JSON-представление модели.

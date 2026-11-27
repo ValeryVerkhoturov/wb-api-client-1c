@@ -571,7 +571,7 @@
 // Library doc: https://valeryverkhoturov.github.io/wb-api-client-docs/reference/api/analytics/post-api-v2-stocks-report-offices
 //
 // Параметры:
-//   Тело - AnalyticsTableShippingOfficeRequest
+//   Тело - AnalyticsTableDispatchOfficeRequest
 //
 // Возвращаемое значение:
 //   ОтветAPI

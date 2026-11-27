@@ -1,6 +1,6 @@
 #Использовать jason
 
-// OrdersFbsSupplyShippingPointsResponse
+// AnalyticsTableDispatchOfficeItemOfficesInner
 //
 // Класс сформирован автоматически (onescript) из спецификации OpenAPI.
 // Правки будут потеряны при следующей генерации.
@@ -9,12 +9,20 @@
 // в JSON, а из `&Тип` и `&ДляКаждого` — класс, в который разбирать значение,
 // поэтому вложенные модели и массивы моделей восстанавливаются сами собой.
 
-// shippingPoints - Массив - Список пунктов отгрузки для указанной поставки
-&Сериализуемое("shippingPoints")
-&Тип("Массив")
-&ДляКаждого
-&Тип("OrdersFbsSupplyShippingPoint")
-Перем shippingPoints Экспорт;
+// officeID - Число - [ID склада](https://dev.wildberries.ru/release-notes?id=605)
+&Сериализуемое("officeID")
+&Тип("Число")
+Перем officeID Экспорт;
+
+// officeName - Строка - [Название склада](https://dev.wildberries.ru/release-notes?id=605)
+&Сериализуемое("officeName")
+&Тип("Строка")
+Перем officeName Экспорт;
+
+// metrics - AnalyticsTableDispatchOfficeMetrics - Метрики по складу
+&Сериализуемое("metrics")
+&Тип("AnalyticsTableDispatchOfficeMetrics")
+Перем metrics Экспорт;
 
 // Возвращает JSON-представление модели.
 //
